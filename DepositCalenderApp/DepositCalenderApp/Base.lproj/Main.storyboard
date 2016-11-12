@@ -1,26 +1,86 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iTc-bn-PrX">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--支出入力-->
+        <scene sceneID="yh0-oJ-uXw">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wsF-fE-G8d" customClass="ExpenseViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="EHB-Cb-4B2"/>
+                        <viewControllerLayoutGuide type="bottom" id="GZq-A3-zKI"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="Fl8-PV-jnD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="支出入力" id="phX-Sm-9U4"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixp-bG-pPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="420" y="113"/>
+        </scene>
+        <!--カレンダー-->
+        <scene sceneID="bVh-Cc-YfS">
+            <objects>
+                <viewController id="5iG-mM-260" customClass="CalenderViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2KI-KB-b6x"/>
+                        <viewControllerLayoutGuide type="bottom" id="O4E-7d-95j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Ia-KU-w4u">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="カレンダー" id="aCa-dE-Bju"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZj-g0-Maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="420" y="-542"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6rc-Jj-bEP">
+            <objects>
+                <tabBarController id="iTc-bn-PrX" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hSs-u8-aCg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5iG-mM-260" kind="relationship" relationship="viewControllers" id="k7L-li-gGB"/>
+                        <segue destination="wsF-fE-G8d" kind="relationship" relationship="viewControllers" id="LOA-ox-fjz"/>
+                        <segue destination="qjn-Di-vSO" kind="relationship" relationship="viewControllers" id="c9z-8Q-hNz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BPh-YB-XRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="-215"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="y5N-Dl-I4V">
+            <objects>
+                <viewController id="qjn-Di-vSO" customClass="SettingViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jsr-jl-SAY"/>
+                        <viewControllerLayoutGuide type="bottom" id="fgc-Gn-0e0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="spI-Np-NoP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" id="ej8-HO-zZW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2lD-Hd-TT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="535"/>
         </scene>
     </scenes>
 </document>
