@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9564B8311DD73F2100729F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8301DD73F2100729F08 /* AppDelegate.swift */; };
+		9564B8331DD73F2100729F08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8321DD73F2100729F08 /* ViewController.swift */; };
+		9564B8361DD73F2100729F08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9564B8341DD73F2100729F08 /* Main.storyboard */; };
+		9564B8381DD73F2100729F08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9564B8371DD73F2100729F08 /* Assets.xcassets */; };
+		9564B83B1DD73F2100729F08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */; };
+		9564B8461DD73F2100729F08 /* DepositCalenderAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8451DD73F2100729F08 /* DepositCalenderAppTests.swift */; };
+		9564B8511DD73F2100729F08 /* DepositCalenderAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8501DD73F2100729F08 /* DepositCalenderAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9564B8421DD73F2100729F08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9564B8251DD73F2100729F08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9564B82C1DD73F2100729F08;
+			remoteInfo = DepositCalenderApp;
+		};
+		9564B84D1DD73F2100729F08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9564B8251DD73F2100729F08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9564B82C1DD73F2100729F08;
+			remoteInfo = DepositCalenderApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9564B82D1DD73F2100729F08 /* DepositCalenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepositCalenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9564B8301DD73F2100729F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9564B8321DD73F2100729F08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9564B8351DD73F2100729F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9564B8371DD73F2100729F08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9564B83A1DD73F2100729F08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9564B83C1DD73F2100729F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9564B8411DD73F2100729F08 /* DepositCalenderAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepositCalenderAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9564B8451DD73F2100729F08 /* DepositCalenderAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositCalenderAppTests.swift; sourceTree = "<group>"; };
+		9564B8471DD73F2100729F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9564B84C1DD73F2100729F08 /* DepositCalenderAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepositCalenderAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9564B8501DD73F2100729F08 /* DepositCalenderAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepositCalenderAppUITests.swift; sourceTree = "<group>"; };
+		9564B8521DD73F2100729F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9564B82A1DD73F2100729F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564B83E1DD73F2100729F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564B8491DD73F2100729F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9564B8241DD73F2100729F08 = {
+			isa = PBXGroup;
+			children = (
+				9564B82F1DD73F2100729F08 /* DepositCalenderApp */,
+				9564B8441DD73F2100729F08 /* DepositCalenderAppTests */,
+				9564B84F1DD73F2100729F08 /* DepositCalenderAppUITests */,
+				9564B82E1DD73F2100729F08 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9564B82E1DD73F2100729F08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9564B82D1DD73F2100729F08 /* DepositCalenderApp.app */,
+				9564B8411DD73F2100729F08 /* DepositCalenderAppTests.xctest */,
+				9564B84C1DD73F2100729F08 /* DepositCalenderAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9564B82F1DD73F2100729F08 /* DepositCalenderApp */ = {
+			isa = PBXGroup;
+			children = (
+				9564B8301DD73F2100729F08 /* AppDelegate.swift */,
+				9564B8321DD73F2100729F08 /* ViewController.swift */,
+				9564B8341DD73F2100729F08 /* Main.storyboard */,
+				9564B8371DD73F2100729F08 /* Assets.xcassets */,
+				9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */,
+				9564B83C1DD73F2100729F08 /* Info.plist */,
+			);
+			path = DepositCalenderApp;
+			sourceTree = "<group>";
+		};
+		9564B8441DD73F2100729F08 /* DepositCalenderAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9564B8451DD73F2100729F08 /* DepositCalenderAppTests.swift */,
+				9564B8471DD73F2100729F08 /* Info.plist */,
+			);
+			path = DepositCalenderAppTests;
+			sourceTree = "<group>";
+		};
+		9564B84F1DD73F2100729F08 /* DepositCalenderAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9564B8501DD73F2100729F08 /* DepositCalenderAppUITests.swift */,
+				9564B8521DD73F2100729F08 /* Info.plist */,
+			);
+			path = DepositCalenderAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9564B82C1DD73F2100729F08 /* DepositCalenderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9564B8551DD73F2100729F08 /* Build configuration list for PBXNativeTarget "DepositCalenderApp" */;
+			buildPhases = (
+				9564B8291DD73F2100729F08 /* Sources */,
+				9564B82A1DD73F2100729F08 /* Frameworks */,
+				9564B82B1DD73F2100729F08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DepositCalenderApp;
+			productName = DepositCalenderApp;
+			productReference = 9564B82D1DD73F2100729F08 /* DepositCalenderApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9564B8401DD73F2100729F08 /* DepositCalenderAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9564B8581DD73F2100729F08 /* Build configuration list for PBXNativeTarget "DepositCalenderAppTests" */;
+			buildPhases = (
+				9564B83D1DD73F2100729F08 /* Sources */,
+				9564B83E1DD73F2100729F08 /* Frameworks */,
+				9564B83F1DD73F2100729F08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9564B8431DD73F2100729F08 /* PBXTargetDependency */,
+			);
+			name = DepositCalenderAppTests;
+			productName = DepositCalenderAppTests;
+			productReference = 9564B8411DD73F2100729F08 /* DepositCalenderAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9564B84B1DD73F2100729F08 /* DepositCalenderAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9564B85B1DD73F2100729F08 /* Build configuration list for PBXNativeTarget "DepositCalenderAppUITests" */;
+			buildPhases = (
+				9564B8481DD73F2100729F08 /* Sources */,
+				9564B8491DD73F2100729F08 /* Frameworks */,
+				9564B84A1DD73F2100729F08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9564B84E1DD73F2100729F08 /* PBXTargetDependency */,
+			);
+			name = DepositCalenderAppUITests;
+			productName = DepositCalenderAppUITests;
+			productReference = 9564B84C1DD73F2100729F08 /* DepositCalenderAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9564B8251DD73F2100729F08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "yuuki-MHTCode";
+				TargetAttributes = {
+					9564B82C1DD73F2100729F08 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					9564B8401DD73F2100729F08 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9564B82C1DD73F2100729F08;
+					};
+					9564B84B1DD73F2100729F08 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9564B82C1DD73F2100729F08;
+					};
+				};
+			};
+			buildConfigurationList = 9564B8281DD73F2100729F08 /* Build configuration list for PBXProject "DepositCalenderApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9564B8241DD73F2100729F08;
+			productRefGroup = 9564B82E1DD73F2100729F08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9564B82C1DD73F2100729F08 /* DepositCalenderApp */,
+				9564B8401DD73F2100729F08 /* DepositCalenderAppTests */,
+				9564B84B1DD73F2100729F08 /* DepositCalenderAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9564B82B1DD73F2100729F08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9564B83B1DD73F2100729F08 /* LaunchScreen.storyboard in Resources */,
+				9564B8381DD73F2100729F08 /* Assets.xcassets in Resources */,
+				9564B8361DD73F2100729F08 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564B83F1DD73F2100729F08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564B84A1DD73F2100729F08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9564B8291DD73F2100729F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9564B8331DD73F2100729F08 /* ViewController.swift in Sources */,
+				9564B8311DD73F2100729F08 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564B83D1DD73F2100729F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9564B8461DD73F2100729F08 /* DepositCalenderAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9564B8481DD73F2100729F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9564B8511DD73F2100729F08 /* DepositCalenderAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9564B8431DD73F2100729F08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9564B82C1DD73F2100729F08 /* DepositCalenderApp */;
+			targetProxy = 9564B8421DD73F2100729F08 /* PBXContainerItemProxy */;
+		};
+		9564B84E1DD73F2100729F08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9564B82C1DD73F2100729F08 /* DepositCalenderApp */;
+			targetProxy = 9564B84D1DD73F2100729F08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9564B8341DD73F2100729F08 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9564B8351DD73F2100729F08 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9564B83A1DD73F2100729F08 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9564B8531DD73F2100729F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9564B8541DD73F2100729F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9564B8561DD73F2100729F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DepositCalenderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9564B8571DD73F2100729F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DepositCalenderApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9564B8591DD73F2100729F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DepositCalenderAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepositCalenderApp.app/DepositCalenderApp";
+			};
+			name = Debug;
+		};
+		9564B85A1DD73F2100729F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DepositCalenderAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepositCalenderApp.app/DepositCalenderApp";
+			};
+			name = Release;
+		};
+		9564B85C1DD73F2100729F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DepositCalenderAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DepositCalenderApp;
+			};
+			name = Debug;
+		};
+		9564B85D1DD73F2100729F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DepositCalenderAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DepositCalenderApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9564B8281DD73F2100729F08 /* Build configuration list for PBXProject "DepositCalenderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9564B8531DD73F2100729F08 /* Debug */,
+				9564B8541DD73F2100729F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9564B8551DD73F2100729F08 /* Build configuration list for PBXNativeTarget "DepositCalenderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9564B8561DD73F2100729F08 /* Debug */,
+				9564B8571DD73F2100729F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9564B8581DD73F2100729F08 /* Build configuration list for PBXNativeTarget "DepositCalenderAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9564B8591DD73F2100729F08 /* Debug */,
+				9564B85A1DD73F2100729F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9564B85B1DD73F2100729F08 /* Build configuration list for PBXNativeTarget "DepositCalenderAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9564B85C1DD73F2100729F08 /* Debug */,
+				9564B85D1DD73F2100729F08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9564B8251DD73F2100729F08 /* Project object */;
+}
