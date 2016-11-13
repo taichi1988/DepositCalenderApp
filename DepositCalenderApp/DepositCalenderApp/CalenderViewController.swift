@@ -39,7 +39,7 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
-    // 各セクション内のセルの数を返す
+    /// 各セクション内のセルの数を返す
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         // Section毎にCellの総数を変える.
@@ -49,7 +49,7 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
             return week.count
         default:
             /// 日付表示セクション
-            return dateManager.numberOfDaysInCurrentMonth()
+            return dateManager.dateCountInCurrentMonth()
         }
     }
 
@@ -74,12 +74,12 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
             cell.textLabel.text = week[indexPath.row]
         } else {
             //Index番号から表示する日を求める
-            cell.textLabel.text = dateManager.conversionDateFormat(index: indexPath.row)
+            cell.textLabel.text = dateManager.convertDateFormat(index: indexPath.row)
         }
         return cell
     }
 
-    //セルのサイズを設定
+    /// セルのサイズを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let numberOfMargin:CGFloat = 8.0
         let widths:CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin)/CGFloat(week.count)
@@ -90,13 +90,13 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
     
     
     
-    //セルの垂直方向のマージンを設定
+    /// セルの垂直方向のマージンを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
     {
         return cellMargin
     }
     
-    //セルの水平方向のマージンを設定
+    /// セルの水平方向のマージンを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
     {
         return cellMargin

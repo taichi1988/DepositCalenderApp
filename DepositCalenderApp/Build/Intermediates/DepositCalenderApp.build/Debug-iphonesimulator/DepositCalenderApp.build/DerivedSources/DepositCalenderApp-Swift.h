@@ -174,13 +174,22 @@ SWIFT_CLASS("_TtC18DepositCalenderApp22CalenderViewController")
 
 SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 @interface DateManager : NSObject
-@property (nonatomic, copy) NSDate * _Nonnull selectDay;
-@property (nonatomic, copy) NSDate * _Nonnull biginDay;
-@property (nonatomic, copy) NSDate * _Nonnull endDay;
+@property (nonatomic, copy) NSDate * _Nonnull selectedDay;
+@property (nonatomic, copy) NSDate * _Nonnull beginningDate;
+@property (nonatomic, copy) NSDate * _Nonnull lastDate;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
-- (NSInteger)numberOfDaysInCurrentMonth;
+- (NSInteger)dateCountInCurrentMonth;
+/**
+  カレンダーの起点の日付を取得
+*/
 - (NSDate * _Nonnull)firstDateOfMonth;
-- (NSDate * _Nonnull)EndOfMonthCalendar;
+/**
+  カレンダーの終点になる日付を求める
+*/
+- (NSDate * _Nonnull)endDateOfMonth;
+/**
+  カレンダーの始点から指定した日数を加算した日付の文字列を返す
+*/
 - (NSString * _Nonnull)conversionDateFormatWithIndex:(NSInteger)index;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
