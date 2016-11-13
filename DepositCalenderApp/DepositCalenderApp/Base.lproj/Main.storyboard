@@ -67,7 +67,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" id="aCa-dE-Bju"/>
                     <connections>
-                        <outlet property="calenderView" destination="EjK-un-V3p" id="d15-jV-yJJ"/>
+                        <outlet property="calenderView" destination="EjK-un-V3p" id="36j-X7-gyW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZj-g0-Maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
