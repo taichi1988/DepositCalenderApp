@@ -49,7 +49,7 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
             return week.count
         default:
             /// 日付表示セクション
-            return dateManager.daysAcquisition()
+            return dateManager.numberOfDaysInCurrentMonth()
         }
     }
 
@@ -57,17 +57,19 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
-        //テキストカラー
+
         if indexPath.row % week.count == 0 {
+            /// 日曜の列
             cell.textLabel.textColor = UIColor.lightRed()
         } else if indexPath.row % week.count == 6 {
+            /// 土曜の列
             cell.textLabel.textColor = UIColor.lightBlue()
         } else {
             cell.textLabel.textColor = UIColor.gray
             cell.backgroundColor = UIColor.orange
         }
         
-        //テキスト配置
+        /// テキスト配置
         if indexPath.section == 0 {
             cell.textLabel.text = week[indexPath.row]
         } else {

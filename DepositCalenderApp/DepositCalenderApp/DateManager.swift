@@ -15,7 +15,7 @@ class DateManager: NSObject {
     var endDay = Date()
     let calendar = Calendar.current
     //月ごとのセルの数を返すメソッド
-    func daysAcquisition() -> Int {
+    func numberOfDaysInCurrentMonth() -> Int {
         //始まりの日と終わりの日を取得
         biginDay = firstDateOfMonth()
         endDay = EndOfMonthCalendar()

@@ -10,44 +10,44 @@ provides-member:
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
 - "cellMargin"
-- "viewDidLoad"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "lightBlue"
 - "lightRed"
+- "viewDidLoad"
 - "numberOfSections"
 - "dateManager"
-- "lightBlue"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "calenderView"
 - "week"
 depends-top-level:
-- "Int"
-- "CalenderViewController"
-- "Array"
+- "CGSize"
 - "CGFloat"
 - "UICollectionViewCell"
 - !private "CalendarCell"
-- "CastingPrecedence"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "~="
-- "DateManager"
-- "UICollectionViewDelegateFlowLayout"
-- !private "%"
-- "StringLiteralType"
-- "UICollectionViewLayout"
-- !private "*"
-- !private "/"
-- "UICollectionView"
-- "IndexPath"
-- "CGSize"
-- "UIViewController"
-- "UICollectionViewDataSource"
+- "Array"
+- "CalenderViewController"
 - !private "-"
+- !private "*"
+- "DateManager"
+- !private "~="
+- !private "/"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "=="
 - "UIColor"
+- "UICollectionView"
+- "StringLiteralType"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionViewLayout"
+- !private "%"
+- "UICollectionViewDataSource"
 - "UICollectionViewDelegate"
+- "IndexPath"
+- "UIViewController"
+- "Int"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -61,7 +61,6 @@ depends-member:
 - !private ["Ps9AnyObject", "conversionDateFormat"]
 - !private ["Ps9AnyObject", "dataSource"]
 - ["Ps9AnyObject", "dateManager"]
-- !private ["Ps9AnyObject", "daysAcquisition"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - !private ["Ps9AnyObject", "frame"]
@@ -71,6 +70,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "lightBlue"]
 - ["Ps9AnyObject", "lightRed"]
+- !private ["Ps9AnyObject", "numberOfDaysInCurrentMonth"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["Ps9AnyObject", "orange"]
@@ -171,7 +171,6 @@ depends-member:
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dataSource"]
 - ["Ps7CVarArg", "dateManager"]
-- !private ["Ps7CVarArg", "daysAcquisition"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - !private ["Ps7CVarArg", "frame"]
@@ -181,6 +180,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "lightBlue"]
 - ["Ps7CVarArg", "lightRed"]
+- !private ["Ps7CVarArg", "numberOfDaysInCurrentMonth"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
 - !private ["Ps7CVarArg", "orange"]
@@ -282,7 +282,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - ["Ps28CustomDebugStringConvertible", "dateManager"]
-- !private ["Ps28CustomDebugStringConvertible", "daysAcquisition"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
@@ -292,6 +291,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "lightBlue"]
 - ["Ps28CustomDebugStringConvertible", "lightRed"]
+- !private ["Ps28CustomDebugStringConvertible", "numberOfDaysInCurrentMonth"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "orange"]
@@ -365,7 +365,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - ["Ps23CustomStringConvertible", "dateManager"]
-- !private ["Ps23CustomStringConvertible", "daysAcquisition"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - !private ["Ps23CustomStringConvertible", "frame"]
@@ -375,6 +374,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "lightBlue"]
 - ["Ps23CustomStringConvertible", "lightRed"]
+- !private ["Ps23CustomStringConvertible", "numberOfDaysInCurrentMonth"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "orange"]
@@ -403,9 +403,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["C18DepositCalenderApp11DateManager", "conversionDateFormat"]
-- !private ["C18DepositCalenderApp11DateManager", "daysAcquisition"]
 - ["C18DepositCalenderApp11DateManager", "deinit"]
 - ["C18DepositCalenderApp11DateManager", "init"]
+- !private ["C18DepositCalenderApp11DateManager", "numberOfDaysInCurrentMonth"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -431,7 +431,6 @@ depends-member:
 - !private ["Ps9Equatable", "conversionDateFormat"]
 - !private ["Ps9Equatable", "dataSource"]
 - ["Ps9Equatable", "dateManager"]
-- !private ["Ps9Equatable", "daysAcquisition"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - !private ["Ps9Equatable", "frame"]
@@ -441,6 +440,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "lightBlue"]
 - ["Ps9Equatable", "lightRed"]
+- !private ["Ps9Equatable", "numberOfDaysInCurrentMonth"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "orange"]
@@ -504,7 +504,6 @@ depends-member:
 - !private ["Ps8Hashable", "conversionDateFormat"]
 - !private ["Ps8Hashable", "dataSource"]
 - ["Ps8Hashable", "dateManager"]
-- !private ["Ps8Hashable", "daysAcquisition"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - !private ["Ps8Hashable", "frame"]
@@ -514,6 +513,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "lightBlue"]
 - ["Ps8Hashable", "lightRed"]
+- !private ["Ps8Hashable", "numberOfDaysInCurrentMonth"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps8Hashable", "orange"]
@@ -701,7 +701,6 @@ depends-member:
 - !private ["CSo8NSObject", "conversionDateFormat"]
 - !private ["CSo8NSObject", "dataSource"]
 - ["CSo8NSObject", "dateManager"]
-- !private ["CSo8NSObject", "daysAcquisition"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - !private ["CSo8NSObject", "frame"]
@@ -711,6 +710,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "lightBlue"]
 - ["CSo8NSObject", "lightRed"]
+- !private ["CSo8NSObject", "numberOfDaysInCurrentMonth"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "orange"]
@@ -745,7 +745,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "conversionDateFormat"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - ["PSo16NSObjectProtocol", "dateManager"]
-- !private ["PSo16NSObjectProtocol", "daysAcquisition"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - !private ["PSo16NSObjectProtocol", "frame"]
@@ -755,6 +754,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "lightBlue"]
 - ["PSo16NSObjectProtocol", "lightRed"]
+- !private ["PSo16NSObjectProtocol", "numberOfDaysInCurrentMonth"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "orange"]
@@ -1398,7 +1398,6 @@ depends-member:
 - !private ["Ps9_Hashable", "conversionDateFormat"]
 - !private ["Ps9_Hashable", "dataSource"]
 - ["Ps9_Hashable", "dateManager"]
-- !private ["Ps9_Hashable", "daysAcquisition"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - !private ["Ps9_Hashable", "frame"]
@@ -1408,6 +1407,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "lightBlue"]
 - ["Ps9_Hashable", "lightRed"]
+- !private ["Ps9_Hashable", "numberOfDaysInCurrentMonth"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9_Hashable", "orange"]

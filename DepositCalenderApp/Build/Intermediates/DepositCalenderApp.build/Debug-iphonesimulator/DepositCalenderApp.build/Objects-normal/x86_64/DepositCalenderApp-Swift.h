@@ -178,7 +178,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 @property (nonatomic, copy) NSDate * _Nonnull biginDay;
 @property (nonatomic, copy) NSDate * _Nonnull endDay;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
-- (NSInteger)daysAcquisition;
+- (NSInteger)numberOfDaysInCurrentMonth;
 - (NSDate * _Nonnull)firstDateOfMonth;
 - (NSDate * _Nonnull)EndOfMonthCalendar;
 - (NSString * _Nonnull)conversionDateFormatWithIndex:(NSInteger)index;
