@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,9 +37,38 @@
                     <view key="view" contentMode="scaleToFill" id="6Ia-KU-w4u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EjK-un-V3p">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NmD-iI-Hp3">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCell" id="Qdu-vD-9Vb" customClass="CalendarCell" customModule="DepositCalenderApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EjK-un-V3p" firstAttribute="height" secondItem="6Ia-KU-w4u" secondAttribute="height" multiplier="0.6" id="PLD-26-Fzm"/>
+                            <constraint firstAttribute="trailing" secondItem="EjK-un-V3p" secondAttribute="trailing" id="abL-73-6Vf"/>
+                            <constraint firstItem="O4E-7d-95j" firstAttribute="top" secondItem="EjK-un-V3p" secondAttribute="bottom" id="h4P-lK-YS9"/>
+                            <constraint firstItem="EjK-un-V3p" firstAttribute="leading" secondItem="6Ia-KU-w4u" secondAttribute="leading" id="vIw-jf-4Za"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" id="aCa-dE-Bju"/>
+                    <connections>
+                        <outlet property="calenderView" destination="EjK-un-V3p" id="d15-jV-yJJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZj-g0-Maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

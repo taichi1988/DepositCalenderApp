@@ -111,6 +111,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -130,15 +133,56 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class UILabel;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
+@interface CalendarCell : UICollectionViewCell
+@property (nonatomic, strong) UILabel * _Null_unspecified textLabel;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class DateManager;
+@class UICollectionView;
+@class UICollectionViewLayout;
+@class NSBundle;
+
 SWIFT_CLASS("_TtC18DepositCalenderApp22CalenderViewController")
-@interface CalenderViewController : UIViewController
+@interface CalenderViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
+@property (nonatomic, readonly) CGFloat cellMargin;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull week;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calenderView;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+/**
+  セクション数を返す
+*/
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+/**
+  セルの内容を設定する
+*/
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
+@interface DateManager : NSObject
+@property (nonatomic, copy) NSDate * _Nonnull selectDay;
+@property (nonatomic, copy) NSDate * _Nonnull biginDay;
+@property (nonatomic, copy) NSDate * _Nonnull endDay;
+@property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
+- (NSInteger)daysAcquisition;
+- (NSDate * _Nonnull)firstDateOfMonth;
+- (NSDate * _Nonnull)EndOfMonthCalendar;
+- (NSString * _Nonnull)conversionDateFormatWithIndex:(NSInteger)index;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -157,6 +201,12 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21SettingViewController")
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIColor (SWIFT_EXTENSION(DepositCalenderApp))
++ (UIColor * _Nonnull)lightBlue;
++ (UIColor * _Nonnull)lightRed;
 @end
 
 #pragma clang diagnostic pop
