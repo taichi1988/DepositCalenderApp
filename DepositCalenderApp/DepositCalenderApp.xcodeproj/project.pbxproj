@@ -17,7 +17,8 @@
 		9564B85F1DD740CA00729F08 /* ExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B85E1DD740CA00729F08 /* ExpenseViewController.swift */; };
 		9564B8611DD7410000729F08 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8601DD7410000729F08 /* SettingViewController.swift */; };
 		9584486E1DD8425800763A8C /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584486D1DD8425800763A8C /* DateManager.swift */; };
-		958448701DD842DA00763A8C /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584486F1DD842DA00763A8C /* CalenderCell.swift */; };
+		95F65A251DDB7D0A0086C3B8 /* CalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F65A231DDB7D0A0086C3B8 /* CalenderCell.swift */; };
+		95F65A261DDB7D0A0086C3B8 /* CalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F65A241DDB7D0A0086C3B8 /* CalenderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,8 @@
 		9564B85E1DD740CA00729F08 /* ExpenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseViewController.swift; sourceTree = "<group>"; };
 		9564B8601DD7410000729F08 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		9584486D1DD8425800763A8C /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
-		9584486F1DD842DA00763A8C /* CalenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		95F65A231DDB7D0A0086C3B8 /* CalenderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderCell.swift; sourceTree = "<group>"; };
+		95F65A241DDB7D0A0086C3B8 /* CalenderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalenderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,11 +112,12 @@
 				9564B85E1DD740CA00729F08 /* ExpenseViewController.swift */,
 				9564B8601DD7410000729F08 /* SettingViewController.swift */,
 				9584486D1DD8425800763A8C /* DateManager.swift */,
-				9584486F1DD842DA00763A8C /* CalenderCell.swift */,
 				9564B8341DD73F2100729F08 /* Main.storyboard */,
 				9564B8371DD73F2100729F08 /* Assets.xcassets */,
 				9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */,
 				9564B83C1DD73F2100729F08 /* Info.plist */,
+				95F65A231DDB7D0A0086C3B8 /* CalenderCell.swift */,
+				95F65A241DDB7D0A0086C3B8 /* CalenderCell.xib */,
 			);
 			path = DepositCalenderApp;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				TargetAttributes = {
 					9564B82C1DD73F2100729F08 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E5GDSPRCHD;
 						ProvisioningStyle = Automatic;
 					};
 					9564B8401DD73F2100729F08 = {
@@ -247,6 +251,7 @@
 				9564B83B1DD73F2100729F08 /* LaunchScreen.storyboard in Resources */,
 				9564B8381DD73F2100729F08 /* Assets.xcassets in Resources */,
 				9564B8361DD73F2100729F08 /* Main.storyboard in Resources */,
+				95F65A261DDB7D0A0086C3B8 /* CalenderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9564B8331DD73F2100729F08 /* CalenderViewController.swift in Sources */,
-				958448701DD842DA00763A8C /* CalenderCell.swift in Sources */,
+				95F65A251DDB7D0A0086C3B8 /* CalenderCell.swift in Sources */,
 				9584486E1DD8425800763A8C /* DateManager.swift in Sources */,
 				9564B8311DD73F2100729F08 /* AppDelegate.swift in Sources */,
 				9564B85F1DD740CA00729F08 /* ExpenseViewController.swift in Sources */,
@@ -426,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5GDSPRCHD;
 				INFOPLIST_FILE = DepositCalenderApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderApp";
@@ -438,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5GDSPRCHD;
 				INFOPLIST_FILE = DepositCalenderApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mht-code.DepositCalenderApp";

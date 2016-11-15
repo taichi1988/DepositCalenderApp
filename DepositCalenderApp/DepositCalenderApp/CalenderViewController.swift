@@ -21,8 +21,7 @@ extension UIColor {
 class CalenderViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let dateManager = DateManager()
-    let cellMargin: CGFloat = 2.0
-    let week = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+    let weekDayCount: Int = 7
 
     @IBOutlet weak var calenderView: UICollectionView!
     
@@ -33,73 +32,52 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
         calenderView.dataSource = self
         calenderView.backgroundColor = UIColor.white
         
+        self.calenderView.register(UINib(nibName: "CalenderCell", bundle: nil), forCellWithReuseIdentifier: "CalenderCell")
+        
     }
     
-    /// セクション数を返す
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
-    }
-    /// 各セクション内のセルの数を返す
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    {
-        // Section毎にCellの総数を変える.
-        switch section {
-        case 0:
-            /// 曜日表示セクション
-            return week.count
-        default:
-            /// 日付表示セクション
-            return dateManager.dateCountInCurrentMonth()
-        }
+    /// カレンダーのセルの個数を返す
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return dateManager.dateCountInCurrentMonth()
     }
 
-    /// セルの内容を設定する
+    /// 各セルに日付を設定する
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
-
-        if indexPath.row % week.count == 0 {
-            /// 日曜の列
-            cell.textLabel.textColor = UIColor.lightRed()
-        } else if indexPath.row % week.count == 6 {
-            /// 土曜の列
-            cell.textLabel.textColor = UIColor.lightBlue()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalenderCell", for: indexPath) as! CalenderCell
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 1
+        
+        if indexPath.row % weekDayCount == 0 {
+            /// 日曜日のセル
+            cell.dateNumber.textColor = UIColor.lightRed()
+        } else if indexPath.row % weekDayCount == 6 {
+            /// 土曜日のセル
+            cell.dateNumber.textColor = UIColor.lightBlue()
         } else {
-            cell.textLabel.textColor = UIColor.gray
-            cell.backgroundColor = UIColor.orange
+            /// 平日のセル
+            cell.dateNumber.textColor = UIColor.gray
         }
         
-        /// テキスト配置
-        if indexPath.section == 0 {
-            cell.textLabel.text = week[indexPath.row]
-        } else {
-            //Index番号から表示する日を求める
-            cell.textLabel.text = dateManager.convertDateFormat(index: indexPath.row)
-        }
+        cell.dateNumber.text = dateManager.convertDateFormat(index: indexPath.row)
         return cell
     }
 
     /// セルのサイズを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let numberOfMargin:CGFloat = 8.0
-        let widths:CGFloat = (collectionView.frame.size.width - cellMargin * numberOfMargin)/CGFloat(week.count)
-        let heights:CGFloat = widths * 0.8
         
-        return CGSize(width:widths,height:heights)
+        let width: CGFloat = collectionView.frame.size.width / CGFloat(weekDayCount)
+        let height: CGFloat = collectionView.frame.size.height / 5
+        return CGSize(width: width, height: height)
     }
-    
-    
     
     /// セルの垂直方向のマージンを設定
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
-    {
-        return cellMargin
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
-    
     /// セルの水平方向のマージンを設定
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat
-    {
-        return cellMargin
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
     }
 }
 

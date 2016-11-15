@@ -136,11 +136,12 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11AppDelegate")
 @class UILabel;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
-@interface CalendarCell : UICollectionViewCell
-@property (nonatomic, strong) UILabel * _Null_unspecified textLabel;
-- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC18DepositCalenderApp12CalenderCell")
+@interface CalenderCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateNumber;
+- (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class DateManager;
@@ -151,21 +152,28 @@ SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
 SWIFT_CLASS("_TtC18DepositCalenderApp22CalenderViewController")
 @interface CalenderViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
-@property (nonatomic, readonly) CGFloat cellMargin;
-@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull week;
+@property (nonatomic, readonly) NSInteger weekDayCount;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calenderView;
 - (void)viewDidLoad;
 /**
-  セクション数を返す
+  カレンダーのセルの個数を返す
 */
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 /**
-  セルの内容を設定する
+  各セルに日付を設定する
 */
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+/**
+  セルのサイズを設定
+*/
 - (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+/**
+  セルの垂直方向のマージンを設定
+*/
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
+/**
+  セルの水平方向のマージンを設定
+*/
 - (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -178,6 +186,9 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 @property (nonatomic, copy) NSDate * _Nonnull beginningDate;
 @property (nonatomic, copy) NSDate * _Nonnull lastDate;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
+/**
+  月ごとのセルの数を返すメソッド
+*/
 - (NSInteger)dateCountInCurrentMonth;
 /**
   カレンダーの起点の日付を取得
@@ -190,7 +201,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 /**
   カレンダーの始点から指定した日数を加算した日付の文字列を返す
 */
-- (NSString * _Nonnull)conversionDateFormatWithIndex:(NSInteger)index;
+- (NSString * _Nonnull)convertDateFormatWithIndex:(NSInteger)index;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
