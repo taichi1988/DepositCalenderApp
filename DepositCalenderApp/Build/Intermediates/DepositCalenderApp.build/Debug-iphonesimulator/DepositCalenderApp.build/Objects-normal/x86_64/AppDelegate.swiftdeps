@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp11AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
-- "applicationWillEnterForeground"
-- "application"
-- "applicationDidBecomeActive"
 - "applicationWillTerminate"
-- "applicationDidEnterBackground"
 - "applicationWillResignActive"
+- "applicationDidEnterBackground"
+- "window"
+- "applicationDidBecomeActive"
+- "application"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "UIApplicationDelegate"
-- !private "BooleanLiteralType"
+- "AppDelegate"
 - "UIWindow"
+- !private "BooleanLiteralType"
+- "UIApplicationLaunchOptionsKey"
+- "UIApplication"
+- "UIApplicationDelegate"
 - "UIResponder"
 - "Bool"
-- "UIApplication"
-- "UIApplicationLaunchOptionsKey"
-- "AppDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]

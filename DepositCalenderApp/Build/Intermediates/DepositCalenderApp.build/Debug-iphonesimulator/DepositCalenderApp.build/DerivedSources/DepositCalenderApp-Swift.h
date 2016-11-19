@@ -111,6 +111,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import CoreGraphics;
+@import Foundation;
+@import ObjectiveC;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -130,15 +133,76 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+@class UILabel;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18DepositCalenderApp22CalenderViewController")
-@interface CalenderViewController : UIViewController
+SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
+@interface CalendarCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateNumber;
+- (void)awakeFromNib;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class DateManager;
+@class UICollectionView;
+@class UICollectionViewLayout;
+@class NSBundle;
+
+SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
+@interface CalendarViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
+@property (nonatomic, readonly) NSInteger weekDayCount;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
+/**
+  カレンダーのセルの個数を返す
+*/
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+/**
+  各セルに日付を設定する
+*/
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+/**
+  セルのサイズを設定
+*/
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+/**
+  セルの垂直方向のマージンを設定
+*/
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
+/**
+  セルの水平方向のマージンを設定
+*/
+- (CGFloat)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
+@interface DateManager : NSObject
+@property (nonatomic, copy) NSDate * _Nonnull selectedDay;
+@property (nonatomic, copy) NSDate * _Nonnull beginningDate;
+@property (nonatomic, copy) NSDate * _Nonnull lastDate;
+@property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
+/**
+  現在の月のセルの数を返すメソッド
+*/
+- (NSInteger)dateCountInCurrentMonth;
+/**
+  カレンダーの起点の日付を取得
+*/
+- (NSDate * _Nonnull)firstDateOfMonth;
+/**
+  カレンダーの終点になる日付を求める
+*/
+- (NSDate * _Nonnull)endDateOfMonth;
+/**
+  カレンダーの始点から指定した日数を加算した日付の文字列を返す
+*/
+- (NSString * _Nonnull)convertDateFormatWithIndex:(NSInteger)index;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -157,6 +221,12 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21SettingViewController")
 - (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIColor (SWIFT_EXTENSION(DepositCalenderApp))
++ (UIColor * _Nonnull)lightBlue;
++ (UIColor * _Nonnull)lightRed;
 @end
 
 #pragma clang diagnostic pop
