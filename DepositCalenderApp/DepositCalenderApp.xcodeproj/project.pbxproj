@@ -109,6 +109,7 @@
 		9564B82F1DD73F2100729F08 /* DepositCalenderApp */ = {
 			isa = PBXGroup;
 			children = (
+				95F65A271DE04EBC0086C3B8 /* Constant.swift */,
 				9564B8301DD73F2100729F08 /* AppDelegate.swift */,
 				9564B8321DD73F2100729F08 /* CalendarViewController.swift */,
 				9564B85E1DD740CA00729F08 /* ExpenseViewController.swift */,
@@ -120,7 +121,6 @@
 				9564B8371DD73F2100729F08 /* Assets.xcassets */,
 				9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */,
 				9564B83C1DD73F2100729F08 /* Info.plist */,
-				95F65A271DE04EBC0086C3B8 /* Constant.swift */,
 			);
 			path = DepositCalenderApp;
 			sourceTree = "<group>";

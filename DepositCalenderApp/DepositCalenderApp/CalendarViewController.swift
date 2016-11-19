@@ -8,20 +8,11 @@
 
 import UIKit
 
-//extension UIColor {
-//    class func lightBlue() -> UIColor {
-//        return UIColor(red: 92.0 / 255, green: 192.0 / 255, blue: 210.0 / 255, alpha: 1.0)
-//    }
-//    
-//    class func lightRed() -> UIColor {
-//        return UIColor(red: 195.0 / 255, green: 123.0 / 255, blue: 175.0 / 255, alpha: 1.0)
-//    }
-//}
-
 class CalendarViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let dateManager = DateManager()
-    let weekDayCount: Int = 7
+    let dayCountOfWeek = 7
+    let weekCountOfMonth = 6
 
     @IBOutlet weak var CalendarView: UICollectionView!
     
@@ -39,16 +30,17 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     /// カレンダーのセルの個数を返す
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dateManager.dateCountInCurrentMonth()
+//        return dayCountOfWeek * weekCountOfMonth
     }
 
     /// 各セルに日付を設定する
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
-        if indexPath.row % weekDayCount == 0 {
+        if indexPath.row % dayCountOfWeek == 0 {
             // 日曜日のセル
             cell.backgroundColor = UIColor.lightPink()
-        } else if indexPath.row % weekDayCount == 6 {
+        } else if indexPath.row % dayCountOfWeek == 6 {
             // 土曜日のセル
             cell.backgroundColor = UIColor.lightGreen()
         } else {
@@ -64,8 +56,8 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     /// セルのサイズを設定
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width: CGFloat = collectionView.frame.size.width / CGFloat(weekDayCount)
-        let height: CGFloat = collectionView.frame.size.height / 6
+        let width: CGFloat = collectionView.frame.size.width / CGFloat(dayCountOfWeek)
+        let height: CGFloat = collectionView.frame.size.height / CGFloat(weekCountOfMonth)
         return CGSize(width: width, height: height)
     }
     

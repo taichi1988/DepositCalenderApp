@@ -9,6 +9,7 @@
 import UIKit
 
 extension UIColor {
+        
     class func lightBlue() -> UIColor {
         return UIColor(red: 92.0 / 255, green: 192.0 / 255, blue: 210.0 / 255, alpha: 1.0)
     }
@@ -17,7 +18,7 @@ extension UIColor {
         return UIColor(red: 195.0 / 255, green: 123.0 / 255, blue: 175.0 / 255, alpha: 1.0)
     }
     
-    class func lightOrange() -> UIColor {
+    class func orange() -> UIColor {
         return UIColor(red: 255.0 / 255.0, green: 128.0 / 255.0, blue: 0.0, alpha: 1.0)
     }
     
@@ -36,6 +37,8 @@ extension UIColor {
     class func brown() -> UIColor {
         return UIColor(red: 139.0 / 255.0, green: 87.0 / 255.0, blue: 42.0 / 255.0, alpha: 1.0)
     }
-
-
+    
+    class func lightBrown() -> UIColor {
+        return UIColor(red: 139.0 / 255.0, green: 87.0 / 255.0, blue: 42.0 / 255.0, alpha: 0.43)
+    }
 }
