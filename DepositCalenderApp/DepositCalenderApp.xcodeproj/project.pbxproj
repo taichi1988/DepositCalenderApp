@@ -19,6 +19,7 @@
 		9584486E1DD8425800763A8C /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584486D1DD8425800763A8C /* DateManager.swift */; };
 		95F65A251DDB7D0A0086C3B8 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F65A231DDB7D0A0086C3B8 /* CalendarCell.swift */; };
 		95F65A261DDB7D0A0086C3B8 /* CalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95F65A241DDB7D0A0086C3B8 /* CalendarCell.xib */; };
+		95F65A281DE04EBC0086C3B8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F65A271DE04EBC0086C3B8 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9584486D1DD8425800763A8C /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		95F65A231DDB7D0A0086C3B8 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		95F65A241DDB7D0A0086C3B8 /* CalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarCell.xib; sourceTree = "<group>"; };
+		95F65A271DE04EBC0086C3B8 /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +114,13 @@
 				9564B85E1DD740CA00729F08 /* ExpenseViewController.swift */,
 				9564B8601DD7410000729F08 /* SettingViewController.swift */,
 				9584486D1DD8425800763A8C /* DateManager.swift */,
+				95F65A231DDB7D0A0086C3B8 /* CalendarCell.swift */,
+				95F65A241DDB7D0A0086C3B8 /* CalendarCell.xib */,
 				9564B8341DD73F2100729F08 /* Main.storyboard */,
 				9564B8371DD73F2100729F08 /* Assets.xcassets */,
 				9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */,
 				9564B83C1DD73F2100729F08 /* Info.plist */,
-				95F65A231DDB7D0A0086C3B8 /* CalendarCell.swift */,
-				95F65A241DDB7D0A0086C3B8 /* CalendarCell.xib */,
+				95F65A271DE04EBC0086C3B8 /* Constant.swift */,
 			);
 			path = DepositCalenderApp;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F65A281DE04EBC0086C3B8 /* Constant.swift in Sources */,
 				9564B8331DD73F2100729F08 /* CalendarViewController.swift in Sources */,
 				95F65A251DDB7D0A0086C3B8 /* CalendarCell.swift in Sources */,
 				9584486E1DD8425800763A8C /* DateManager.swift in Sources */,

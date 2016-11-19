@@ -8,15 +8,15 @@
 
 import UIKit
 
-extension UIColor {
-    class func lightBlue() -> UIColor {
-        return UIColor(red: 92.0 / 255, green: 192.0 / 255, blue: 210.0 / 255, alpha: 1.0)
-    }
-    
-    class func lightRed() -> UIColor {
-        return UIColor(red: 195.0 / 255, green: 123.0 / 255, blue: 175.0 / 255, alpha: 1.0)
-    }
-}
+//extension UIColor {
+//    class func lightBlue() -> UIColor {
+//        return UIColor(red: 92.0 / 255, green: 192.0 / 255, blue: 210.0 / 255, alpha: 1.0)
+//    }
+//    
+//    class func lightRed() -> UIColor {
+//        return UIColor(red: 195.0 / 255, green: 123.0 / 255, blue: 175.0 / 255, alpha: 1.0)
+//    }
+//}
 
 class CalendarViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
@@ -45,22 +45,19 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
-        // デバッグ用に枠線追加、後に削除
-        cell.layer.borderColor = UIColor.black.cgColor
-        cell.layer.borderWidth = 1
-        
         if indexPath.row % weekDayCount == 0 {
             // 日曜日のセル
-            cell.dateNumber.textColor = UIColor.lightRed()
+            cell.backgroundColor = UIColor.lightPink()
         } else if indexPath.row % weekDayCount == 6 {
             // 土曜日のセル
-            cell.dateNumber.textColor = UIColor.lightBlue()
+            cell.backgroundColor = UIColor.lightGreen()
         } else {
             // 平日のセル
-            cell.dateNumber.textColor = UIColor.gray
+            cell.backgroundColor = UIColor.offWhite()
         }
         
         cell.dateNumber.text = dateManager.convertDateFormat(index: indexPath.row)
+        cell.dateNumber.textColor = UIColor.brown()
         return cell
     }
 
