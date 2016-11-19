@@ -1,5 +1,5 @@
 //
-//  CalenderCell.swift
+//  CalendarCell.swift
 //  DepositCalenderApp
 //
 //  Created by 行木太一 on 2016/11/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CalenderCell: UICollectionViewCell {
+class CalendarCell: UICollectionViewCell {
 
     @IBOutlet weak var dateNumber: UILabel!
     

@@ -136,8 +136,8 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11AppDelegate")
 @class UILabel;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18DepositCalenderApp12CalenderCell")
-@interface CalenderCell : UICollectionViewCell
+SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
+@interface CalendarCell : UICollectionViewCell
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateNumber;
 - (void)awakeFromNib;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
@@ -149,11 +149,11 @@ SWIFT_CLASS("_TtC18DepositCalenderApp12CalenderCell")
 @class UICollectionViewLayout;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC18DepositCalenderApp22CalenderViewController")
-@interface CalenderViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
+@interface CalendarViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
 @property (nonatomic, readonly) NSInteger weekDayCount;
-@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calenderView;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
 - (void)viewDidLoad;
 /**
   カレンダーのセルの個数を返す
@@ -187,7 +187,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 @property (nonatomic, copy) NSDate * _Nonnull lastDate;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
 /**
-  月ごとのセルの数を返すメソッド
+  現在の月のセルの数を返すメソッド
 */
 - (NSInteger)dateCountInCurrentMonth;
 /**

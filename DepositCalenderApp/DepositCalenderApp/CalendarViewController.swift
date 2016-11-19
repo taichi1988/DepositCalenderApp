@@ -1,5 +1,5 @@
 //
-//  CalenderViewController.swift
+//  CalendarViewController.swift
 //  DepositCalenderApp
 //
 //  Created by 行木太一 on 2016/11/12.
@@ -18,21 +18,21 @@ extension UIColor {
     }
 }
 
-class CalenderViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+class CalendarViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let dateManager = DateManager()
     let weekDayCount: Int = 7
 
-    @IBOutlet weak var calenderView: UICollectionView!
+    @IBOutlet weak var CalendarView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calenderView.delegate = self
-        calenderView.dataSource = self
-        calenderView.backgroundColor = UIColor.white
+        CalendarView.delegate = self
+        CalendarView.dataSource = self
+        CalendarView.backgroundColor = UIColor.white
         
-        self.calenderView.register(UINib(nibName: "CalenderCell", bundle: nil), forCellWithReuseIdentifier: "CalenderCell")
+        self.CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
         
     }
     
@@ -44,18 +44,19 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
     /// 各セルに日付を設定する
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalenderCell", for: indexPath) as! CalenderCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
+        // デバッグ用に枠線追加、後に削除
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 1
         
         if indexPath.row % weekDayCount == 0 {
-            /// 日曜日のセル
+            // 日曜日のセル
             cell.dateNumber.textColor = UIColor.lightRed()
         } else if indexPath.row % weekDayCount == 6 {
-            /// 土曜日のセル
+            // 土曜日のセル
             cell.dateNumber.textColor = UIColor.lightBlue()
         } else {
-            /// 平日のセル
+            // 平日のセル
             cell.dateNumber.textColor = UIColor.gray
         }
         
@@ -67,7 +68,7 @@ class CalenderViewController: UIViewController,UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width: CGFloat = collectionView.frame.size.width / CGFloat(weekDayCount)
-        let height: CGFloat = collectionView.frame.size.height / 5
+        let height: CGFloat = collectionView.frame.size.height / 6
         return CGSize(width: width, height: height)
     }
     

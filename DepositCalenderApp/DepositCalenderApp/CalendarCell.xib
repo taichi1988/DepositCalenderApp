@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalenderCell" reuseIdentifier="CalenderCell" id="gTV-IL-0wX" customClass="CalenderCell" customModule="DepositCalenderApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalenderCell" reuseIdentifier="CalendarCell" id="gTV-IL-0wX" userLabel="CalendarCell" customClass="CalendarCell" customModule="DepositCalenderApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -27,7 +27,7 @@
                 <constraint firstItem="5ig-l9-NxY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="SQ6-Vs-3rB"/>
             </constraints>
             <connections>
-                <outlet property="dateNumber" destination="5ig-l9-NxY" id="s7c-PA-rap"/>
+                <outlet property="dateNumber" destination="5ig-l9-NxY" id="QYw-1b-trl"/>
             </connections>
         </collectionViewCell>
     </objects>

@@ -29,7 +29,7 @@
         <!--カレンダー-->
         <scene sceneID="bVh-Cc-YfS">
             <objects>
-                <viewController id="5iG-mM-260" customClass="CalenderViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5iG-mM-260" customClass="CalendarViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2KI-KB-b6x"/>
                         <viewControllerLayoutGuide type="bottom" id="O4E-7d-95j"/>
@@ -141,7 +141,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="カレンダー" id="aCa-dE-Bju"/>
                     <connections>
-                        <outlet property="calenderView" destination="EjK-un-V3p" id="36j-X7-gyW"/>
+                        <outlet property="CalendarView" destination="EjK-un-V3p" id="v25-6R-0pB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZj-g0-Maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
