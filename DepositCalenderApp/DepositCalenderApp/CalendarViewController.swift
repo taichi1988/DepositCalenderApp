@@ -21,9 +21,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
         
         CalendarView.delegate = self
         CalendarView.dataSource = self
-        CalendarView.backgroundColor = UIColor.white
-        
-        self.CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
+        CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
         
     }
     

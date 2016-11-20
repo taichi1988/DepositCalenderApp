@@ -6,39 +6,39 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp22CalendarViewController", ""]
 provides-dynamic-lookup:
+- "CalendarView"
+- "dateManager"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "dayCountOfWeek"
 - "viewDidLoad"
 - "weekCountOfMonth"
-- "dateManager"
-- "CalendarView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
 depends-top-level:
 - "CGFloat"
-- "CalendarViewController"
-- !private "UIColor"
-- "UICollectionViewCell"
-- "Int"
-- "UICollectionViewDataSource"
-- "UICollectionViewLayout"
-- "UICollectionViewDelegate"
 - "IndexPath"
-- "UICollectionViewDelegateFlowLayout"
-- !private "UINib"
+- "UICollectionViewCell"
+- "UICollectionViewLayout"
+- "Int"
 - !private "%"
-- "AssignmentPrecedence"
-- !private "=="
-- "CGSize"
-- "CastingPrecedence"
-- !private "/"
-- !private "StringLiteralType"
 - "UIViewController"
+- "CalendarViewController"
 - "DateManager"
+- "CGSize"
+- !private "=="
+- "AssignmentPrecedence"
+- "CastingPrecedence"
 - !private "CalendarCell"
+- !private "StringLiteralType"
+- !private "/"
+- "UICollectionViewDelegateFlowLayout"
 - "UICollectionView"
+- !private "UIColor"
+- "UICollectionViewDataSource"
+- !private "UINib"
+- "UICollectionViewDelegate"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -86,7 +86,6 @@ depends-member:
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", "weekCountOfMonth"]
-- !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps22BidirectionalIndexable", "row"]
@@ -154,7 +153,6 @@ depends-member:
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
 - ["Ps7CVarArg", "weekCountOfMonth"]
-- !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", ""]
 - !private ["C18DepositCalenderApp12CalendarCell", "backgroundColor"]
 - !private ["C18DepositCalenderApp12CalendarCell", "dateNumber"]
@@ -247,7 +245,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", "weekCountOfMonth"]
-- !private ["Ps28CustomDebugStringConvertible", "white"]
 - !private ["Ps28CustomDebugStringConvertible", "width"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -308,7 +305,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps23CustomStringConvertible", "weekCountOfMonth"]
-- !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["C18DepositCalenderApp11DateManager", "convertDateFormat"]
 - !private ["C18DepositCalenderApp11DateManager", "dateCountInCurrentMonth"]
@@ -363,7 +359,6 @@ depends-member:
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", "weekCountOfMonth"]
-- !private ["Ps9Equatable", "white"]
 - !private ["Ps9Equatable", "width"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
@@ -422,7 +417,6 @@ depends-member:
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", "weekCountOfMonth"]
-- !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
 - ["V10Foundation9IndexPath", "deinit"]
@@ -479,14 +473,12 @@ depends-member:
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
 - ["PSo8NSCoding", "weekCountOfMonth"]
-- !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "brown"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lightGreen"]
 - !private ["PSo9NSCopying", "lightPink"]
 - !private ["PSo9NSCopying", "offWhite"]
-- !private ["PSo9NSCopying", "white"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
 - ["PSo26NSExtensionRequestHandling", "CalendarView"]
@@ -570,7 +562,6 @@ depends-member:
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "weekCountOfMonth"]
-- !private ["CSo8NSObject", "white"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
 - ["PSo16NSObjectProtocol", "CalendarView"]
@@ -616,14 +607,12 @@ depends-member:
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
 - ["PSo16NSObjectProtocol", "weekCountOfMonth"]
-- !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "brown"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lightGreen"]
 - !private ["PSo14NSSecureCoding", "lightPink"]
 - !private ["PSo14NSSecureCoding", "offWhite"]
-- !private ["PSo14NSSecureCoding", "white"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "row"]
@@ -696,7 +685,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo24UICollectionReusableView", "backgroundColor"]
 - !private ["CSo24UICollectionReusableView", "dateNumber"]
-- !private ["CSo16UICollectionView", "backgroundColor"]
 - !private ["CSo16UICollectionView", "dataSource"]
 - ["CSo16UICollectionView", "deinit"]
 - !private ["CSo16UICollectionView", "delegate"]
@@ -798,7 +786,6 @@ depends-member:
 - !private ["CSo7UIColor", "lightGreen"]
 - !private ["CSo7UIColor", "lightPink"]
 - !private ["CSo7UIColor", "offWhite"]
-- !private ["CSo7UIColor", "white"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGSize"]
 - ["PSo18UIContentContainer", "CalendarView"]
@@ -988,7 +975,6 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
 - ["PSo30UIResponderStandardEditActions", "weekCountOfMonth"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["CSo12UIScrollView", "backgroundColor"]
 - !private ["CSo12UIScrollView", "dataSource"]
 - !private ["CSo12UIScrollView", "delegate"]
 - !private ["CSo12UIScrollView", "dequeueReusableCell"]
@@ -1161,7 +1147,6 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "lightGreen"]
 - !private ["Ps26_ExpressibleByColorLiteral", "lightPink"]
 - !private ["Ps26_ExpressibleByColorLiteral", "offWhite"]
-- !private ["Ps26_ExpressibleByColorLiteral", "white"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGSize"]
@@ -1210,7 +1195,6 @@ depends-member:
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
 - ["Ps9_Hashable", "weekCountOfMonth"]
-- !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]

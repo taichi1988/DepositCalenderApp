@@ -26,13 +26,15 @@ class DateManager: NSObject {
     
     /// カレンダーの起点の日付を取得
     func firstDateOfMonth() -> Date {
-
+        /// 現在日付のコンポーネント
         var components = calendar.dateComponents([.year,.month,.day], from: selectedDay)
+        // 日付の要素を1日に指定
         components.day = 1
-        
+        /// 今月1日のデータ
         let firstDate = Calendar.current.date(from: components)
-        /// その月の1日の曜日を調べて、その要素数だけ戻ったものがカレンダーの左上(日曜日=1 土曜日=7　なので1足した状態で戻る)
+        /// 今月1日の曜日
         let weekOfFirstDay = calendar.component(.weekday, from:firstDate!)
+        /// 取得した1日の曜日から、同じ週の日曜日が何日になるかを取得する
         let startDateOfCalender = calendar.date(byAdding: .day, value: 1 - weekOfFirstDay, to: firstDate!)!
         return startDateOfCalender
     }
@@ -48,10 +50,11 @@ class DateManager: NSObject {
         return lastDateOfCalender
     }
     
-    /// カレンダーの始点から指定した日数を加算した日付の文字列を返す
+    /// カレンダーの始点から引数で渡ってきたカレンダーセルのインデックスを加算した日付の文字列を返す
     func convertDateFormat(index: Int) -> String {
-        let firstDate = calendar.date(byAdding: .day, value: index, to: beginningDate)
-        return calendar.component(.day, from: firstDate!).description
+        /// カレンダーの起点の日付にカレンダーセルのインデックス番号を足した日にち
+        let date = calendar.date(byAdding: .day, value: index, to: beginningDate)
+        return calendar.component(.day, from: date!).description
     }
     
     

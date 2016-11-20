@@ -200,7 +200,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 */
 - (NSDate * _Nonnull)endDateOfMonth;
 /**
-  カレンダーの始点から指定した日数を加算した日付の文字列を返す
+  カレンダーの始点から引数で渡ってきたカレンダーセルのインデックスを加算した日付の文字列を返す
 */
 - (NSString * _Nonnull)convertDateFormatWithIndex:(NSInteger)index;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
