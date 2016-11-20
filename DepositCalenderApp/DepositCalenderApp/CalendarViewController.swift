@@ -27,7 +27,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     
     override func viewDidLayoutSubviews(){
         super.viewDidLayoutSubviews()
-        self.navigationItem.title = "タイトル変更"
+//        self.navigationItem.title = "タイトル変更"
     }
     
     /// カレンダーのセルの個数を返す
