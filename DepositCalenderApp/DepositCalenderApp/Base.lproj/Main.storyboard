@@ -35,7 +35,7 @@
                         <viewControllerLayoutGuide type="bottom" id="O4E-7d-95j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Ia-KU-w4u">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-zj-Vka">
@@ -201,11 +201,12 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Yy-di-v0J" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="カレンダー" id="aCa-dE-Bju"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="r1P-kT-HR3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="r1P-kT-HR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
