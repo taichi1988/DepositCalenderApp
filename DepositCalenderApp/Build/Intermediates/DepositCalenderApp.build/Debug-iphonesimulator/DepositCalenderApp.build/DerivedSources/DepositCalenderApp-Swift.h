@@ -152,7 +152,8 @@ SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
 SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
 @interface CalendarViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
-@property (nonatomic, readonly) NSInteger weekDayCount;
+@property (nonatomic, readonly) NSInteger dayCountOfWeek;
+@property (nonatomic, readonly) NSInteger weekCountOfMonth;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
 - (void)viewDidLoad;
 /**
@@ -199,7 +200,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 */
 - (NSDate * _Nonnull)endDateOfMonth;
 /**
-  カレンダーの始点から指定した日数を加算した日付の文字列を返す
+  カレンダーの始点から引数で渡ってきたカレンダーセルのインデックスを加算した日付の文字列を返す
 */
 - (NSString * _Nonnull)convertDateFormatWithIndex:(NSInteger)index;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -227,11 +228,12 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21SettingViewController")
 @interface UIColor (SWIFT_EXTENSION(DepositCalenderApp))
 + (UIColor * _Nonnull)lightBlue;
 + (UIColor * _Nonnull)lightRed;
-+ (UIColor * _Nonnull)lightOrange;
++ (UIColor * _Nonnull)orange;
 + (UIColor * _Nonnull)offWhite;
 + (UIColor * _Nonnull)lightGreen;
 + (UIColor * _Nonnull)lightPink;
 + (UIColor * _Nonnull)brown;
++ (UIColor * _Nonnull)lightBrown;
 @end
 
 #pragma clang diagnostic pop

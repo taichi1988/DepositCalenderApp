@@ -164,7 +164,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hSs-u8-aCg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="5iG-mM-260" kind="relationship" relationship="viewControllers" id="k7L-li-gGB"/>
