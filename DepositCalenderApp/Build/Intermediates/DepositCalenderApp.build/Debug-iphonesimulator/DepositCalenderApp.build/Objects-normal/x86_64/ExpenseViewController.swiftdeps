@@ -6,8 +6,8 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp21ExpenseViewController", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 depends-top-level:
 - "ExpenseViewController"
 - "UIViewController"

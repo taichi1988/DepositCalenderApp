@@ -6,39 +6,40 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp22CalendarViewController", ""]
 provides-dynamic-lookup:
-- "CalendarView"
+- "viewDidLoad"
+- "viewDidLayoutSubviews"
 - "dateManager"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
 - "collectionView"
-- "dayCountOfWeek"
-- "viewDidLoad"
 - "weekCountOfMonth"
+- "CalendarView"
+- "dayCountOfWeek"
 depends-top-level:
-- "CGFloat"
+- "CalendarViewController"
 - "IndexPath"
+- !private "StringLiteralType"
+- "DateManager"
+- !private "CalendarCell"
+- !private "UINib"
 - "UICollectionViewCell"
 - "UICollectionViewLayout"
-- "Int"
-- !private "%"
-- "UIViewController"
-- "CalendarViewController"
-- "DateManager"
-- "CGSize"
-- !private "=="
-- "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "CalendarCell"
-- !private "StringLiteralType"
 - !private "/"
 - "UICollectionViewDelegateFlowLayout"
+- "UIViewController"
 - "UICollectionView"
-- !private "UIColor"
-- "UICollectionViewDataSource"
-- !private "UINib"
+- "Int"
 - "UICollectionViewDelegate"
+- "UICollectionViewDataSource"
+- "CGSize"
+- !private "UIColor"
+- !private "%"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "CGFloat"
+- !private "=="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -64,6 +65,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lightGreen"]
 - !private ["Ps9AnyObject", "lightPink"]
+- !private ["Ps9AnyObject", "navigationItem"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["Ps9AnyObject", "offWhite"]
@@ -82,6 +84,8 @@ depends-member:
 - ["Ps9AnyObject", "scrollViewWillEndDragging"]
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textColor"]
+- !private ["Ps9AnyObject", "title"]
+- ["Ps9AnyObject", "viewDidLayoutSubviews"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
@@ -131,6 +135,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "lightGreen"]
 - !private ["Ps7CVarArg", "lightPink"]
+- !private ["Ps7CVarArg", "navigationItem"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
 - !private ["Ps7CVarArg", "offWhite"]
@@ -149,6 +154,8 @@ depends-member:
 - ["Ps7CVarArg", "scrollViewWillEndDragging"]
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "textColor"]
+- !private ["Ps7CVarArg", "title"]
+- ["Ps7CVarArg", "viewDidLayoutSubviews"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
@@ -176,6 +183,7 @@ depends-member:
 - ["C18DepositCalenderApp22CalendarViewController", "indexPathForPreferredFocusedView"]
 - ["C18DepositCalenderApp22CalendarViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["C18DepositCalenderApp22CalendarViewController", "init"]
+- !private ["C18DepositCalenderApp22CalendarViewController", "navigationItem"]
 - ["C18DepositCalenderApp22CalendarViewController", "numberOfSections"]
 - ["C18DepositCalenderApp22CalendarViewController", "numberOfSectionsInCollectionView"]
 - ["C18DepositCalenderApp22CalendarViewController", "scrollViewDidEndDecelerating"]
@@ -190,6 +198,7 @@ depends-member:
 - ["C18DepositCalenderApp22CalendarViewController", "scrollViewWillBeginDragging"]
 - ["C18DepositCalenderApp22CalendarViewController", "scrollViewWillBeginZooming"]
 - ["C18DepositCalenderApp22CalendarViewController", "scrollViewWillEndDragging"]
+- ["C18DepositCalenderApp22CalendarViewController", "viewDidLayoutSubviews"]
 - ["C18DepositCalenderApp22CalendarViewController", "viewDidLoad"]
 - ["C18DepositCalenderApp22CalendarViewController", "viewForZooming"]
 - ["C18DepositCalenderApp22CalendarViewController", "viewForZoomingInScrollView"]
@@ -221,6 +230,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "lightGreen"]
 - !private ["Ps28CustomDebugStringConvertible", "lightPink"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationItem"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "offWhite"]
@@ -241,6 +251,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
+- !private ["Ps28CustomDebugStringConvertible", "title"]
+- ["Ps28CustomDebugStringConvertible", "viewDidLayoutSubviews"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
@@ -282,6 +294,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "lightGreen"]
 - !private ["Ps23CustomStringConvertible", "lightPink"]
+- !private ["Ps23CustomStringConvertible", "navigationItem"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "offWhite"]
@@ -301,6 +314,8 @@ depends-member:
 - ["Ps23CustomStringConvertible", "scrollViewWillEndDragging"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
+- !private ["Ps23CustomStringConvertible", "title"]
+- ["Ps23CustomStringConvertible", "viewDidLayoutSubviews"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -335,6 +350,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "lightGreen"]
 - !private ["Ps9Equatable", "lightPink"]
+- !private ["Ps9Equatable", "navigationItem"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "offWhite"]
@@ -355,6 +371,8 @@ depends-member:
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textColor"]
+- !private ["Ps9Equatable", "title"]
+- ["Ps9Equatable", "viewDidLayoutSubviews"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
@@ -394,6 +412,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "lightGreen"]
 - !private ["Ps8Hashable", "lightPink"]
+- !private ["Ps8Hashable", "navigationItem"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps8Hashable", "offWhite"]
@@ -413,6 +432,8 @@ depends-member:
 - ["Ps8Hashable", "scrollViewWillEndDragging"]
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textColor"]
+- !private ["Ps8Hashable", "title"]
+- ["Ps8Hashable", "viewDidLayoutSubviews"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
@@ -451,6 +472,7 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "lightGreen"]
 - !private ["PSo8NSCoding", "lightPink"]
+- !private ["PSo8NSCoding", "navigationItem"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
 - !private ["PSo8NSCoding", "offWhite"]
@@ -469,6 +491,8 @@ depends-member:
 - ["PSo8NSCoding", "scrollViewWillEndDragging"]
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textColor"]
+- !private ["PSo8NSCoding", "title"]
+- ["PSo8NSCoding", "viewDidLayoutSubviews"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -491,6 +515,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationItem"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -505,6 +530,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillBeginZooming"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewWillEndDragging"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLayoutSubviews"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
@@ -540,6 +566,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "lightGreen"]
 - !private ["CSo8NSObject", "lightPink"]
+- !private ["CSo8NSObject", "navigationItem"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "offWhite"]
@@ -558,6 +585,8 @@ depends-member:
 - ["CSo8NSObject", "scrollViewWillEndDragging"]
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textColor"]
+- !private ["CSo8NSObject", "title"]
+- ["CSo8NSObject", "viewDidLayoutSubviews"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
@@ -585,6 +614,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "lightGreen"]
 - !private ["PSo16NSObjectProtocol", "lightPink"]
+- !private ["PSo16NSObjectProtocol", "navigationItem"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "offWhite"]
@@ -603,6 +633,8 @@ depends-member:
 - ["PSo16NSObjectProtocol", "scrollViewWillEndDragging"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
+- !private ["PSo16NSObjectProtocol", "title"]
+- ["PSo16NSObjectProtocol", "viewDidLayoutSubviews"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -661,6 +693,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "navigationItem"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "register"]
@@ -678,6 +711,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "scrollViewWillEndDragging"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
+- ["PSo21UIAppearanceContainer", "viewDidLayoutSubviews"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -705,6 +739,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "dayCountOfWeek"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "navigationItem"]
 - ["PSo26UICollectionViewDataSource", "numberOfSections"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndDecelerating"]
@@ -734,6 +769,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "dayCountOfWeek"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "navigationItem"]
 - ["PSo24UICollectionViewDelegate", "numberOfSections"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDecelerating"]
@@ -763,6 +799,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "dayCountOfWeek"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "navigationItem"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSections"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDecelerating"]
@@ -798,6 +835,7 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationItem"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -812,6 +850,7 @@ depends-member:
 - ["PSo18UIContentContainer", "scrollViewWillBeginDragging"]
 - ["PSo18UIContentContainer", "scrollViewWillBeginZooming"]
 - ["PSo18UIContentContainer", "scrollViewWillEndDragging"]
+- ["PSo18UIContentContainer", "viewDidLayoutSubviews"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -855,6 +894,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "navigationItem"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "register"]
@@ -872,6 +912,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
+- ["PSo18UIFocusEnvironment", "viewDidLayoutSubviews"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -888,6 +929,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "textColor"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
+- ["CSo16UINavigationItem", "deinit"]
+- !private ["CSo16UINavigationItem", "title"]
 - ["CSo5UINib", "deinit"]
 - !private ["CSo5UINib", "init"]
 - ["CSo11UIResponder", "CGFloat"]
@@ -914,6 +957,7 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "navigationItem"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "register"]
@@ -931,6 +975,7 @@ depends-member:
 - ["CSo11UIResponder", "scrollViewWillEndDragging"]
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textColor"]
+- ["CSo11UIResponder", "viewDidLayoutSubviews"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -953,6 +998,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationItem"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "register"]
@@ -970,6 +1016,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "scrollViewWillEndDragging"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
+- ["PSo30UIResponderStandardEditActions", "viewDidLayoutSubviews"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
@@ -991,6 +1038,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dayCountOfWeek"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "navigationItem"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1021,6 +1069,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationItem"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -1035,6 +1084,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "scrollViewWillBeginDragging"]
 - ["PSo16UIStateRestoring", "scrollViewWillBeginZooming"]
 - ["PSo16UIStateRestoring", "scrollViewWillEndDragging"]
+- ["PSo16UIStateRestoring", "viewDidLayoutSubviews"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
@@ -1058,6 +1108,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "navigationItem"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "register"]
@@ -1075,6 +1126,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "scrollViewWillEndDragging"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
+- ["PSo18UITraitEnvironment", "viewDidLayoutSubviews"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -1108,6 +1160,7 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationItem"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -1122,6 +1175,7 @@ depends-member:
 - ["CSo16UIViewController", "scrollViewWillBeginDragging"]
 - ["CSo16UIViewController", "scrollViewWillBeginZooming"]
 - ["CSo16UIViewController", "scrollViewWillEndDragging"]
+- ["CSo16UIViewController", "viewDidLayoutSubviews"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
@@ -1172,6 +1226,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "lightGreen"]
 - !private ["Ps9_Hashable", "lightPink"]
+- !private ["Ps9_Hashable", "navigationItem"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9_Hashable", "offWhite"]
@@ -1191,6 +1246,8 @@ depends-member:
 - ["Ps9_Hashable", "scrollViewWillEndDragging"]
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textColor"]
+- !private ["Ps9_Hashable", "title"]
+- ["Ps9_Hashable", "viewDidLayoutSubviews"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
@@ -1277,6 +1334,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "CSo7UILabel"
+- "CSo16UINavigationItem"
 - "CSo5UINib"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
@@ -1310,4 +1368,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "315d3a322b6243a7fa0081b3b166079c"
+interface-hash: "690aa7122ce2e96099713d147743f7b6"

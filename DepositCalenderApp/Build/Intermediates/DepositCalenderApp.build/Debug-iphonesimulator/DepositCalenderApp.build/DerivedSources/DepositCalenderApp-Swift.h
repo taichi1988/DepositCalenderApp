@@ -156,6 +156,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
 @property (nonatomic, readonly) NSInteger weekCountOfMonth;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
 /**
   カレンダーのセルの個数を返す
 */

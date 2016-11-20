@@ -25,6 +25,11 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
         
     }
     
+    override func viewDidLayoutSubviews(){
+        super.viewDidLayoutSubviews()
+        self.navigationItem.title = "タイトル変更"
+    }
+    
     /// カレンダーのセルの個数を返す
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dateManager.dateCountInCurrentMonth()
