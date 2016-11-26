@@ -19,6 +19,8 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "カレンダー"
+        
         CalendarView.delegate = self
         CalendarView.dataSource = self
         CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
