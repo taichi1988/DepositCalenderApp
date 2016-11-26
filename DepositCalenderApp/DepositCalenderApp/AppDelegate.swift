@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        let attributes = [NSFontAttributeName: UIFont(name: "Futura", size: 25), NSForegroundColorAttributeName: UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes = attributes
         UINavigationBar.appearance().barTintColor = UIColor.orange()
-        UINavigationBar.appearance().tintColor = UIColor.white
         UITabBar.appearance().barTintColor = UIColor.orange()
         
         return true
