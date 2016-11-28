@@ -19,32 +19,32 @@
                         <viewControllerLayoutGuide type="bottom" id="GZq-A3-zKI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fl8-PV-jnD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="支出入力" id="phX-Sm-9U4"/>
+                    <navigationItem key="navigationItem" title="支出入力" id="L19-YL-2h2"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixp-bG-pPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="278" y="107"/>
+            <point key="canvasLocation" x="2036" y="101.19940029985008"/>
         </scene>
         <!--カレンダー-->
         <scene sceneID="bVh-Cc-YfS">
             <objects>
-                <viewController title="カレンダー" id="5iG-mM-260" customClass="CalendarViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5iG-mM-260" customClass="CalendarViewController" customModule="DepositCalenderApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2KI-KB-b6x"/>
                         <viewControllerLayoutGuide type="bottom" id="O4E-7d-95j"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Ia-KU-w4u">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-zj-Vka">
-                                <rect key="frame" x="0.0" y="186.5" width="375" height="36"/>
+                                <rect key="frame" x="0.0" y="213.5" width="375" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="u0l-4p-Dje">
                                         <rect key="frame" x="0.0" y="0.0" width="53.5" height="36"/>
@@ -130,7 +130,7 @@
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="djQ-XE-XUp">
-                                <rect key="frame" x="0.0" y="222.5" width="375" height="331.5"/>
+                                <rect key="frame" x="0.0" y="249.5" width="375" height="304.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dll-iL-1IE">
                                     <size key="itemSize" width="50" height="50"/>
@@ -161,7 +161,7 @@
                             <constraint firstAttribute="trailing" secondItem="djQ-XE-XUp" secondAttribute="trailing" id="xas-yE-D4u"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="O6M-ZZ-yDh"/>
+                    <navigationItem key="navigationItem" title="カレンダー" id="O6M-ZZ-yDh"/>
                     <connections>
                         <outlet property="CalendarView" destination="djQ-XE-XUp" id="J32-7y-hNa"/>
                     </connections>
@@ -175,15 +175,14 @@
             <objects>
                 <tabBarController id="iTc-bn-PrX" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="02Z-JH-09P"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="hSs-u8-aCg">
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="hSs-u8-aCg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.50196078431372548" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="1Yy-di-v0J" kind="relationship" relationship="viewControllers" id="k7L-li-gGB"/>
-                        <segue destination="wsF-fE-G8d" kind="relationship" relationship="viewControllers" id="LOA-ox-fjz"/>
-                        <segue destination="qjn-Di-vSO" kind="relationship" relationship="viewControllers" id="c9z-8Q-hNz"/>
+                        <segue destination="6wz-eA-H3h" kind="relationship" relationship="viewControllers" id="LOA-ox-fjz"/>
+                        <segue destination="9Pb-7q-zNg" kind="relationship" relationship="viewControllers" id="c9z-8Q-hNz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPh-YB-XRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -199,15 +198,15 @@
                         <viewControllerLayoutGuide type="bottom" id="fgc-Gn-0e0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="spI-Np-NoP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="設定" id="ej8-HO-zZW"/>
+                    <navigationItem key="navigationItem" title="設定" id="xBM-3S-bzs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lD-Hd-TT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-532" y="570"/>
+            <point key="canvasLocation" x="407.19999999999999" y="569.86506746626696"/>
         </scene>
         <!--カレンダー-->
         <scene sceneID="yMF-95-dbN">
@@ -217,13 +216,11 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="r1P-kT-HR3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="r1P-kT-HR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -234,6 +231,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YIg-e7-9J6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="278" y="-645"/>
+        </scene>
+        <!--支出入力-->
+        <scene sceneID="Vrn-Ud-3Kp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6wz-eA-H3h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="支出入力" id="phX-Sm-9U4"/>
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Mfj-0b-g9x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wsF-fE-G8d" kind="relationship" relationship="rootViewController" id="RTf-5j-RmF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ula-fy-ytb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216.8" y="101.19940029985008"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="wJP-dw-o08">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9Pb-7q-zNg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="設定" id="ej8-HO-zZW"/>
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="dKC-51-ijm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qjn-Di-vSO" kind="relationship" relationship="rootViewController" id="PZn-UK-ZSH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lu6-DH-gcv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="569.86506746626696"/>
         </scene>
     </scenes>
 </document>
