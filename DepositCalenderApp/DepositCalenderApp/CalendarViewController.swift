@@ -15,6 +15,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     let weekCountOfMonth = 6
 
     @IBOutlet weak var CalendarView: UICollectionView!
+    @IBOutlet weak var monthLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,8 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
         CalendarView.delegate = self
         CalendarView.dataSource = self
         CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
-        
+        // カレンダーの背面のLabelに現在の月をセット
+        monthLabel.text = dateManager.currentMonth()
     }
     
     override func viewDidLayoutSubviews(){
@@ -48,7 +50,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
             cell.backgroundColor = UIColor.lightGreen()
         } else {
             // 平日のセル
-            cell.backgroundColor = UIColor.offWhite()
+            cell.backgroundColor = UIColor.clearOffWhite()
         }
         
         cell.dateNumber.text = dateManager.convertDateFormat(index: indexPath.row)

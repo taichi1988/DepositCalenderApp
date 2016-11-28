@@ -6,40 +6,42 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp22CalendarViewController", ""]
 provides-dynamic-lookup:
-- "weekCountOfMonth"
-- "CalendarView"
-- "dayCountOfWeek"
 - "viewDidLoad"
+- "dayCountOfWeek"
+- "CalendarView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "dateManager"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "monthLabel"
+- "weekCountOfMonth"
 - "viewDidLayoutSubviews"
 depends-top-level:
-- !private "CalendarCell"
-- "UICollectionViewDataSource"
-- !private "%"
 - "CGFloat"
-- "Int"
-- !private "UINib"
+- !private "UIColor"
+- !private "%"
+- "UICollectionView"
 - "CalendarViewController"
+- !private "StringLiteralType"
+- !private "UINib"
+- "DateManager"
 - "UICollectionViewCell"
-- "UICollectionViewLayout"
-- "CastingPrecedence"
 - "IndexPath"
+- "CastingPrecedence"
+- "UICollectionViewLayout"
+- !private "CalendarCell"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "UIColor"
-- "DateManager"
-- !private "StringLiteralType"
+- "UILabel"
 - "CGSize"
-- "UIViewController"
-- !private "/"
+- "Int"
 - "UICollectionViewDelegateFlowLayout"
-- "UICollectionView"
+- !private "/"
 - "UICollectionViewDelegate"
+- "UICollectionViewDataSource"
+- "UIViewController"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -50,8 +52,10 @@ depends-member:
 - !private ["Ps9AnyObject", "UINib"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "brown"]
+- !private ["Ps9AnyObject", "clearOffWhite"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "convertDateFormat"]
+- !private ["Ps9AnyObject", "currentMonth"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "dateCountInCurrentMonth"]
 - ["Ps9AnyObject", "dateManager"]
@@ -65,9 +69,9 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lightGreen"]
 - !private ["Ps9AnyObject", "lightPink"]
+- ["Ps9AnyObject", "monthLabel"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
-- !private ["Ps9AnyObject", "offWhite"]
 - !private ["Ps9AnyObject", "register"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -118,8 +122,10 @@ depends-member:
 - !private ["Ps7CVarArg", "UINib"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "brown"]
+- !private ["Ps7CVarArg", "clearOffWhite"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "convertDateFormat"]
+- !private ["Ps7CVarArg", "currentMonth"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "dateCountInCurrentMonth"]
 - ["Ps7CVarArg", "dateManager"]
@@ -133,9 +139,9 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "lightGreen"]
 - !private ["Ps7CVarArg", "lightPink"]
+- ["Ps7CVarArg", "monthLabel"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
-- !private ["Ps7CVarArg", "offWhite"]
 - !private ["Ps7CVarArg", "register"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
@@ -171,6 +177,7 @@ depends-member:
 - ["C18DepositCalenderApp22CalendarViewController", "UICollectionViewCell"]
 - ["C18DepositCalenderApp22CalendarViewController", "UICollectionViewLayout"]
 - !private ["C18DepositCalenderApp22CalendarViewController", "UIColor"]
+- ["C18DepositCalenderApp22CalendarViewController", "UILabel"]
 - !private ["C18DepositCalenderApp22CalendarViewController", "UINib"]
 - ["C18DepositCalenderApp22CalendarViewController", "collectionView"]
 - ["C18DepositCalenderApp22CalendarViewController", "dateManager"]
@@ -179,6 +186,7 @@ depends-member:
 - ["C18DepositCalenderApp22CalendarViewController", "indexPathForPreferredFocusedView"]
 - ["C18DepositCalenderApp22CalendarViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["C18DepositCalenderApp22CalendarViewController", "init"]
+- ["C18DepositCalenderApp22CalendarViewController", "monthLabel"]
 - ["C18DepositCalenderApp22CalendarViewController", "numberOfSections"]
 - ["C18DepositCalenderApp22CalendarViewController", "numberOfSectionsInCollectionView"]
 - ["C18DepositCalenderApp22CalendarViewController", "scrollViewDidEndDecelerating"]
@@ -209,8 +217,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UINib"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "brown"]
+- !private ["Ps28CustomDebugStringConvertible", "clearOffWhite"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "convertDateFormat"]
+- !private ["Ps28CustomDebugStringConvertible", "currentMonth"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "dateCountInCurrentMonth"]
 - ["Ps28CustomDebugStringConvertible", "dateManager"]
@@ -225,9 +235,9 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "lightGreen"]
 - !private ["Ps28CustomDebugStringConvertible", "lightPink"]
+- ["Ps28CustomDebugStringConvertible", "monthLabel"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
-- !private ["Ps28CustomDebugStringConvertible", "offWhite"]
 - !private ["Ps28CustomDebugStringConvertible", "register"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
@@ -272,8 +282,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "brown"]
+- !private ["Ps23CustomStringConvertible", "clearOffWhite"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "convertDateFormat"]
+- !private ["Ps23CustomStringConvertible", "currentMonth"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "dateCountInCurrentMonth"]
 - ["Ps23CustomStringConvertible", "dateManager"]
@@ -287,9 +299,9 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "lightGreen"]
 - !private ["Ps23CustomStringConvertible", "lightPink"]
+- ["Ps23CustomStringConvertible", "monthLabel"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
-- !private ["Ps23CustomStringConvertible", "offWhite"]
 - !private ["Ps23CustomStringConvertible", "register"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -313,6 +325,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "weekCountOfMonth"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["C18DepositCalenderApp11DateManager", "convertDateFormat"]
+- !private ["C18DepositCalenderApp11DateManager", "currentMonth"]
 - !private ["C18DepositCalenderApp11DateManager", "dateCountInCurrentMonth"]
 - ["C18DepositCalenderApp11DateManager", "deinit"]
 - ["C18DepositCalenderApp11DateManager", "init"]
@@ -325,8 +338,10 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "brown"]
+- !private ["Ps9Equatable", "clearOffWhite"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "convertDateFormat"]
+- !private ["Ps9Equatable", "currentMonth"]
 - !private ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "dateCountInCurrentMonth"]
 - ["Ps9Equatable", "dateManager"]
@@ -341,9 +356,9 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "lightGreen"]
 - !private ["Ps9Equatable", "lightPink"]
+- ["Ps9Equatable", "monthLabel"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
-- !private ["Ps9Equatable", "offWhite"]
 - !private ["Ps9Equatable", "register"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
@@ -386,8 +401,10 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "brown"]
+- !private ["Ps8Hashable", "clearOffWhite"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "convertDateFormat"]
+- !private ["Ps8Hashable", "currentMonth"]
 - !private ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "dateCountInCurrentMonth"]
 - ["Ps8Hashable", "dateManager"]
@@ -401,9 +418,9 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "lightGreen"]
 - !private ["Ps8Hashable", "lightPink"]
+- ["Ps8Hashable", "monthLabel"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
-- !private ["Ps8Hashable", "offWhite"]
 - !private ["Ps8Hashable", "register"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
@@ -446,6 +463,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "brown"]
+- !private ["PSo8NSCoding", "clearOffWhite"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "dataSource"]
 - ["PSo8NSCoding", "dateManager"]
@@ -459,9 +477,9 @@ depends-member:
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "lightGreen"]
 - !private ["PSo8NSCoding", "lightPink"]
+- ["PSo8NSCoding", "monthLabel"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
-- !private ["PSo8NSCoding", "offWhite"]
 - !private ["PSo8NSCoding", "register"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -484,10 +502,10 @@ depends-member:
 - ["PSo8NSCoding", "weekCountOfMonth"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "brown"]
+- !private ["PSo9NSCopying", "clearOffWhite"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lightGreen"]
 - !private ["PSo9NSCopying", "lightPink"]
-- !private ["PSo9NSCopying", "offWhite"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
 - ["PSo26NSExtensionRequestHandling", "CalendarView"]
@@ -500,6 +518,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "monthLabel"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
@@ -532,11 +551,14 @@ depends-member:
 - ["CSo8NSObject", "UICollectionViewCell"]
 - ["CSo8NSObject", "UICollectionViewLayout"]
 - !private ["CSo8NSObject", "UIColor"]
+- ["CSo8NSObject", "UILabel"]
 - !private ["CSo8NSObject", "UINib"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "brown"]
+- !private ["CSo8NSObject", "clearOffWhite"]
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "convertDateFormat"]
+- !private ["CSo8NSObject", "currentMonth"]
 - !private ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "dateCountInCurrentMonth"]
 - ["CSo8NSObject", "dateManager"]
@@ -550,9 +572,9 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "lightGreen"]
 - !private ["CSo8NSObject", "lightPink"]
+- ["CSo8NSObject", "monthLabel"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
-- !private ["CSo8NSObject", "offWhite"]
 - !private ["CSo8NSObject", "register"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -581,8 +603,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "brown"]
+- !private ["PSo16NSObjectProtocol", "clearOffWhite"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "convertDateFormat"]
+- !private ["PSo16NSObjectProtocol", "currentMonth"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "dateCountInCurrentMonth"]
 - ["PSo16NSObjectProtocol", "dateManager"]
@@ -596,9 +620,9 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "lightGreen"]
 - !private ["PSo16NSObjectProtocol", "lightPink"]
+- ["PSo16NSObjectProtocol", "monthLabel"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
-- !private ["PSo16NSObjectProtocol", "offWhite"]
 - !private ["PSo16NSObjectProtocol", "register"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -621,10 +645,10 @@ depends-member:
 - ["PSo16NSObjectProtocol", "weekCountOfMonth"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "brown"]
+- !private ["PSo14NSSecureCoding", "clearOffWhite"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lightGreen"]
 - !private ["PSo14NSSecureCoding", "lightPink"]
-- !private ["PSo14NSSecureCoding", "offWhite"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "row"]
@@ -673,6 +697,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedView"]
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
+- ["PSo21UIAppearanceContainer", "monthLabel"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
 - !private ["PSo21UIAppearanceContainer", "register"]
@@ -718,6 +743,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "dayCountOfWeek"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo26UICollectionViewDataSource", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "monthLabel"]
 - ["PSo26UICollectionViewDataSource", "numberOfSections"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndDecelerating"]
@@ -747,6 +773,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "dayCountOfWeek"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo24UICollectionViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "monthLabel"]
 - ["PSo24UICollectionViewDelegate", "numberOfSections"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDecelerating"]
@@ -776,6 +803,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "dayCountOfWeek"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "monthLabel"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSections"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDecelerating"]
@@ -795,10 +823,10 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "weekCountOfMonth"]
 - ["PSo34UICollectionViewDelegateFlowLayout", ""]
 - !private ["CSo7UIColor", "brown"]
+- !private ["CSo7UIColor", "clearOffWhite"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "lightGreen"]
 - !private ["CSo7UIColor", "lightPink"]
-- !private ["CSo7UIColor", "offWhite"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGSize"]
 - ["PSo18UIContentContainer", "CalendarView"]
@@ -811,6 +839,7 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "monthLabel"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
@@ -869,6 +898,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
+- ["PSo18UIFocusEnvironment", "monthLabel"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UIFocusEnvironment", "register"]
@@ -916,6 +946,7 @@ depends-member:
 - ["CSo11UIResponder", "UICollectionViewCell"]
 - ["CSo11UIResponder", "UICollectionViewLayout"]
 - !private ["CSo11UIResponder", "UIColor"]
+- ["CSo11UIResponder", "UILabel"]
 - !private ["CSo11UIResponder", "UINib"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "collectionView"]
@@ -929,6 +960,7 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo11UIResponder", "init"]
+- ["CSo11UIResponder", "monthLabel"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
 - !private ["CSo11UIResponder", "register"]
@@ -969,6 +1001,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedView"]
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- ["PSo30UIResponderStandardEditActions", "monthLabel"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "register"]
@@ -1008,6 +1041,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "dayCountOfWeek"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "monthLabel"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
@@ -1038,6 +1072,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "monthLabel"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
@@ -1076,6 +1111,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedView"]
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "init"]
+- ["PSo18UITraitEnvironment", "monthLabel"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
 - !private ["PSo18UITraitEnvironment", "register"]
@@ -1119,6 +1155,7 @@ depends-member:
 - ["CSo16UIViewController", "UICollectionViewCell"]
 - ["CSo16UIViewController", "UICollectionViewLayout"]
 - !private ["CSo16UIViewController", "UIColor"]
+- ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UINib"]
 - ["CSo16UIViewController", "collectionView"]
 - ["CSo16UIViewController", "dateManager"]
@@ -1127,6 +1164,7 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInCollectionView"]
 - ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "monthLabel"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
@@ -1164,9 +1202,9 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "brown"]
+- !private ["Ps26_ExpressibleByColorLiteral", "clearOffWhite"]
 - !private ["Ps26_ExpressibleByColorLiteral", "lightGreen"]
 - !private ["Ps26_ExpressibleByColorLiteral", "lightPink"]
-- !private ["Ps26_ExpressibleByColorLiteral", "offWhite"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGSize"]
@@ -1177,8 +1215,10 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "brown"]
+- !private ["Ps9_Hashable", "clearOffWhite"]
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "convertDateFormat"]
+- !private ["Ps9_Hashable", "currentMonth"]
 - !private ["Ps9_Hashable", "dataSource"]
 - !private ["Ps9_Hashable", "dateCountInCurrentMonth"]
 - ["Ps9_Hashable", "dateManager"]
@@ -1192,9 +1232,9 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "lightGreen"]
 - !private ["Ps9_Hashable", "lightPink"]
+- ["Ps9_Hashable", "monthLabel"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
-- !private ["Ps9_Hashable", "offWhite"]
 - !private ["Ps9_Hashable", "register"]
 - !private ["Ps9_Hashable", "row"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
@@ -1335,4 +1375,4 @@ depends-external:
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "690aa7122ce2e96099713d147743f7b6"
+interface-hash: "c7cfdc06293dd5ca44f00c52f80af7b2"

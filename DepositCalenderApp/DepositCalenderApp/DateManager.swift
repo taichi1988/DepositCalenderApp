@@ -15,6 +15,12 @@ class DateManager: NSObject {
     var lastDate = Date()
     let calendar = Calendar.current
     
+    /// 現在の月をStringで返す
+    func currentMonth() -> String {
+        let currentMonth = calendar.component(.month, from: selectedDay)
+        return currentMonth.description
+    }
+    
     /// 現在の月のセルの数を返すメソッド
     func dateCountInCurrentMonth() -> Int {
         // 始まりの日と終わりの日を取得

@@ -160,6 +160,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
 @property (nonatomic, readonly) NSInteger dayCountOfWeek;
 @property (nonatomic, readonly) NSInteger weekCountOfMonth;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified monthLabel;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 /**
@@ -193,6 +194,10 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 @property (nonatomic, copy) NSDate * _Nonnull beginningDate;
 @property (nonatomic, copy) NSDate * _Nonnull lastDate;
 @property (nonatomic, readonly, copy) NSCalendar * _Nonnull calendar;
+/**
+  現在の月をStringで返す
+*/
+- (NSString * _Nonnull)currentMonth;
 /**
   現在の月のセルの数を返すメソッド
 */
@@ -240,6 +245,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21SettingViewController")
 + (UIColor * _Nonnull)lightPink;
 + (UIColor * _Nonnull)brown;
 + (UIColor * _Nonnull)lightBrown;
++ (UIColor * _Nonnull)clearOffWhite;
 @end
 
 #pragma clang diagnostic pop

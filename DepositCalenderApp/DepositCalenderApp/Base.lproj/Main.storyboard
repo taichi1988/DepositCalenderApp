@@ -129,9 +129,15 @@
                                     <constraint firstAttribute="bottom" secondItem="ADn-4a-egw" secondAttribute="bottom" id="wgP-5D-pFe"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaq-pH-XmN">
+                                <rect key="frame" x="0.0" y="250" width="375" height="304"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="200"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="djQ-XE-XUp">
                                 <rect key="frame" x="0.0" y="249.5" width="375" height="304.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dll-iL-1IE">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -152,8 +158,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="qaq-pH-XmN" firstAttribute="width" secondItem="djQ-XE-XUp" secondAttribute="width" id="2eI-7O-p3a"/>
+                            <constraint firstAttribute="trailing" secondItem="qaq-pH-XmN" secondAttribute="trailing" id="7Ac-l5-WSh"/>
                             <constraint firstItem="O4E-7d-95j" firstAttribute="top" secondItem="djQ-XE-XUp" secondAttribute="bottom" id="HOB-2s-JdS"/>
+                            <constraint firstItem="qaq-pH-XmN" firstAttribute="height" secondItem="djQ-XE-XUp" secondAttribute="height" id="KUe-oy-xvF"/>
                             <constraint firstItem="HRo-zj-Vka" firstAttribute="leading" secondItem="6Ia-KU-w4u" secondAttribute="leading" id="LSG-Bo-RzC"/>
+                            <constraint firstItem="O4E-7d-95j" firstAttribute="top" secondItem="qaq-pH-XmN" secondAttribute="bottom" id="gFA-ZC-shq"/>
+                            <constraint firstItem="qaq-pH-XmN" firstAttribute="leading" secondItem="6Ia-KU-w4u" secondAttribute="leading" id="kmD-1a-aX9"/>
                             <constraint firstItem="djQ-XE-XUp" firstAttribute="height" secondItem="6Ia-KU-w4u" secondAttribute="height" multiplier="0.55" id="kpv-RC-me5"/>
                             <constraint firstItem="djQ-XE-XUp" firstAttribute="leading" secondItem="6Ia-KU-w4u" secondAttribute="leading" id="sBV-sb-ZaV"/>
                             <constraint firstAttribute="trailing" secondItem="HRo-zj-Vka" secondAttribute="trailing" id="tP9-sy-ocO"/>
@@ -164,11 +175,12 @@
                     <navigationItem key="navigationItem" title="カレンダー" id="O6M-ZZ-yDh"/>
                     <connections>
                         <outlet property="CalendarView" destination="djQ-XE-XUp" id="J32-7y-hNa"/>
+                        <outlet property="monthLabel" destination="qaq-pH-XmN" id="Ikm-1U-6PQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZj-g0-Maa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="-645"/>
+            <point key="canvasLocation" x="1096.8" y="-645.42728635682158"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="6rc-Jj-bEP">
@@ -216,7 +228,7 @@
                     <toolbarItems/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="r1P-kT-HR3">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="r1P-kT-HR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">

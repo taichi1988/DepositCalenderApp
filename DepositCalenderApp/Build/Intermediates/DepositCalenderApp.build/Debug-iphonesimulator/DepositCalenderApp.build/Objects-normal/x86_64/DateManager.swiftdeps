@@ -7,25 +7,26 @@ provides-member:
 - ["C18DepositCalenderApp11DateManager", ""]
 provides-dynamic-lookup:
 - "lastDate"
-- "convertDateFormat"
-- "endDateOfMonth"
+- "currentMonth"
 - "dateCountInCurrentMonth"
-- "beginningDate"
-- "calendar"
 - "firstDateOfMonth"
+- "convertDateFormat"
 - "selectedDay"
+- "calendar"
+- "endDateOfMonth"
+- "beginningDate"
 depends-top-level:
-- "NSObject"
-- !private "Array"
-- !private "DateComponents"
-- !private "-"
+- !private "+"
 - "String"
+- !private "Array"
+- !private "-"
+- "NSObject"
 - "Int"
 - "AssignmentPrecedence"
-- !private "+"
 - "Calendar"
-- "DateManager"
 - "Date"
+- "DateManager"
+- !private "DateComponents"
 depends-member:
 - ["Ps9AnyObject", "Calendar"]
 - ["Ps9AnyObject", "Date"]
@@ -33,6 +34,7 @@ depends-member:
 - ["Ps9AnyObject", "beginningDate"]
 - ["Ps9AnyObject", "calendar"]
 - ["Ps9AnyObject", "convertDateFormat"]
+- ["Ps9AnyObject", "currentMonth"]
 - ["Ps9AnyObject", "dateCountInCurrentMonth"]
 - ["Ps9AnyObject", "endDateOfMonth"]
 - ["Ps9AnyObject", "firstDateOfMonth"]
@@ -48,6 +50,7 @@ depends-member:
 - ["Ps7CVarArg", "beginningDate"]
 - ["Ps7CVarArg", "calendar"]
 - ["Ps7CVarArg", "convertDateFormat"]
+- ["Ps7CVarArg", "currentMonth"]
 - ["Ps7CVarArg", "dateCountInCurrentMonth"]
 - !private ["Ps7CVarArg", "description"]
 - ["Ps7CVarArg", "endDateOfMonth"]
@@ -81,6 +84,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "component"]
 - ["Ps28CustomDebugStringConvertible", "convertDateFormat"]
 - ["Ps28CustomDebugStringConvertible", "current"]
+- ["Ps28CustomDebugStringConvertible", "currentMonth"]
 - !private ["Ps28CustomDebugStringConvertible", "date"]
 - !private ["Ps28CustomDebugStringConvertible", "dateComponents"]
 - ["Ps28CustomDebugStringConvertible", "dateCountInCurrentMonth"]
@@ -114,6 +118,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "component"]
 - ["Ps23CustomStringConvertible", "convertDateFormat"]
 - ["Ps23CustomStringConvertible", "current"]
+- ["Ps23CustomStringConvertible", "currentMonth"]
 - !private ["Ps23CustomStringConvertible", "date"]
 - !private ["Ps23CustomStringConvertible", "dateComponents"]
 - ["Ps23CustomStringConvertible", "dateCountInCurrentMonth"]
@@ -139,6 +144,7 @@ depends-member:
 - ["C18DepositCalenderApp11DateManager", "beginningDate"]
 - ["C18DepositCalenderApp11DateManager", "calendar"]
 - ["C18DepositCalenderApp11DateManager", "convertDateFormat"]
+- ["C18DepositCalenderApp11DateManager", "currentMonth"]
 - ["C18DepositCalenderApp11DateManager", "dateCountInCurrentMonth"]
 - ["C18DepositCalenderApp11DateManager", "deinit"]
 - ["C18DepositCalenderApp11DateManager", "endDateOfMonth"]
@@ -156,6 +162,7 @@ depends-member:
 - !private ["Ps9Equatable", "component"]
 - ["Ps9Equatable", "convertDateFormat"]
 - ["Ps9Equatable", "current"]
+- ["Ps9Equatable", "currentMonth"]
 - !private ["Ps9Equatable", "date"]
 - !private ["Ps9Equatable", "dateComponents"]
 - ["Ps9Equatable", "dateCountInCurrentMonth"]
@@ -185,6 +192,7 @@ depends-member:
 - !private ["Ps8Hashable", "component"]
 - ["Ps8Hashable", "convertDateFormat"]
 - ["Ps8Hashable", "current"]
+- ["Ps8Hashable", "currentMonth"]
 - !private ["Ps8Hashable", "date"]
 - !private ["Ps8Hashable", "dateComponents"]
 - ["Ps8Hashable", "dateCountInCurrentMonth"]
@@ -218,6 +226,7 @@ depends-member:
 - ["CSo8NSObject", "beginningDate"]
 - ["CSo8NSObject", "calendar"]
 - ["CSo8NSObject", "convertDateFormat"]
+- ["CSo8NSObject", "currentMonth"]
 - ["CSo8NSObject", "dateCountInCurrentMonth"]
 - ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "endDateOfMonth"]
@@ -232,6 +241,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "beginningDate"]
 - ["PSo16NSObjectProtocol", "calendar"]
 - ["PSo16NSObjectProtocol", "convertDateFormat"]
+- ["PSo16NSObjectProtocol", "currentMonth"]
 - ["PSo16NSObjectProtocol", "dateCountInCurrentMonth"]
 - ["PSo16NSObjectProtocol", "endDateOfMonth"]
 - ["PSo16NSObjectProtocol", "firstDateOfMonth"]
@@ -271,6 +281,7 @@ depends-member:
 - !private ["Ps9_Hashable", "component"]
 - ["Ps9_Hashable", "convertDateFormat"]
 - ["Ps9_Hashable", "current"]
+- ["Ps9_Hashable", "currentMonth"]
 - !private ["Ps9_Hashable", "date"]
 - !private ["Ps9_Hashable", "dateComponents"]
 - ["Ps9_Hashable", "dateCountInCurrentMonth"]
@@ -371,4 +382,4 @@ depends-external:
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "09cd448b061033e3ca589803d0db0562"
+interface-hash: "07484a4bc9a7f6aaf2a3da8ab5e29dee"
