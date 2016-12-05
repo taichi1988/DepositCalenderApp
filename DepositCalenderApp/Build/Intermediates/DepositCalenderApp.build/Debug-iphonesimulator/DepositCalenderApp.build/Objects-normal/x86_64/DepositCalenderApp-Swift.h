@@ -246,6 +246,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21SettingViewController")
 + (UIColor * _Nonnull)brown;
 + (UIColor * _Nonnull)lightBrown;
 + (UIColor * _Nonnull)clearOffWhite;
++ (UIColor * _Nonnull)shadowColor;
 @end
 
 #pragma clang diagnostic pop

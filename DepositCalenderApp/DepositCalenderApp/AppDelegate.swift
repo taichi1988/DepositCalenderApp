@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = attributes
         UINavigationBar.appearance().barTintColor = UIColor.orange()
         UITabBar.appearance().barTintColor = UIColor.orange()
-        
+
         return true
     }
 

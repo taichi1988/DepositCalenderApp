@@ -19,7 +19,11 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        self.tabBarController?.tabBar.layer.shadowRadius = 4
+        self.tabBarController?.tabBar.layer.shadowColor = UIColor.shadowColor().cgColor
+        self.tabBarController?.tabBar.layer.shadowOpacity = 1
+        
         CalendarView.delegate = self
         CalendarView.dataSource = self
         CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")

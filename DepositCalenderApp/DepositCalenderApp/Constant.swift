@@ -45,5 +45,9 @@ extension UIColor {
     class func clearOffWhite() -> UIColor {
         return UIColor(red: 255.0 / 255.0, green: 249.0 / 255.0, blue: 225.0 / 255.0, alpha: 0.9)
     }
+    
+    class func shadowColor() -> UIColor {
+        return UIColor(red: 173.0 / 255.0, green: 92.0 / 255.0, blue: 53.0 / 255.0, alpha: 0.49)
+    }
 
 }
