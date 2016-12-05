@@ -16,13 +16,15 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
 
     @IBOutlet weak var CalendarView: UICollectionView!
     @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet weak var weekLabel: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.layer.shadowRadius = 4
-        self.tabBarController?.tabBar.layer.shadowColor = UIColor.shadowColor().cgColor
-        self.tabBarController?.tabBar.layer.shadowOpacity = 1
+        // タブバーにシャドウを設定
+        // TODO: AppDelegateで一括定義できる？
+        self.tabBarController?.tabBar.setShadow(radius: 4.0, x: 0, y: -3)
+        self.weekLabel.setShadow(radius: 2.0, x: 0, y: 1)
         
         CalendarView.delegate = self
         CalendarView.dataSource = self
