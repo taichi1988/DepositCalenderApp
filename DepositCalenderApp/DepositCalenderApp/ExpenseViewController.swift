@@ -9,27 +9,26 @@
 import UIKit
 
 class ExpenseViewController: UIViewController {
-
+    /// 日付のラベル
+    @IBOutlet weak var dateLabel: UILabel!
+    /// 支出出力領域の背面のView
+    @IBOutlet weak var textAreaBackView: UIView!
+    /// 入力ボタン
+    @IBOutlet weak var inputButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        textAreaBackView.setShadow(radius: 10, x: 0, y: 2)
+        inputButton.layer.cornerRadius = inputButton.frame.height/2
+        inputButton.setShadow(radius: 2, x: 0, y: 2)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func inputButtonTapped(_ sender: Any) {
+        
     }
-    */
-
 }

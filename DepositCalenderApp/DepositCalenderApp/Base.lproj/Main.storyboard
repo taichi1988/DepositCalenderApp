@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,11 +22,92 @@
                     <view key="view" contentMode="scaleToFill" id="Fl8-PV-jnD">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EPg-yL-OAA">
+                                <rect key="frame" x="82.5" y="25" width="210" height="85"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNB-Ae-e00">
+                                        <rect key="frame" x="10" y="10" width="62" height="65"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                        <color key="textColor" red="1" green="0.3411764705882353" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日の支出" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHh-qy-jgr">
+                                        <rect key="frame" x="80" y="28" width="120" height="39"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                        <color key="textColor" red="1" green="0.3411764705882353" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ZNB-Ae-e00" firstAttribute="leading" secondItem="EPg-yL-OAA" secondAttribute="leading" constant="10" id="5tm-cM-KOh"/>
+                                    <constraint firstItem="kHh-qy-jgr" firstAttribute="leading" secondItem="ZNB-Ae-e00" secondAttribute="trailing" constant="8" id="MCP-Xg-FC5"/>
+                                    <constraint firstItem="kHh-qy-jgr" firstAttribute="baseline" secondItem="ZNB-Ae-e00" secondAttribute="baseline" constant="-3" id="SWx-Ue-65g"/>
+                                    <constraint firstAttribute="trailing" secondItem="kHh-qy-jgr" secondAttribute="trailing" constant="10" id="bNP-hF-xX1"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZNB-Ae-e00" secondAttribute="bottom" constant="10" id="gBI-Gm-qxK"/>
+                                    <constraint firstItem="ZNB-Ae-e00" firstAttribute="top" secondItem="EPg-yL-OAA" secondAttribute="top" constant="10" id="kqo-Tt-YEl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-Zj-pFO">
+                                <rect key="frame" x="0.0" y="118" width="375" height="346"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ランチ" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-wp-Kie">
+                                        <rect key="frame" x="20" y="10" width="169" height="326"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="0.40153556034482757" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="¥1000" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="cs3-bx-Mb7">
+                                        <rect key="frame" x="186.5" y="10" width="168.5" height="326"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="0.40153556034482757" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cs3-bx-Mb7" firstAttribute="top" secondItem="y9c-Zj-pFO" secondAttribute="top" constant="10" id="3f8-Wa-wxf"/>
+                                    <constraint firstItem="RgW-wp-Kie" firstAttribute="leading" secondItem="y9c-Zj-pFO" secondAttribute="leading" constant="20" id="B2j-3Z-kGF"/>
+                                    <constraint firstItem="RgW-wp-Kie" firstAttribute="top" secondItem="y9c-Zj-pFO" secondAttribute="top" constant="10" id="NcB-XD-6FV"/>
+                                    <constraint firstItem="RgW-wp-Kie" firstAttribute="width" secondItem="y9c-Zj-pFO" secondAttribute="width" multiplier="0.45" id="Onz-bE-sLj"/>
+                                    <constraint firstItem="cs3-bx-Mb7" firstAttribute="width" secondItem="y9c-Zj-pFO" secondAttribute="width" multiplier="0.45" id="lyv-LQ-Evf"/>
+                                    <constraint firstAttribute="trailing" secondItem="cs3-bx-Mb7" secondAttribute="trailing" constant="20" id="oOe-Za-rIq"/>
+                                    <constraint firstAttribute="bottom" secondItem="cs3-bx-Mb7" secondAttribute="bottom" constant="10" id="qfE-gs-NYS"/>
+                                    <constraint firstAttribute="bottom" secondItem="RgW-wp-Kie" secondAttribute="bottom" constant="10" id="rtl-Pt-7ms"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhz-x1-gha">
+                                <rect key="frame" x="61" y="494" width="253" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="inputButtonTapped:" destination="wsF-fE-G8d" eventType="touchUpInside" id="gfj-Tk-59d"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EPg-yL-OAA" firstAttribute="top" secondItem="EHB-Cb-4B2" secondAttribute="bottom" constant="25" id="1O4-5c-Xyv"/>
+                            <constraint firstItem="EPg-yL-OAA" firstAttribute="centerX" secondItem="Fl8-PV-jnD" secondAttribute="centerX" id="BCA-rU-4uD"/>
+                            <constraint firstItem="y9c-Zj-pFO" firstAttribute="leading" secondItem="Fl8-PV-jnD" secondAttribute="leading" id="FyN-yi-tZM"/>
+                            <constraint firstItem="y9c-Zj-pFO" firstAttribute="top" secondItem="EPg-yL-OAA" secondAttribute="bottom" constant="8" id="IOR-6v-BNA"/>
+                            <constraint firstItem="GZq-A3-zKI" firstAttribute="top" secondItem="zhz-x1-gha" secondAttribute="bottom" constant="30" id="Qjt-O0-LY4"/>
+                            <constraint firstAttribute="trailing" secondItem="y9c-Zj-pFO" secondAttribute="trailing" id="XKY-D8-cc1"/>
+                            <constraint firstItem="zhz-x1-gha" firstAttribute="top" secondItem="y9c-Zj-pFO" secondAttribute="bottom" constant="30" id="cC5-kK-31P"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zhz-x1-gha" secondAttribute="trailing" constant="45" id="pKP-yb-3iI"/>
+                            <constraint firstItem="zhz-x1-gha" firstAttribute="leading" secondItem="Fl8-PV-jnD" secondAttribute="leadingMargin" constant="45" id="vhx-Gd-584"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="支出入力" id="L19-YL-2h2"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="ZNB-Ae-e00" id="LEy-OU-r6B"/>
+                        <outlet property="inputButton" destination="zhz-x1-gha" id="vhR-Rg-mye"/>
+                        <outlet property="textAreaBackView" destination="y9c-Zj-pFO" id="3di-k8-Skp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixp-bG-pPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

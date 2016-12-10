@@ -22,7 +22,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
         super.viewDidLoad()
         
         // タブバーにシャドウを設定
-        // TODO: AppDelegateで一括定義できる？
+        // TODO: AppDelegateでタブバーにシャドウを一括定義できる？
         self.tabBarController?.tabBar.setShadow(radius: 4.0, x: 0, y: -3)
         self.weekLabel.setShadow(radius: 2.0, x: 0, y: 1)
         
@@ -41,6 +41,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     /// カレンダーのセルの個数を返す
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dateManager.dateCountInCurrentMonth()
+        // TODO: セルの数を42個(６週ある月の日付の数)に固定
 //        return dayCountOfWeek * weekCountOfMonth
     }
 

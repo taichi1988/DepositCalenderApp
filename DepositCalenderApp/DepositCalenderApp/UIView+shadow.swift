@@ -16,7 +16,7 @@ extension UIView {
     /// - parameter y: 垂直方向の影の出し具合
     ///
     func setShadow(radius: CGFloat, x: CGFloat, y: CGFloat) {
-        self.layer.shadowOpacity = 1
+        self.layer.shadowOpacity = 1.0
         self.layer.shadowColor = UIColor.shadowColor().cgColor
         self.layer.shadowRadius = radius
         self.layer.shadowOffset = CGSize(width: x, height: y)

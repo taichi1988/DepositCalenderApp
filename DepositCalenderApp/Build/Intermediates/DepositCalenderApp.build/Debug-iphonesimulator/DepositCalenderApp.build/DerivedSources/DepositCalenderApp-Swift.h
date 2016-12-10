@@ -152,6 +152,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp12CalendarCell")
 @class DateManager;
 @class UICollectionView;
 @class UICollectionViewLayout;
+@class UIView;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
@@ -161,6 +162,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
 @property (nonatomic, readonly) NSInteger weekCountOfMonth;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified monthLabel;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified weekLabel;
 - (void)viewDidLoad;
 - (void)viewDidLayoutSubviews;
 /**
@@ -217,11 +219,25 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC18DepositCalenderApp21ExpenseViewController")
 @interface ExpenseViewController : UIViewController
+/**
+  日付のラベル
+*/
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
+/**
+  支出出力領域の背面のView
+*/
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified textAreaBackView;
+/**
+  入力ボタン
+*/
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified inputButton;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)inputButtonTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -247,6 +263,20 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21SettingViewController")
 + (UIColor * _Nonnull)lightBrown;
 + (UIColor * _Nonnull)clearOffWhite;
 + (UIColor * _Nonnull)shadowColor;
+@end
+
+
+@interface UIView (SWIFT_EXTENSION(DepositCalenderApp))
+/**
+  UIViewを継承するUIパーツにシャドウを設定するメソッド
+  \param radius 影のぼかし具合
+
+  \param x 水平方向の影の出し具合
+
+  \param y 垂直方向の影の出し具合
+
+*/
+- (void)setShadowWithRadius:(CGFloat)radius x:(CGFloat)x y:(CGFloat)y;
 @end
 
 #pragma clang diagnostic pop
