@@ -80,6 +80,18 @@
 		<data>
 		U4BcpZ9jKd0OcGrzUyTzfce8xXs=
 		</data>
+		<key>Frameworks/PopupDialog.framework/Info.plist</key>
+		<data>
+		ZbjVH01i0omPLxfIrw3bR3+OKvY=
+		</data>
+		<key>Frameworks/PopupDialog.framework/PopupDialog</key>
+		<data>
+		jSRrwAF7Sdr6QPIKiml385yvXzc=
+		</data>
+		<key>Frameworks/PopupDialog.framework/_CodeSignature/CodeResources</key>
+		<data>
+		yaCLmfkxFxBuj9ANGiI6GAMO+S4=
+		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
 		u5b07I8v3WpyCx+6S67HnG1yZKE=
@@ -260,6 +272,39 @@
 			<key>hash2</key>
 			<data>
 			UU3Ch0KRcyPGF5HGvrSvfsrqa2Daxyz47WuXON119Xc=
+			</data>
+		</dict>
+		<key>Frameworks/PopupDialog.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZbjVH01i0omPLxfIrw3bR3+OKvY=
+			</data>
+			<key>hash2</key>
+			<data>
+			7dHY51Hz+taToopnlPUAkM0bP1citb3VFwqbeHMR6EE=
+			</data>
+		</dict>
+		<key>Frameworks/PopupDialog.framework/PopupDialog</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jSRrwAF7Sdr6QPIKiml385yvXzc=
+			</data>
+			<key>hash2</key>
+			<data>
+			FsCUl/zLIELJXVXEo/VHnx2jiRNeMlEgEWCAuuJDVNw=
+			</data>
+		</dict>
+		<key>Frameworks/PopupDialog.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yaCLmfkxFxBuj9ANGiI6GAMO+S4=
+			</data>
+			<key>hash2</key>
+			<data>
+			7duYEfTRF6Vvss2pmplr89Km420+OFNCHMc991MXm3U=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>

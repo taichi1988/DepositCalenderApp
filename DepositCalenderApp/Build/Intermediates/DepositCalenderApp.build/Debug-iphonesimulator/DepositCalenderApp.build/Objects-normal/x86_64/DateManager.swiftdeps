@@ -7,26 +7,26 @@ provides-member:
 - ["C18DepositCalenderApp11DateManager", ""]
 provides-dynamic-lookup:
 - "calendar"
-- "dateCountInCurrentMonth"
 - "beginningDate"
+- "dateCountInCurrentMonth"
+- "firstDateOfMonth"
+- "convertDateFormat"
 - "lastDate"
 - "currentMonth"
 - "endDateOfMonth"
 - "selectedDay"
-- "firstDateOfMonth"
-- "convertDateFormat"
 depends-top-level:
-- "Int"
 - "DateManager"
 - "Date"
-- !private "+"
+- "Int"
 - !private "Array"
-- !private "-"
-- "Calendar"
 - "AssignmentPrecedence"
-- !private "DateComponents"
+- "Calendar"
+- !private "-"
 - "NSObject"
+- !private "DateComponents"
 - "String"
+- !private "+"
 depends-member:
 - ["Ps9AnyObject", "Calendar"]
 - ["Ps9AnyObject", "Date"]

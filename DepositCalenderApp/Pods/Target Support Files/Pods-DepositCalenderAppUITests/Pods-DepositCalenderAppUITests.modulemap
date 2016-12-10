@@ -1,0 +1,6 @@
+framework module Pods_DepositCalenderAppUITests {
+  umbrella header "Pods-DepositCalenderAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

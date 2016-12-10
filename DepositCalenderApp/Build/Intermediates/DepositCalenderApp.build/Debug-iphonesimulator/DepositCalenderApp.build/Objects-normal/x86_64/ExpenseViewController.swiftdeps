@@ -14,12 +14,12 @@ provides-dynamic-lookup:
 - "dateLabel"
 depends-top-level:
 - "UIView"
-- "UIViewController"
-- "UILabel"
-- "ExpenseViewController"
-- "AssignmentPrecedence"
 - "UIButton"
+- "ExpenseViewController"
+- "UIViewController"
 - !private "/"
+- "AssignmentPrecedence"
+- "UILabel"
 depends-member:
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "dateLabel"]
