@@ -13,13 +13,13 @@ provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
 - "dateLabel"
 depends-top-level:
-- "UIButton"
-- "UILabel"
+- "UIView"
 - "UIViewController"
+- "UILabel"
 - "ExpenseViewController"
 - "AssignmentPrecedence"
+- "UIButton"
 - !private "/"
-- "UIView"
 depends-member:
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "dateLabel"]

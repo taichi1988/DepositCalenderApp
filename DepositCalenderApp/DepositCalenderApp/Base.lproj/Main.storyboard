@@ -256,7 +256,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="カレンダー" id="O6M-ZZ-yDh"/>
                     <connections>
-                        <outlet property="CalendarView" destination="djQ-XE-XUp" id="J32-7y-hNa"/>
+                        <outlet property="calendarView" destination="djQ-XE-XUp" id="388-Os-ss5"/>
                         <outlet property="monthLabel" destination="qaq-pH-XmN" id="Ikm-1U-6PQ"/>
                         <outlet property="weekLabel" destination="HRo-zj-Vka" id="UhE-Fq-z5I"/>
                     </connections>

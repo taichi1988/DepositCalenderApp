@@ -13,8 +13,8 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     let dateManager = DateManager()
     let dayCountOfWeek = 7
     let weekCountOfMonth = 6
-
-    @IBOutlet weak var CalendarView: UICollectionView!
+    
+    @IBOutlet weak var calendarView: UICollectionView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var weekLabel: UIView!
     
@@ -26,9 +26,9 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
         self.tabBarController?.tabBar.setShadow(radius: 4.0, x: 0, y: -3)
         self.weekLabel.setShadow(radius: 2.0, x: 0, y: 1)
         
-        CalendarView.delegate = self
-        CalendarView.dataSource = self
-        CalendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
+        calendarView.delegate = self
+        calendarView.dataSource = self
+        calendarView.register(UINib(nibName: "CalendarCell", bundle: nil), forCellWithReuseIdentifier: "CalendarCell")
         // カレンダーの背面のLabelに現在の月をセット
         monthLabel.text = dateManager.currentMonth()
     }

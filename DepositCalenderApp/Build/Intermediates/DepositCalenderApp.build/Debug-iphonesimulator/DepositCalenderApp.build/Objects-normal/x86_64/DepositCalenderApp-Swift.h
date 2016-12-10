@@ -160,7 +160,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp22CalendarViewController")
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
 @property (nonatomic, readonly) NSInteger dayCountOfWeek;
 @property (nonatomic, readonly) NSInteger weekCountOfMonth;
-@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified CalendarView;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calendarView;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified monthLabel;
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified weekLabel;
 - (void)viewDidLoad;

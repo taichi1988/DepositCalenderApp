@@ -6,54 +6,54 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp22CalendarViewController", ""]
 provides-dynamic-lookup:
+- "weekCountOfMonth"
 - "dateManager"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "CalendarView"
+- "calendarView"
 - "weekLabel"
 - "viewDidLayoutSubviews"
-- "weekCountOfMonth"
-- "monthLabel"
-- "dayCountOfWeek"
 - "viewDidLoad"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "dayCountOfWeek"
+- "monthLabel"
 depends-top-level:
-- !private "/"
+- "UICollectionViewDataSource"
+- "CastingPrecedence"
+- "IndexPath"
 - "UICollectionView"
-- !private "CalendarCell"
+- "UICollectionViewDelegateFlowLayout"
+- "AssignmentPrecedence"
+- "UICollectionViewDelegate"
+- "UILabel"
 - !private "=="
 - "UIViewController"
-- !private "StringLiteralType"
-- "UICollectionViewCell"
-- "UICollectionViewDataSource"
-- "Int"
-- "UICollectionViewLayout"
-- "UILabel"
-- "UICollectionViewDelegateFlowLayout"
-- "UICollectionViewDelegate"
-- "CalendarViewController"
+- !private "%"
 - "UIView"
 - "CGSize"
 - !private "UIColor"
-- !private "%"
-- "DateManager"
-- "IndexPath"
+- !private "/"
 - "CGFloat"
-- "AssignmentPrecedence"
+- "DateManager"
+- "Int"
+- "UICollectionViewCell"
+- "UICollectionViewLayout"
+- !private "StringLiteralType"
+- !private "CalendarCell"
+- "CalendarViewController"
 - !private "UINib"
-- "CastingPrecedence"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
 - !private ["Ps9AnyObject", "CGSize"]
-- ["Ps9AnyObject", "CalendarView"]
 - ["Ps9AnyObject", "DateManager"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UINib"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "brown"]
+- ["Ps9AnyObject", "calendarView"]
 - !private ["Ps9AnyObject", "clearOffWhite"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "convertDateFormat"]
@@ -123,12 +123,12 @@ depends-member:
 - !private ["VSC6CGSize", "width"]
 - !private ["Ps7CVarArg", "CGFloat"]
 - !private ["Ps7CVarArg", "CGSize"]
-- ["Ps7CVarArg", "CalendarView"]
 - ["Ps7CVarArg", "DateManager"]
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UINib"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - !private ["Ps7CVarArg", "brown"]
+- ["Ps7CVarArg", "calendarView"]
 - !private ["Ps7CVarArg", "clearOffWhite"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "convertDateFormat"]
@@ -180,7 +180,6 @@ depends-member:
 - ["C18DepositCalenderApp22CalendarViewController", "CGFloat"]
 - ["C18DepositCalenderApp22CalendarViewController", "CGSize"]
 - !private ["C18DepositCalenderApp22CalendarViewController", "CalendarCell"]
-- ["C18DepositCalenderApp22CalendarViewController", "CalendarView"]
 - ["C18DepositCalenderApp22CalendarViewController", "DateManager"]
 - ["C18DepositCalenderApp22CalendarViewController", "IndexPath"]
 - ["C18DepositCalenderApp22CalendarViewController", "Int"]
@@ -191,6 +190,7 @@ depends-member:
 - ["C18DepositCalenderApp22CalendarViewController", "UILabel"]
 - !private ["C18DepositCalenderApp22CalendarViewController", "UINib"]
 - ["C18DepositCalenderApp22CalendarViewController", "UIView"]
+- ["C18DepositCalenderApp22CalendarViewController", "calendarView"]
 - ["C18DepositCalenderApp22CalendarViewController", "collectionView"]
 - ["C18DepositCalenderApp22CalendarViewController", "dateManager"]
 - ["C18DepositCalenderApp22CalendarViewController", "dayCountOfWeek"]
@@ -225,12 +225,12 @@ depends-member:
 - !private ["Ps10Comparable", "row"]
 - !private ["Ps28CustomDebugStringConvertible", "CGFloat"]
 - !private ["Ps28CustomDebugStringConvertible", "CGSize"]
-- ["Ps28CustomDebugStringConvertible", "CalendarView"]
 - ["Ps28CustomDebugStringConvertible", "DateManager"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UINib"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "brown"]
+- ["Ps28CustomDebugStringConvertible", "calendarView"]
 - !private ["Ps28CustomDebugStringConvertible", "clearOffWhite"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "convertDateFormat"]
@@ -293,13 +293,13 @@ depends-member:
 - !private ["Ps17CustomReflectable", "width"]
 - !private ["Ps23CustomStringConvertible", "CGFloat"]
 - !private ["Ps23CustomStringConvertible", "CGSize"]
-- ["Ps23CustomStringConvertible", "CalendarView"]
 - ["Ps23CustomStringConvertible", "DateManager"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UINib"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "brown"]
+- ["Ps23CustomStringConvertible", "calendarView"]
 - !private ["Ps23CustomStringConvertible", "clearOffWhite"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "convertDateFormat"]
@@ -353,13 +353,13 @@ depends-member:
 - ["C18DepositCalenderApp11DateManager", "init"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGSize"]
-- ["Ps9Equatable", "CalendarView"]
 - ["Ps9Equatable", "DateManager"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UINib"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "brown"]
+- ["Ps9Equatable", "calendarView"]
 - !private ["Ps9Equatable", "clearOffWhite"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "convertDateFormat"]
@@ -420,13 +420,13 @@ depends-member:
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "CGSize"]
-- ["Ps8Hashable", "CalendarView"]
 - ["Ps8Hashable", "DateManager"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UINib"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "brown"]
+- ["Ps8Hashable", "calendarView"]
 - !private ["Ps8Hashable", "clearOffWhite"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "convertDateFormat"]
@@ -487,12 +487,12 @@ depends-member:
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "CGFloat"]
 - !private ["PSo8NSCoding", "CGSize"]
-- ["PSo8NSCoding", "CalendarView"]
 - ["PSo8NSCoding", "DateManager"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UINib"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "brown"]
+- ["PSo8NSCoding", "calendarView"]
 - !private ["PSo8NSCoding", "clearOffWhite"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "dataSource"]
@@ -542,10 +542,10 @@ depends-member:
 - !private ["PSo9NSCopying", "lightPink"]
 - !private ["PSo26NSExtensionRequestHandling", "CGFloat"]
 - !private ["PSo26NSExtensionRequestHandling", "CGSize"]
-- ["PSo26NSExtensionRequestHandling", "CalendarView"]
 - ["PSo26NSExtensionRequestHandling", "DateManager"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - !private ["PSo26NSExtensionRequestHandling", "UINib"]
+- ["PSo26NSExtensionRequestHandling", "calendarView"]
 - ["PSo26NSExtensionRequestHandling", "collectionView"]
 - ["PSo26NSExtensionRequestHandling", "dateManager"]
 - ["PSo26NSExtensionRequestHandling", "dayCountOfWeek"]
@@ -580,7 +580,6 @@ depends-member:
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGSize"]
 - !private ["CSo8NSObject", "CalendarCell"]
-- ["CSo8NSObject", "CalendarView"]
 - ["CSo8NSObject", "DateManager"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
@@ -593,6 +592,7 @@ depends-member:
 - ["CSo8NSObject", "UIView"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "brown"]
+- ["CSo8NSObject", "calendarView"]
 - !private ["CSo8NSObject", "clearOffWhite"]
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "convertDateFormat"]
@@ -639,12 +639,12 @@ depends-member:
 - ["CSo8NSObject", "weekLabel"]
 - !private ["PSo16NSObjectProtocol", "CGFloat"]
 - !private ["PSo16NSObjectProtocol", "CGSize"]
-- ["PSo16NSObjectProtocol", "CalendarView"]
 - ["PSo16NSObjectProtocol", "DateManager"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UINib"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "brown"]
+- ["PSo16NSObjectProtocol", "calendarView"]
 - !private ["PSo16NSObjectProtocol", "clearOffWhite"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "convertDateFormat"]
@@ -729,11 +729,11 @@ depends-member:
 - !private ["PSo12UIAppearance", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "CGFloat"]
 - !private ["PSo21UIAppearanceContainer", "CGSize"]
-- ["PSo21UIAppearanceContainer", "CalendarView"]
 - ["PSo21UIAppearanceContainer", "DateManager"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UINib"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
+- ["PSo21UIAppearanceContainer", "calendarView"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - ["PSo21UIAppearanceContainer", "dateManager"]
@@ -786,10 +786,10 @@ depends-member:
 - ["CSo20UICollectionViewCell", "deinit"]
 - !private ["PSo26UICollectionViewDataSource", "CGFloat"]
 - !private ["PSo26UICollectionViewDataSource", "CGSize"]
-- !private ["PSo26UICollectionViewDataSource", "CalendarView"]
 - ["PSo26UICollectionViewDataSource", "DateManager"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - !private ["PSo26UICollectionViewDataSource", "UINib"]
+- !private ["PSo26UICollectionViewDataSource", "calendarView"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "dateManager"]
 - !private ["PSo26UICollectionViewDataSource", "dayCountOfWeek"]
@@ -818,10 +818,10 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", ""]
 - !private ["PSo24UICollectionViewDelegate", "CGFloat"]
 - !private ["PSo24UICollectionViewDelegate", "CGSize"]
-- !private ["PSo24UICollectionViewDelegate", "CalendarView"]
 - ["PSo24UICollectionViewDelegate", "DateManager"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - !private ["PSo24UICollectionViewDelegate", "UINib"]
+- !private ["PSo24UICollectionViewDelegate", "calendarView"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "dateManager"]
 - !private ["PSo24UICollectionViewDelegate", "dayCountOfWeek"]
@@ -850,10 +850,10 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", ""]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CGFloat"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "CGSize"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "CalendarView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "DateManager"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UINib"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "calendarView"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "dateManager"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "dayCountOfWeek"]
@@ -887,10 +887,10 @@ depends-member:
 - !private ["CSo7UIColor", "lightPink"]
 - !private ["PSo18UIContentContainer", "CGFloat"]
 - !private ["PSo18UIContentContainer", "CGSize"]
-- ["PSo18UIContentContainer", "CalendarView"]
 - ["PSo18UIContentContainer", "DateManager"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - !private ["PSo18UIContentContainer", "UINib"]
+- ["PSo18UIContentContainer", "calendarView"]
 - ["PSo18UIContentContainer", "collectionView"]
 - ["PSo18UIContentContainer", "dateManager"]
 - ["PSo18UIContentContainer", "dayCountOfWeek"]
@@ -945,11 +945,11 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "CGFloat"]
 - !private ["PSo18UIFocusEnvironment", "CGSize"]
-- ["PSo18UIFocusEnvironment", "CalendarView"]
 - ["PSo18UIFocusEnvironment", "DateManager"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UINib"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
+- ["PSo18UIFocusEnvironment", "calendarView"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - ["PSo18UIFocusEnvironment", "dateManager"]
@@ -1006,7 +1006,6 @@ depends-member:
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGSize"]
 - !private ["CSo11UIResponder", "CalendarCell"]
-- ["CSo11UIResponder", "CalendarView"]
 - ["CSo11UIResponder", "DateManager"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
@@ -1018,6 +1017,7 @@ depends-member:
 - !private ["CSo11UIResponder", "UINib"]
 - ["CSo11UIResponder", "UIView"]
 - !private ["CSo11UIResponder", "backgroundColor"]
+- ["CSo11UIResponder", "calendarView"]
 - ["CSo11UIResponder", "collectionView"]
 - !private ["CSo11UIResponder", "dataSource"]
 - ["CSo11UIResponder", "dateManager"]
@@ -1058,11 +1058,11 @@ depends-member:
 - ["CSo11UIResponder", "weekLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "CGFloat"]
 - !private ["PSo30UIResponderStandardEditActions", "CGSize"]
-- ["PSo30UIResponderStandardEditActions", "CalendarView"]
 - ["PSo30UIResponderStandardEditActions", "DateManager"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UINib"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
+- ["PSo30UIResponderStandardEditActions", "calendarView"]
 - ["PSo30UIResponderStandardEditActions", "collectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "dataSource"]
 - ["PSo30UIResponderStandardEditActions", "dateManager"]
@@ -1109,10 +1109,10 @@ depends-member:
 - !private ["CSo12UIScrollView", "register"]
 - !private ["PSo20UIScrollViewDelegate", "CGFloat"]
 - !private ["PSo20UIScrollViewDelegate", "CGSize"]
-- !private ["PSo20UIScrollViewDelegate", "CalendarView"]
 - ["PSo20UIScrollViewDelegate", "DateManager"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UINib"]
+- !private ["PSo20UIScrollViewDelegate", "calendarView"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "dateManager"]
 - !private ["PSo20UIScrollViewDelegate", "dayCountOfWeek"]
@@ -1141,10 +1141,10 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", ""]
 - !private ["PSo16UIStateRestoring", "CGFloat"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
-- ["PSo16UIStateRestoring", "CalendarView"]
 - ["PSo16UIStateRestoring", "DateManager"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - !private ["PSo16UIStateRestoring", "UINib"]
+- ["PSo16UIStateRestoring", "calendarView"]
 - ["PSo16UIStateRestoring", "collectionView"]
 - ["PSo16UIStateRestoring", "dateManager"]
 - ["PSo16UIStateRestoring", "dayCountOfWeek"]
@@ -1182,11 +1182,11 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "tabBar"]
 - !private ["PSo18UITraitEnvironment", "CGFloat"]
 - !private ["PSo18UITraitEnvironment", "CGSize"]
-- ["PSo18UITraitEnvironment", "CalendarView"]
 - ["PSo18UITraitEnvironment", "DateManager"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UINib"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
+- ["PSo18UITraitEnvironment", "calendarView"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - ["PSo18UITraitEnvironment", "dateManager"]
@@ -1239,7 +1239,6 @@ depends-member:
 - ["CSo16UIViewController", "CGFloat"]
 - ["CSo16UIViewController", "CGSize"]
 - !private ["CSo16UIViewController", "CalendarCell"]
-- ["CSo16UIViewController", "CalendarView"]
 - ["CSo16UIViewController", "DateManager"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
@@ -1250,6 +1249,7 @@ depends-member:
 - ["CSo16UIViewController", "UILabel"]
 - !private ["CSo16UIViewController", "UINib"]
 - ["CSo16UIViewController", "UIView"]
+- ["CSo16UIViewController", "calendarView"]
 - ["CSo16UIViewController", "collectionView"]
 - ["CSo16UIViewController", "dateManager"]
 - ["CSo16UIViewController", "dayCountOfWeek"]
@@ -1305,13 +1305,13 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGSize"]
-- ["Ps9_Hashable", "CalendarView"]
 - ["Ps9_Hashable", "DateManager"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UINib"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "backgroundColor"]
 - !private ["Ps9_Hashable", "brown"]
+- ["Ps9_Hashable", "calendarView"]
 - !private ["Ps9_Hashable", "clearOffWhite"]
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "convertDateFormat"]
@@ -1479,4 +1479,4 @@ depends-external:
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "b07ff220c922bfd5678347d816729bbc"
+interface-hash: "ec474fb3185145a3d0febcffdc2d67e7"
