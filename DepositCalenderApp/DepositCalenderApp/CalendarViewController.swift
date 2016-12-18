@@ -41,7 +41,7 @@ class CalendarViewController: UIViewController,UICollectionViewDataSource, UICol
     /// カレンダーのセルの個数を返す
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dateManager.dateCountInCurrentMonth()
-        // TODO: セルの数を42個(６週ある月の日付の数)に固定
+        // FIXME: セルの数を42個(６週ある月の日付の数)に固定
 //        return dayCountOfWeek * weekCountOfMonth
     }
 

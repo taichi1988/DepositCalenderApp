@@ -6,21 +6,27 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp21ExpenseViewController", ""]
 provides-dynamic-lookup:
-- "inputButton"
 - "textAreaBackView"
 - "inputButtonTapped"
 - "viewDidLoad"
-- "didReceiveMemoryWarning"
 - "dateLabel"
+- "inputButton"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIView"
-- "UIButton"
-- "ExpenseViewController"
 - "UIViewController"
+- "ExpenseViewController"
+- !private "StringLiteralType"
+- "UIView"
+- !private "BooleanLiteralType"
 - !private "/"
+- !private "PopupDialog"
+- "UIButton"
 - "AssignmentPrecedence"
 - "UILabel"
+- !private "ExpenseInputViewController"
 depends-member:
+- !private ["Ps9AnyObject", "ExpenseInputViewController"]
+- !private ["Ps9AnyObject", "PopupDialog"]
 - !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "dateLabel"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
@@ -29,10 +35,12 @@ depends-member:
 - ["Ps9AnyObject", "inputButton"]
 - ["Ps9AnyObject", "inputButtonTapped"]
 - !private ["Ps9AnyObject", "layer"]
+- !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "setShadow"]
 - ["Ps9AnyObject", "textAreaBackView"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", ""]
+- ["Sb", "deinit"]
 - !private ["CSo7CALayer", "cornerRadius"]
 - ["CSo7CALayer", "deinit"]
 - !private ["PSo15CALayerDelegate", "frame"]
@@ -41,6 +49,8 @@ depends-member:
 - !private ["PSo13CAMediaTiming", "cornerRadius"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["VSC6CGRect", "height"]
+- !private ["Ps7CVarArg", "ExpenseInputViewController"]
+- !private ["Ps7CVarArg", "PopupDialog"]
 - !private ["Ps7CVarArg", "cornerRadius"]
 - ["Ps7CVarArg", "dateLabel"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
@@ -49,10 +59,14 @@ depends-member:
 - ["Ps7CVarArg", "inputButton"]
 - ["Ps7CVarArg", "inputButtonTapped"]
 - !private ["Ps7CVarArg", "layer"]
+- !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "setShadow"]
 - ["Ps7CVarArg", "textAreaBackView"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "ExpenseInputViewController"]
+- !private ["Ps28CustomDebugStringConvertible", "PopupDialog"]
 - !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - ["Ps28CustomDebugStringConvertible", "dateLabel"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
@@ -62,12 +76,17 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "inputButton"]
 - ["Ps28CustomDebugStringConvertible", "inputButtonTapped"]
 - !private ["Ps28CustomDebugStringConvertible", "layer"]
+- !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "setShadow"]
 - ["Ps28CustomDebugStringConvertible", "textAreaBackView"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "height"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "height"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "ExpenseInputViewController"]
+- !private ["Ps23CustomStringConvertible", "PopupDialog"]
 - !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - ["Ps23CustomStringConvertible", "dateLabel"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
@@ -76,10 +95,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "inputButton"]
 - ["Ps23CustomStringConvertible", "inputButtonTapped"]
 - !private ["Ps23CustomStringConvertible", "layer"]
+- !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "setShadow"]
 - ["Ps23CustomStringConvertible", "textAreaBackView"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["Ps9Equatable", "ExpenseInputViewController"]
+- !private ["Ps9Equatable", "PopupDialog"]
 - !private ["Ps9Equatable", "cornerRadius"]
 - ["Ps9Equatable", "dateLabel"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
@@ -89,10 +111,15 @@ depends-member:
 - ["Ps9Equatable", "inputButton"]
 - ["Ps9Equatable", "inputButtonTapped"]
 - !private ["Ps9Equatable", "layer"]
+- !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "setShadow"]
 - ["Ps9Equatable", "textAreaBackView"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", ""]
+- ["C18DepositCalenderApp26ExpenseInputViewController", "deinit"]
+- !private ["C18DepositCalenderApp26ExpenseInputViewController", "init"]
+- !private ["C18DepositCalenderApp21ExpenseViewController", "ExpenseInputViewController"]
+- !private ["C18DepositCalenderApp21ExpenseViewController", "PopupDialog"]
 - ["C18DepositCalenderApp21ExpenseViewController", "UIButton"]
 - ["C18DepositCalenderApp21ExpenseViewController", "UILabel"]
 - ["C18DepositCalenderApp21ExpenseViewController", "UIView"]
@@ -102,8 +129,15 @@ depends-member:
 - ["C18DepositCalenderApp21ExpenseViewController", "init"]
 - ["C18DepositCalenderApp21ExpenseViewController", "inputButton"]
 - ["C18DepositCalenderApp21ExpenseViewController", "inputButtonTapped"]
+- !private ["C18DepositCalenderApp21ExpenseViewController", "present"]
 - ["C18DepositCalenderApp21ExpenseViewController", "textAreaBackView"]
 - ["C18DepositCalenderApp21ExpenseViewController", "viewDidLoad"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "ExpenseInputViewController"]
+- !private ["Ps8Hashable", "PopupDialog"]
 - !private ["Ps8Hashable", "cornerRadius"]
 - ["Ps8Hashable", "dateLabel"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
@@ -112,12 +146,17 @@ depends-member:
 - ["Ps8Hashable", "inputButton"]
 - ["Ps8Hashable", "inputButtonTapped"]
 - !private ["Ps8Hashable", "layer"]
+- !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "setShadow"]
 - ["Ps8Hashable", "textAreaBackView"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", ""]
 - ["SQ", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
+- !private ["PSo8NSCoding", "ExpenseInputViewController"]
+- !private ["PSo8NSCoding", "PopupDialog"]
 - !private ["PSo8NSCoding", "cornerRadius"]
 - ["PSo8NSCoding", "dateLabel"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
@@ -126,18 +165,26 @@ depends-member:
 - ["PSo8NSCoding", "inputButton"]
 - ["PSo8NSCoding", "inputButtonTapped"]
 - !private ["PSo8NSCoding", "layer"]
+- !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "setShadow"]
 - ["PSo8NSCoding", "textAreaBackView"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "ExpenseInputViewController"]
+- !private ["PSo26NSExtensionRequestHandling", "PopupDialog"]
 - ["PSo26NSExtensionRequestHandling", "dateLabel"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "inputButton"]
 - ["PSo26NSExtensionRequestHandling", "inputButtonTapped"]
+- !private ["PSo26NSExtensionRequestHandling", "present"]
 - ["PSo26NSExtensionRequestHandling", "textAreaBackView"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
+- !private ["CSo8NSObject", "ExpenseInputViewController"]
+- !private ["CSo8NSObject", "PopupDialog"]
 - ["CSo8NSObject", "UIButton"]
 - ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UIView"]
@@ -149,9 +196,12 @@ depends-member:
 - ["CSo8NSObject", "inputButton"]
 - ["CSo8NSObject", "inputButtonTapped"]
 - !private ["CSo8NSObject", "layer"]
+- !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "setShadow"]
 - ["CSo8NSObject", "textAreaBackView"]
 - ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "ExpenseInputViewController"]
+- !private ["PSo16NSObjectProtocol", "PopupDialog"]
 - !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - ["PSo16NSObjectProtocol", "dateLabel"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
@@ -160,17 +210,28 @@ depends-member:
 - ["PSo16NSObjectProtocol", "inputButton"]
 - ["PSo16NSObjectProtocol", "inputButtonTapped"]
 - !private ["PSo16NSObjectProtocol", "layer"]
+- !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "setShadow"]
 - ["PSo16NSObjectProtocol", "textAreaBackView"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
+- ["C11PopupDialog11PopupDialog", "deinit"]
+- !private ["C11PopupDialog11PopupDialog", "init"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "layer"]
 - !private ["PSo29UIAccessibilityIdentification", "setShadow"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "layer"]
 - !private ["PSo12UIAppearance", "setShadow"]
+- !private ["PSo21UIAppearanceContainer", "ExpenseInputViewController"]
+- !private ["PSo21UIAppearanceContainer", "PopupDialog"]
 - ["PSo21UIAppearanceContainer", "dateLabel"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
@@ -178,6 +239,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "inputButton"]
 - ["PSo21UIAppearanceContainer", "inputButtonTapped"]
 - !private ["PSo21UIAppearanceContainer", "layer"]
+- !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "setShadow"]
 - ["PSo21UIAppearanceContainer", "textAreaBackView"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
@@ -185,11 +247,14 @@ depends-member:
 - !private ["CSo8UIButton", "frame"]
 - !private ["CSo8UIButton", "layer"]
 - !private ["CSo8UIButton", "setShadow"]
+- !private ["PSo18UIContentContainer", "ExpenseInputViewController"]
+- !private ["PSo18UIContentContainer", "PopupDialog"]
 - ["PSo18UIContentContainer", "dateLabel"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "inputButton"]
 - ["PSo18UIContentContainer", "inputButtonTapped"]
+- !private ["PSo18UIContentContainer", "present"]
 - ["PSo18UIContentContainer", "textAreaBackView"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", ""]
@@ -202,6 +267,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "layer"]
 - !private ["PSo13UIDynamicItem", "setShadow"]
+- !private ["PSo18UIFocusEnvironment", "ExpenseInputViewController"]
+- !private ["PSo18UIFocusEnvironment", "PopupDialog"]
 - ["PSo18UIFocusEnvironment", "dateLabel"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
@@ -209,6 +276,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "inputButton"]
 - ["PSo18UIFocusEnvironment", "inputButtonTapped"]
 - !private ["PSo18UIFocusEnvironment", "layer"]
+- !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "setShadow"]
 - ["PSo18UIFocusEnvironment", "textAreaBackView"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
@@ -216,6 +284,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "layer"]
 - !private ["PSo11UIFocusItem", "setShadow"]
+- !private ["CSo11UIResponder", "ExpenseInputViewController"]
+- !private ["CSo11UIResponder", "PopupDialog"]
 - ["CSo11UIResponder", "UIButton"]
 - ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UIView"]
@@ -226,9 +296,12 @@ depends-member:
 - ["CSo11UIResponder", "inputButton"]
 - ["CSo11UIResponder", "inputButtonTapped"]
 - !private ["CSo11UIResponder", "layer"]
+- !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "setShadow"]
 - ["CSo11UIResponder", "textAreaBackView"]
 - ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo30UIResponderStandardEditActions", "ExpenseInputViewController"]
+- !private ["PSo30UIResponderStandardEditActions", "PopupDialog"]
 - ["PSo30UIResponderStandardEditActions", "dateLabel"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
@@ -236,18 +309,24 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "inputButton"]
 - ["PSo30UIResponderStandardEditActions", "inputButtonTapped"]
 - !private ["PSo30UIResponderStandardEditActions", "layer"]
+- !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "setShadow"]
 - ["PSo30UIResponderStandardEditActions", "textAreaBackView"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo16UIStateRestoring", "ExpenseInputViewController"]
+- !private ["PSo16UIStateRestoring", "PopupDialog"]
 - ["PSo16UIStateRestoring", "dateLabel"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "inputButton"]
 - ["PSo16UIStateRestoring", "inputButtonTapped"]
+- !private ["PSo16UIStateRestoring", "present"]
 - ["PSo16UIStateRestoring", "textAreaBackView"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "ExpenseInputViewController"]
+- !private ["PSo18UITraitEnvironment", "PopupDialog"]
 - ["PSo18UITraitEnvironment", "dateLabel"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "frame"]
@@ -255,6 +334,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "inputButton"]
 - ["PSo18UITraitEnvironment", "inputButtonTapped"]
 - !private ["PSo18UITraitEnvironment", "layer"]
+- !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "setShadow"]
 - ["PSo18UITraitEnvironment", "textAreaBackView"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
@@ -262,6 +342,8 @@ depends-member:
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "layer"]
 - !private ["CSo6UIView", "setShadow"]
+- !private ["CSo16UIViewController", "ExpenseInputViewController"]
+- !private ["CSo16UIViewController", "PopupDialog"]
 - ["CSo16UIViewController", "UIButton"]
 - ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UIView"]
@@ -271,12 +353,20 @@ depends-member:
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "inputButton"]
 - ["CSo16UIViewController", "inputButtonTapped"]
+- !private ["CSo16UIViewController", "present"]
 - ["CSo16UIViewController", "textAreaBackView"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", ""]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setShadow"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "ExpenseInputViewController"]
+- !private ["Ps9_Hashable", "PopupDialog"]
 - !private ["Ps9_Hashable", "cornerRadius"]
 - ["Ps9_Hashable", "dateLabel"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
@@ -285,33 +375,52 @@ depends-member:
 - ["Ps9_Hashable", "inputButton"]
 - ["Ps9_Hashable", "inputButtonTapped"]
 - !private ["Ps9_Hashable", "layer"]
+- !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "setShadow"]
 - ["Ps9_Hashable", "textAreaBackView"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Sb"
 - "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
 - !private "PSo13CAMediaTiming"
 - "V12CoreGraphics7CGFloat"
 - !private "VSC6CGRect"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- "C18DepositCalenderApp26ExpenseInputViewController"
 - "C18DepositCalenderApp21ExpenseViewController"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
 - "SQ"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Sq"
+- "C11PopupDialog11PopupDialog"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
@@ -329,6 +438,11 @@ depends-nominal:
 - !private "CSo6UIView"
 - "CSo16UIViewController"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
 depends-dynamic-lookup:
@@ -343,4 +457,9 @@ depends-external:
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "e2bff09794268fd7308c68fb6d1bb83a"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/FXBlurView.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
+interface-hash: "ab35de70b2172ba624b4080933d6ea8e"

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PopupDialog
 
 class ExpenseViewController: UIViewController {
     /// 日付のラベル
@@ -29,6 +30,8 @@ class ExpenseViewController: UIViewController {
     }
     
     @IBAction func inputButtonTapped(_ sender: Any) {
-        
+        let vc = ExpenseInputViewController(nibName: "ExpenseInputViewController", bundle: nil)
+        let popVC = PopupDialog(viewController: vc)
+        present(popVC, animated: true, completion: nil)
     }
 }

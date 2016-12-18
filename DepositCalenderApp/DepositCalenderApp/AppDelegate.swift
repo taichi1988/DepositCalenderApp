@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import PopupDialog
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,10 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let attributes = [NSFontAttributeName: UIFont(name: "Futura", size: 25), NSForegroundColorAttributeName: UIColor.white]
+        let attributes = [
+            NSFontAttributeName: UIFont(name: "Futura", size: 25),
+            NSForegroundColorAttributeName: UIColor.white
+        ]
         UINavigationBar.appearance().titleTextAttributes = attributes
         UINavigationBar.appearance().barTintColor = UIColor.orange()
         UITabBar.appearance().barTintColor = UIColor.orange()
+        
+        let ov = PopupDialogOverlayView.appearance()
+        ov.color = UIColor.white
+        
+        let dcv = PopupDialogContainerView.appearance()
+        dcv.shadowColor = UIColor.shadowColor()
+        dcv.cornerRadius = 10
 
         return true
     }

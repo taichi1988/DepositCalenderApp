@@ -6,34 +6,38 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationDidEnterBackground"
-- "window"
 - "applicationWillEnterForeground"
 - "applicationDidBecomeActive"
+- "window"
 - "applicationWillTerminate"
 - "applicationWillResignActive"
 - "application"
+- "applicationDidEnterBackground"
 depends-top-level:
+- "UIResponder"
 - "UIApplicationDelegate"
 - !private "StringLiteralType"
-- "UIWindow"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- !private "NSFontAttributeName"
-- !private "UINavigationBar"
-- "UIResponder"
-- !private "BooleanLiteralType"
-- !private "Dictionary"
 - !private "UITabBar"
-- !private "UIFont"
-- "UIApplication"
 - !private "NSForegroundColorAttributeName"
-- "AssignmentPrecedence"
-- "Bool"
+- "UIWindow"
+- "UIApplication"
+- !private "BooleanLiteralType"
+- !private "UINavigationBar"
 - !private "UIColor"
+- !private "NSFontAttributeName"
+- "Bool"
+- !private "UIFont"
+- "AssignmentPrecedence"
+- "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
+- !private "Dictionary"
+- !private "PopupDialogContainerView"
+- !private "PopupDialogOverlayView"
 depends-member:
 - !private ["Ps9AnyObject", "NSFontAttributeName"]
 - !private ["Ps9AnyObject", "NSForegroundColorAttributeName"]
+- !private ["Ps9AnyObject", "PopupDialogContainerView"]
+- !private ["Ps9AnyObject", "PopupDialogOverlayView"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "UINavigationBar"]
@@ -52,8 +56,11 @@ depends-member:
 - ["Ps9AnyObject", "applicationWillResignActive"]
 - ["Ps9AnyObject", "applicationWillTerminate"]
 - !private ["Ps9AnyObject", "barTintColor"]
+- !private ["Ps9AnyObject", "color"]
+- !private ["Ps9AnyObject", "cornerRadius"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "orange"]
+- !private ["Ps9AnyObject", "shadowColor"]
 - !private ["Ps9AnyObject", "titleTextAttributes"]
 - !private ["Ps9AnyObject", "white"]
 - ["Ps9AnyObject", "window"]
@@ -61,6 +68,8 @@ depends-member:
 - ["C18DepositCalenderApp11AppDelegate", "Bool"]
 - !private ["C18DepositCalenderApp11AppDelegate", "NSFontAttributeName"]
 - !private ["C18DepositCalenderApp11AppDelegate", "NSForegroundColorAttributeName"]
+- !private ["C18DepositCalenderApp11AppDelegate", "PopupDialogContainerView"]
+- !private ["C18DepositCalenderApp11AppDelegate", "PopupDialogOverlayView"]
 - ["C18DepositCalenderApp11AppDelegate", "UIApplication"]
 - ["C18DepositCalenderApp11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - !private ["C18DepositCalenderApp11AppDelegate", "UIColor"]
@@ -86,11 +95,16 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "appearance"]
 - !private ["PSo15CALayerDelegate", "barTintColor"]
+- !private ["PSo15CALayerDelegate", "color"]
+- !private ["PSo15CALayerDelegate", "cornerRadius"]
+- !private ["PSo15CALayerDelegate", "shadowColor"]
 - !private ["PSo15CALayerDelegate", "titleTextAttributes"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "NSFontAttributeName"]
 - !private ["Ps7CVarArg", "NSForegroundColorAttributeName"]
+- !private ["Ps7CVarArg", "PopupDialogContainerView"]
+- !private ["Ps7CVarArg", "PopupDialogOverlayView"]
 - !private ["Ps7CVarArg", "UIColor"]
 - !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "UINavigationBar"]
@@ -110,8 +124,11 @@ depends-member:
 - ["Ps7CVarArg", "applicationWillResignActive"]
 - ["Ps7CVarArg", "applicationWillTerminate"]
 - !private ["Ps7CVarArg", "barTintColor"]
+- !private ["Ps7CVarArg", "color"]
+- !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "orange"]
+- !private ["Ps7CVarArg", "shadowColor"]
 - !private ["Ps7CVarArg", "titleTextAttributes"]
 - !private ["Ps7CVarArg", "white"]
 - ["Ps7CVarArg", "window"]
@@ -122,6 +139,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "NSFontAttributeName"]
 - !private ["Ps28CustomDebugStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps28CustomDebugStringConvertible", "PopupDialogContainerView"]
+- !private ["Ps28CustomDebugStringConvertible", "PopupDialogOverlayView"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "UINavigationBar"]
@@ -141,8 +160,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "applicationWillResignActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationWillTerminate"]
 - !private ["Ps28CustomDebugStringConvertible", "barTintColor"]
+- !private ["Ps28CustomDebugStringConvertible", "color"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "orange"]
+- !private ["Ps28CustomDebugStringConvertible", "shadowColor"]
 - !private ["Ps28CustomDebugStringConvertible", "titleTextAttributes"]
 - !private ["Ps28CustomDebugStringConvertible", "white"]
 - ["Ps28CustomDebugStringConvertible", "window"]
@@ -154,6 +176,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "NSFontAttributeName"]
 - !private ["Ps23CustomStringConvertible", "NSForegroundColorAttributeName"]
+- !private ["Ps23CustomStringConvertible", "PopupDialogContainerView"]
+- !private ["Ps23CustomStringConvertible", "PopupDialogOverlayView"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "UINavigationBar"]
@@ -173,8 +197,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "applicationWillResignActive"]
 - ["Ps23CustomStringConvertible", "applicationWillTerminate"]
 - !private ["Ps23CustomStringConvertible", "barTintColor"]
+- !private ["Ps23CustomStringConvertible", "color"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "orange"]
+- !private ["Ps23CustomStringConvertible", "shadowColor"]
 - !private ["Ps23CustomStringConvertible", "titleTextAttributes"]
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", "window"]
@@ -184,6 +211,8 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Ps9Equatable", "NSFontAttributeName"]
 - !private ["Ps9Equatable", "NSForegroundColorAttributeName"]
+- !private ["Ps9Equatable", "PopupDialogContainerView"]
+- !private ["Ps9Equatable", "PopupDialogOverlayView"]
 - !private ["Ps9Equatable", "UIColor"]
 - !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "UINavigationBar"]
@@ -202,8 +231,11 @@ depends-member:
 - ["Ps9Equatable", "applicationWillResignActive"]
 - ["Ps9Equatable", "applicationWillTerminate"]
 - !private ["Ps9Equatable", "barTintColor"]
+- !private ["Ps9Equatable", "color"]
+- !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "orange"]
+- !private ["Ps9Equatable", "shadowColor"]
 - !private ["Ps9Equatable", "titleTextAttributes"]
 - !private ["Ps9Equatable", "white"]
 - ["Ps9Equatable", "window"]
@@ -214,8 +246,11 @@ depends-member:
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["Sf", "deinit"]
 - !private ["Ps8Hashable", "NSFontAttributeName"]
 - !private ["Ps8Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps8Hashable", "PopupDialogContainerView"]
+- !private ["Ps8Hashable", "PopupDialogOverlayView"]
 - !private ["Ps8Hashable", "UIColor"]
 - !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "UINavigationBar"]
@@ -234,8 +269,11 @@ depends-member:
 - ["Ps8Hashable", "applicationWillResignActive"]
 - ["Ps8Hashable", "applicationWillTerminate"]
 - !private ["Ps8Hashable", "barTintColor"]
+- !private ["Ps8Hashable", "color"]
+- !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "orange"]
+- !private ["Ps8Hashable", "shadowColor"]
 - !private ["Ps8Hashable", "titleTextAttributes"]
 - !private ["Ps8Hashable", "white"]
 - ["Ps8Hashable", "window"]
@@ -248,17 +286,23 @@ depends-member:
 - !private ["Ps10MirrorPath", "init"]
 - !private ["PSo8NSCoding", "appearance"]
 - !private ["PSo8NSCoding", "barTintColor"]
+- !private ["PSo8NSCoding", "color"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "orange"]
+- !private ["PSo8NSCoding", "shadowColor"]
 - !private ["PSo8NSCoding", "titleTextAttributes"]
 - !private ["PSo8NSCoding", "white"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "orange"]
+- !private ["PSo9NSCopying", "shadowColor"]
 - !private ["PSo9NSCopying", "white"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "NSFontAttributeName"]
 - !private ["CSo8NSObject", "NSForegroundColorAttributeName"]
+- !private ["CSo8NSObject", "PopupDialogContainerView"]
+- !private ["CSo8NSObject", "PopupDialogOverlayView"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -280,13 +324,18 @@ depends-member:
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
 - !private ["CSo8NSObject", "barTintColor"]
+- !private ["CSo8NSObject", "color"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "orange"]
+- !private ["CSo8NSObject", "shadowColor"]
 - !private ["CSo8NSObject", "titleTextAttributes"]
 - !private ["CSo8NSObject", "white"]
 - ["CSo8NSObject", "window"]
 - !private ["PSo16NSObjectProtocol", "NSFontAttributeName"]
 - !private ["PSo16NSObjectProtocol", "NSForegroundColorAttributeName"]
+- !private ["PSo16NSObjectProtocol", "PopupDialogContainerView"]
+- !private ["PSo16NSObjectProtocol", "PopupDialogOverlayView"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "UINavigationBar"]
@@ -305,17 +354,28 @@ depends-member:
 - ["PSo16NSObjectProtocol", "applicationWillResignActive"]
 - ["PSo16NSObjectProtocol", "applicationWillTerminate"]
 - !private ["PSo16NSObjectProtocol", "barTintColor"]
+- !private ["PSo16NSObjectProtocol", "color"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "orange"]
+- !private ["PSo16NSObjectProtocol", "shadowColor"]
 - !private ["PSo16NSObjectProtocol", "titleTextAttributes"]
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "orange"]
+- !private ["PSo14NSSecureCoding", "shadowColor"]
 - !private ["PSo14NSSecureCoding", "white"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
+- !private ["C11PopupDialog24PopupDialogContainerView", "appearance"]
+- !private ["C11PopupDialog24PopupDialogContainerView", "cornerRadius"]
+- ["C11PopupDialog24PopupDialogContainerView", "deinit"]
+- !private ["C11PopupDialog24PopupDialogContainerView", "shadowColor"]
+- !private ["C11PopupDialog22PopupDialogOverlayView", "appearance"]
+- !private ["C11PopupDialog22PopupDialogOverlayView", "color"]
+- ["C11PopupDialog22PopupDialogOverlayView", "deinit"]
 - !private ["Ps8Sequence", "Key"]
 - !private ["Ps8Sequence", "Value"]
 - ["SS", "deinit"]
@@ -324,15 +384,26 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "appearance"]
 - !private ["PSo29UIAccessibilityIdentification", "barTintColor"]
+- !private ["PSo29UIAccessibilityIdentification", "color"]
+- !private ["PSo29UIAccessibilityIdentification", "cornerRadius"]
+- !private ["PSo29UIAccessibilityIdentification", "shadowColor"]
 - !private ["PSo29UIAccessibilityIdentification", "titleTextAttributes"]
 - !private ["PSo12UIAppearance", "appearance"]
 - !private ["PSo12UIAppearance", "barTintColor"]
+- !private ["PSo12UIAppearance", "color"]
+- !private ["PSo12UIAppearance", "cornerRadius"]
+- !private ["PSo12UIAppearance", "shadowColor"]
 - !private ["PSo12UIAppearance", "titleTextAttributes"]
 - !private ["PSo21UIAppearanceContainer", "appearance"]
 - !private ["PSo21UIAppearanceContainer", "barTintColor"]
+- !private ["PSo21UIAppearanceContainer", "color"]
+- !private ["PSo21UIAppearanceContainer", "cornerRadius"]
+- !private ["PSo21UIAppearanceContainer", "shadowColor"]
 - !private ["PSo21UIAppearanceContainer", "titleTextAttributes"]
 - !private ["PSo21UIApplicationDelegate", "NSFontAttributeName"]
 - !private ["PSo21UIApplicationDelegate", "NSForegroundColorAttributeName"]
+- !private ["PSo21UIApplicationDelegate", "PopupDialogContainerView"]
+- !private ["PSo21UIApplicationDelegate", "PopupDialogOverlayView"]
 - !private ["PSo21UIApplicationDelegate", "UIColor"]
 - !private ["PSo21UIApplicationDelegate", "UIFont"]
 - !private ["PSo21UIApplicationDelegate", "UINavigationBar"]
@@ -356,18 +427,31 @@ depends-member:
 - !private ["PSo16UIBarPositioning", "titleTextAttributes"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "orange"]
+- !private ["CSo7UIColor", "shadowColor"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo17UICoordinateSpace", "appearance"]
 - !private ["PSo17UICoordinateSpace", "barTintColor"]
+- !private ["PSo17UICoordinateSpace", "color"]
+- !private ["PSo17UICoordinateSpace", "cornerRadius"]
+- !private ["PSo17UICoordinateSpace", "shadowColor"]
 - !private ["PSo17UICoordinateSpace", "titleTextAttributes"]
 - !private ["PSo13UIDynamicItem", "appearance"]
 - !private ["PSo13UIDynamicItem", "barTintColor"]
+- !private ["PSo13UIDynamicItem", "color"]
+- !private ["PSo13UIDynamicItem", "cornerRadius"]
+- !private ["PSo13UIDynamicItem", "shadowColor"]
 - !private ["PSo13UIDynamicItem", "titleTextAttributes"]
 - !private ["PSo18UIFocusEnvironment", "appearance"]
 - !private ["PSo18UIFocusEnvironment", "barTintColor"]
+- !private ["PSo18UIFocusEnvironment", "color"]
+- !private ["PSo18UIFocusEnvironment", "cornerRadius"]
+- !private ["PSo18UIFocusEnvironment", "shadowColor"]
 - !private ["PSo18UIFocusEnvironment", "titleTextAttributes"]
 - !private ["PSo11UIFocusItem", "appearance"]
 - !private ["PSo11UIFocusItem", "barTintColor"]
+- !private ["PSo11UIFocusItem", "color"]
+- !private ["PSo11UIFocusItem", "cornerRadius"]
+- !private ["PSo11UIFocusItem", "shadowColor"]
 - !private ["PSo11UIFocusItem", "titleTextAttributes"]
 - !private ["CSo6UIFont", "init"]
 - !private ["CSo15UINavigationBar", "appearance"]
@@ -377,6 +461,8 @@ depends-member:
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "NSFontAttributeName"]
 - !private ["CSo11UIResponder", "NSForegroundColorAttributeName"]
+- !private ["CSo11UIResponder", "PopupDialogContainerView"]
+- !private ["CSo11UIResponder", "PopupDialogOverlayView"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -398,13 +484,18 @@ depends-member:
 - ["CSo11UIResponder", "applicationWillResignActive"]
 - ["CSo11UIResponder", "applicationWillTerminate"]
 - !private ["CSo11UIResponder", "barTintColor"]
+- !private ["CSo11UIResponder", "color"]
+- !private ["CSo11UIResponder", "cornerRadius"]
 - ["CSo11UIResponder", "deinit"]
 - ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "shadowColor"]
 - !private ["CSo11UIResponder", "titleTextAttributes"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
 - !private ["PSo30UIResponderStandardEditActions", "NSFontAttributeName"]
 - !private ["PSo30UIResponderStandardEditActions", "NSForegroundColorAttributeName"]
+- !private ["PSo30UIResponderStandardEditActions", "PopupDialogContainerView"]
+- !private ["PSo30UIResponderStandardEditActions", "PopupDialogOverlayView"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "UINavigationBar"]
@@ -423,7 +514,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "applicationWillResignActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationWillTerminate"]
 - !private ["PSo30UIResponderStandardEditActions", "barTintColor"]
+- !private ["PSo30UIResponderStandardEditActions", "color"]
+- !private ["PSo30UIResponderStandardEditActions", "cornerRadius"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
+- !private ["PSo30UIResponderStandardEditActions", "shadowColor"]
 - !private ["PSo30UIResponderStandardEditActions", "titleTextAttributes"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
@@ -432,22 +526,34 @@ depends-member:
 - ["CSo8UITabBar", "deinit"]
 - !private ["PSo18UITraitEnvironment", "appearance"]
 - !private ["PSo18UITraitEnvironment", "barTintColor"]
+- !private ["PSo18UITraitEnvironment", "color"]
+- !private ["PSo18UITraitEnvironment", "cornerRadius"]
+- !private ["PSo18UITraitEnvironment", "shadowColor"]
 - !private ["PSo18UITraitEnvironment", "titleTextAttributes"]
 - !private ["CSo6UIView", "appearance"]
 - !private ["CSo6UIView", "barTintColor"]
+- !private ["CSo6UIView", "color"]
+- !private ["CSo6UIView", "cornerRadius"]
+- !private ["CSo6UIView", "shadowColor"]
 - !private ["CSo6UIView", "titleTextAttributes"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "appearance"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "barTintColor"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "color"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "cornerRadius"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "shadowColor"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleTextAttributes"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "orange"]
+- !private ["Ps26_ExpressibleByColorLiteral", "shadowColor"]
 - !private ["Ps26_ExpressibleByColorLiteral", "white"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "NSFontAttributeName"]
 - !private ["Ps9_Hashable", "NSForegroundColorAttributeName"]
+- !private ["Ps9_Hashable", "PopupDialogContainerView"]
+- !private ["Ps9_Hashable", "PopupDialogOverlayView"]
 - !private ["Ps9_Hashable", "UIColor"]
 - !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "UINavigationBar"]
@@ -466,8 +572,11 @@ depends-member:
 - ["Ps9_Hashable", "applicationWillResignActive"]
 - ["Ps9_Hashable", "applicationWillTerminate"]
 - !private ["Ps9_Hashable", "barTintColor"]
+- !private ["Ps9_Hashable", "color"]
+- !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "orange"]
+- !private ["Ps9_Hashable", "shadowColor"]
 - !private ["Ps9_Hashable", "titleTextAttributes"]
 - !private ["Ps9_Hashable", "white"]
 - ["Ps9_Hashable", "window"]
@@ -495,6 +604,7 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Sf"
 - "Ps8Hashable"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
@@ -508,6 +618,8 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Sq"
+- "C11PopupDialog24PopupDialogContainerView"
+- "C11PopupDialog22PopupDialogOverlayView"
 - !private "Ps8Sequence"
 - "SS"
 - !private "Ps16TextOutputStream"
@@ -550,4 +662,9 @@ depends-external:
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "7e85a999868267b7cde0941f4dd635ac"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/FXBlurView.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
+interface-hash: "c7fb7b39117f619cd20c978711a32de2"

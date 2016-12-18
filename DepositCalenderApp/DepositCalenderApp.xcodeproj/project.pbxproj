@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		806524CB85367923115D789B /* Pods_DepositCalenderApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C63441454CA6295F546557 /* Pods_DepositCalenderApp.framework */; };
+		951A8C901E0652AA00DB0B23 /* ExpenseInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951A8C8E1E0652AA00DB0B23 /* ExpenseInputViewController.swift */; };
+		951A8C911E0652AA00DB0B23 /* ExpenseInputViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 951A8C8F1E0652AA00DB0B23 /* ExpenseInputViewController.xib */; };
 		954C7DF51DF5BE280097FFF0 /* UIView+shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954C7DF41DF5BE280097FFF0 /* UIView+shadow.swift */; };
 		9564B8311DD73F2100729F08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8301DD73F2100729F08 /* AppDelegate.swift */; };
 		9564B8331DD73F2100729F08 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9564B8321DD73F2100729F08 /* CalendarViewController.swift */; };
@@ -50,6 +52,8 @@
 		732F9BF2E8648AC3864444F7 /* Pods_DepositCalenderAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DepositCalenderAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C63441454CA6295F546557 /* Pods_DepositCalenderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DepositCalenderApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A21616F6FF72B831E2007C3 /* Pods-DepositCalenderAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DepositCalenderAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DepositCalenderAppTests/Pods-DepositCalenderAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		951A8C8E1E0652AA00DB0B23 /* ExpenseInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseInputViewController.swift; sourceTree = "<group>"; };
+		951A8C8F1E0652AA00DB0B23 /* ExpenseInputViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpenseInputViewController.xib; sourceTree = "<group>"; };
 		954C7DF41DF5BE280097FFF0 /* UIView+shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+shadow.swift"; sourceTree = "<group>"; };
 		9564B82D1DD73F2100729F08 /* DepositCalenderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepositCalenderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9564B8301DD73F2100729F08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +158,8 @@
 				9564B8371DD73F2100729F08 /* Assets.xcassets */,
 				9564B8391DD73F2100729F08 /* LaunchScreen.storyboard */,
 				9564B83C1DD73F2100729F08 /* Info.plist */,
+				951A8C8E1E0652AA00DB0B23 /* ExpenseInputViewController.swift */,
+				951A8C8F1E0652AA00DB0B23 /* ExpenseInputViewController.xib */,
 			);
 			path = DepositCalenderApp;
 			sourceTree = "<group>";
@@ -304,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9564B83B1DD73F2100729F08 /* LaunchScreen.storyboard in Resources */,
+				951A8C911E0652AA00DB0B23 /* ExpenseInputViewController.xib in Resources */,
 				9564B8381DD73F2100729F08 /* Assets.xcassets in Resources */,
 				9564B8361DD73F2100729F08 /* Main.storyboard in Resources */,
 				95F65A261DDB7D0A0086C3B8 /* CalendarCell.xib in Resources */,
@@ -470,6 +477,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				954C7DF51DF5BE280097FFF0 /* UIView+shadow.swift in Sources */,
+				951A8C901E0652AA00DB0B23 /* ExpenseInputViewController.swift in Sources */,
 				95F65A281DE04EBC0086C3B8 /* Constant.swift in Sources */,
 				9564B8331DD73F2100729F08 /* CalendarViewController.swift in Sources */,
 				95F65A251DDB7D0A0086C3B8 /* CalendarCell.swift in Sources */,

@@ -6,11 +6,11 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp21SettingViewController", ""]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
 - "viewDidLoad"
+- "didReceiveMemoryWarning"
 depends-top-level:
-- "UIViewController"
 - "SettingViewController"
+- "UIViewController"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
@@ -128,4 +128,9 @@ depends-external:
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode8_1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/PopupDialog.swiftmodule/x86_64.swiftmodule"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-Swift.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/FXBlurView.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Headers/PopupDialog-umbrella.h"
+- "/Users/ty_mht-code/Documents/DepositCalenderApp/DepositCalenderApp/Build/Products/Debug-iphonesimulator/PopupDialog/PopupDialog.framework/Modules/module.modulemap"
 interface-hash: "86594f1e1d8b0227ec37fe880b3f1c6b"

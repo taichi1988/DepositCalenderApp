@@ -220,6 +220,19 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 @end
 
 @class UIButton;
+@class UITextField;
+
+SWIFT_CLASS("_TtC18DepositCalenderApp26ExpenseInputViewController")
+@interface ExpenseInputViewController : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified inputBtn;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified itemTextField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified priceTextField;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC18DepositCalenderApp21ExpenseViewController")
 @interface ExpenseViewController : UIViewController
