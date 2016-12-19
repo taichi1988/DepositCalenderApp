@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C18DepositCalenderApp21ExpenseViewController", ""]
 provides-dynamic-lookup:
-- "textAreaBackView"
-- "inputButtonTapped"
 - "viewDidLoad"
-- "dateLabel"
 - "inputButton"
+- "textAreaBackView"
 - "didReceiveMemoryWarning"
+- "inputButtonTapped"
+- "dateLabel"
 depends-top-level:
-- "UIViewController"
-- "ExpenseViewController"
 - !private "StringLiteralType"
-- "UIView"
-- !private "BooleanLiteralType"
 - !private "/"
-- !private "PopupDialog"
-- "UIButton"
-- "AssignmentPrecedence"
+- "UIView"
 - "UILabel"
+- "ExpenseViewController"
+- !private "BooleanLiteralType"
 - !private "ExpenseInputViewController"
+- "UIViewController"
+- !private "PopupDialog"
+- "AssignmentPrecedence"
+- "UIButton"
 depends-member:
 - !private ["Ps9AnyObject", "ExpenseInputViewController"]
 - !private ["Ps9AnyObject", "PopupDialog"]
@@ -325,6 +325,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "textAreaBackView"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", ""]
+- !private ["PSo19UITextFieldDelegate", "init"]
 - !private ["PSo18UITraitEnvironment", "ExpenseInputViewController"]
 - !private ["PSo18UITraitEnvironment", "PopupDialog"]
 - ["PSo18UITraitEnvironment", "dateLabel"]
@@ -434,6 +435,7 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
+- !private "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"

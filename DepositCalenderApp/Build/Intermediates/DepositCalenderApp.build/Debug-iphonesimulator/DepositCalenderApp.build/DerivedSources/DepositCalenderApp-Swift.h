@@ -229,8 +229,17 @@ SWIFT_CLASS("_TtC18DepositCalenderApp26ExpenseInputViewController")
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified priceTextField;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (IBAction)inputBtnTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ExpenseInputViewController (SWIFT_EXTENSION(DepositCalenderApp)) <UITextFieldDelegate>
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldClear:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldEndEditing:(UITextField * _Nonnull)textField;
 @end
 
 

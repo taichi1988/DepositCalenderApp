@@ -19,6 +19,9 @@ class ExpenseInputViewController: UIViewController {
 
         inputBtn.layer.cornerRadius = inputBtn.frame.height / 2
         inputBtn.setShadow(radius: 3, x: 0, y: 2)
+        
+        itemTextField.delegate = self
+        priceTextField.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,15 +29,27 @@ class ExpenseInputViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func inputBtnTapped(_ sender: Any) {
     }
-    */
+}
 
+// MARK: UITextField Delegate
+//
+extension ExpenseInputViewController: UITextFieldDelegate {
+    /// 完了ボタンを押した時に呼ばれる
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        // キーボードを隠す
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    /// テキストフィールドがフォーカスされた時に呼ばれる
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
+    
+    /// テキストフィールド編集終了時に呼ばれる
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        return true
+    }
 }
