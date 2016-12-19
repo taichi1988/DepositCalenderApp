@@ -224,11 +224,23 @@ SWIFT_CLASS("_TtC18DepositCalenderApp11DateManager")
 
 SWIFT_CLASS("_TtC18DepositCalenderApp26ExpenseInputViewController")
 @interface ExpenseInputViewController : UIViewController
+/**
+  入力ボタン
+*/
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified inputBtn;
+/**
+  項目のテキストフィールド
+*/
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified itemTextField;
+/**
+  金額のテキストフィールド
+*/
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified priceTextField;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+/**
+  入力ボタンアクション
+*/
 - (IBAction)inputBtnTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -236,9 +248,17 @@ SWIFT_CLASS("_TtC18DepositCalenderApp26ExpenseInputViewController")
 
 
 @interface ExpenseInputViewController (SWIFT_EXTENSION(DepositCalenderApp)) <UITextFieldDelegate>
+/**
+  完了ボタンを押した時に呼ばれる
+*/
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
-- (BOOL)textFieldShouldClear:(UITextField * _Nonnull)textField;
+/**
+  テキストフィールドがフォーカスされた時に呼ばれる
+*/
 - (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField;
+/**
+  テキストフィールド編集終了時に呼ばれる
+*/
 - (BOOL)textFieldShouldEndEditing:(UITextField * _Nonnull)textField;
 @end
 
@@ -257,11 +277,23 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21ExpenseViewController")
   入力ボタン
 */
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified inputButton;
+/**
+  支出入力画面インスタンス変数
+*/
+@property (nonatomic, strong) ExpenseInputViewController * _Null_unspecified inputVC;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (IBAction)inputButtonTapped:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface ExpenseViewController (SWIFT_EXTENSION(DepositCalenderApp))
+/**
+  Delegate Method
+*/
+- (void)addExpenseWithItem:(NSString * _Nonnull)item price:(NSString * _Nonnull)price;
 @end
 
 

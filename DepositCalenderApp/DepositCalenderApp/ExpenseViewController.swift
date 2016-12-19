@@ -12,13 +12,19 @@ import PopupDialog
 class ExpenseViewController: UIViewController {
     /// 日付のラベル
     @IBOutlet weak var dateLabel: UILabel!
-    /// 支出出力領域の背面のView
+    /// 支出項目と支出金額を出力する領域の背面のView
     @IBOutlet weak var textAreaBackView: UIView!
     /// 入力ボタン
     @IBOutlet weak var inputButton: UIButton!
+    /// 支出入力画面インスタンス変数
+    var inputVC: ExpenseInputViewController!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // 支出入力画面インスタンス化
+        inputVC = ExpenseInputViewController(nibName: "ExpenseInputViewController", bundle: nil)
+        inputVC.delegate = self
         
         textAreaBackView.setShadow(radius: 10, x: 0, y: 2)
         inputButton.layer.cornerRadius = inputButton.frame.height/2
@@ -30,8 +36,17 @@ class ExpenseViewController: UIViewController {
     }
     
     @IBAction func inputButtonTapped(_ sender: Any) {
-        let vc = ExpenseInputViewController(nibName: "ExpenseInputViewController", bundle: nil)
-        let popVC = PopupDialog(viewController: vc)
+        /// PopUpFWインスタンス生成
+        let popVC = PopupDialog(viewController: inputVC)
         present(popVC, animated: true, completion: nil)
+    }
+}
+
+// MARK: - ExpenseInputViewController Delegate
+//
+extension ExpenseViewController: ExpenseInputViewControllerDelegate {
+    /// Delegate Method
+    func addExpense(item: String, price: String) {
+        print("\(item)  \(price)")
     }
 }

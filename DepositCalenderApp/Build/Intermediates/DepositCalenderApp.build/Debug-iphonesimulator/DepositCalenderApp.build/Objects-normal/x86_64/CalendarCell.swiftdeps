@@ -10,8 +10,8 @@ provides-dynamic-lookup:
 - "dateNumber"
 depends-top-level:
 - "CalendarCell"
-- "UICollectionViewCell"
 - "UILabel"
+- "UICollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "dateNumber"]
