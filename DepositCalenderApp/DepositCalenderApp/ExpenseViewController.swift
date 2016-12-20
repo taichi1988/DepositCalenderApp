@@ -35,6 +35,7 @@ class ExpenseViewController: UIViewController {
         // 項目と金額を空文字で初期化
         itemTextView.text = ""
         priceTextView.text = ""
+        
         // FIXME: TextViewにplaceHolderを！
         
         textAreaBackView.setShadow(radius: 10, x: 0, y: 2)
