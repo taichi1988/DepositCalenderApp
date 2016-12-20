@@ -17,6 +17,9 @@ protocol ExpenseInputViewControllerDelegate: class {
     func addExpense(item: String, price: String)
 }
 
+/// 支出入力フォームポップアップ画面
+/// 入力した項目と金額は支出入力画面に追加される
+///
 class ExpenseInputViewController: UIViewController {
     
     weak var delegate: ExpenseInputViewControllerDelegate?
@@ -45,11 +48,12 @@ class ExpenseInputViewController: UIViewController {
     
     /// 入力ボタンアクション
     @IBAction func inputBtnTapped(_ sender: Any) {
+        // 項目と金額の両テキストの空文字判定
         if let itemTxt = itemTextField.text, !itemTxt.isEmpty,
             let priceTxt = priceTextField.text, !priceTxt.isEmpty {
-            
+            // 空でなければ支出入力画面に追加する
             self.delegate?.addExpense(item: itemTxt, price: priceTxt)
-            
+            // 入力完了後テキストを消す
             itemTextField.text = ""
             priceTextField.text = ""
         }

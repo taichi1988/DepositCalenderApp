@@ -52,7 +52,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-Zj-pFO">
                                 <rect key="frame" x="0.0" y="118" width="375" height="346"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ランチ" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-wp-Kie">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ランチ" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-wp-Kie">
                                         <rect key="frame" x="20" y="10" width="169" height="326"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="0.40153556034482757" colorSpace="calibratedRGB"/>
@@ -106,6 +106,8 @@
                     <connections>
                         <outlet property="dateLabel" destination="ZNB-Ae-e00" id="LEy-OU-r6B"/>
                         <outlet property="inputButton" destination="zhz-x1-gha" id="vhR-Rg-mye"/>
+                        <outlet property="itemTextView" destination="RgW-wp-Kie" id="Fae-lb-aaO"/>
+                        <outlet property="priceTextView" destination="cs3-bx-Mb7" id="9xY-Pq-wX4"/>
                         <outlet property="textAreaBackView" destination="y9c-Zj-pFO" id="3di-k8-Skp"/>
                     </connections>
                 </viewController>

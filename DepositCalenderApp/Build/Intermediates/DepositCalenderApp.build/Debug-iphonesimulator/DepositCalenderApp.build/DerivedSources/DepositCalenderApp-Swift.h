@@ -262,6 +262,7 @@ SWIFT_CLASS("_TtC18DepositCalenderApp26ExpenseInputViewController")
 - (BOOL)textFieldShouldEndEditing:(UITextField * _Nonnull)textField;
 @end
 
+@class UITextView;
 
 SWIFT_CLASS("_TtC18DepositCalenderApp21ExpenseViewController")
 @interface ExpenseViewController : UIViewController
@@ -270,9 +271,17 @@ SWIFT_CLASS("_TtC18DepositCalenderApp21ExpenseViewController")
 */
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateLabel;
 /**
-  支出出力領域の背面のView
+  支出項目と支出金額を出力する領域の背面のView
 */
 @property (nonatomic, weak) IBOutlet UIView * _Null_unspecified textAreaBackView;
+/**
+  支出項目の表示領域
+*/
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified itemTextView;
+/**
+  支出金額の表示領域
+*/
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified priceTextView;
 /**
   入力ボタン
 */
