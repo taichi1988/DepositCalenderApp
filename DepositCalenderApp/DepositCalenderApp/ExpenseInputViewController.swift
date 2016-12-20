@@ -60,8 +60,8 @@ class ExpenseInputViewController: UIViewController {
     }
 }
 
-// MARK: UITextField Delegate
-//
+// MARK: - UITextField Delegate
+
 extension ExpenseInputViewController: UITextFieldDelegate {
     /// 完了ボタンを押した時に呼ばれる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

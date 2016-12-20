@@ -31,6 +31,10 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="GPZ-Hc-z0p"/>
                             </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <state key="normal" title="決 定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
                             <connections>
                                 <action selector="inputBtnTapped:" destination="-1" eventType="touchUpInside" id="qWY-IJ-2w0"/>
                             </connections>
