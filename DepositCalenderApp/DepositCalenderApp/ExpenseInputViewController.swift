@@ -24,7 +24,7 @@ class ExpenseInputViewController: UIViewController {
     
     weak var delegate: ExpenseInputViewControllerDelegate?
     
-    /// 入力ボタン
+    /// 決定ボタン
     @IBOutlet weak var inputBtn: UIButton!
     /// 項目のテキストフィールド
     @IBOutlet weak var itemTextField: UITextField!
@@ -46,7 +46,7 @@ class ExpenseInputViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /// 入力ボタンアクション
+    /// 決定ボタンアクション
     @IBAction func inputBtnTapped(_ sender: Any) {
         // 項目と金額の両テキストの空文字判定
         if let itemTxt = itemTextField.text, !itemTxt.isEmpty,
@@ -63,7 +63,7 @@ class ExpenseInputViewController: UIViewController {
 // MARK: - UITextField Delegate
 
 extension ExpenseInputViewController: UITextFieldDelegate {
-    /// 完了ボタンを押した時に呼ばれる
+    /// 決定ボタンを押した時に呼ばれる
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // キーボードを隠す
         textField.resignFirstResponder()
