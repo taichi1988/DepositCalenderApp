@@ -43,13 +43,13 @@
                             <rect key="frame" x="103" y="124" width="202" height="59"/>
                             <color key="textColor" red="0.68235296010971069" green="0.36078432202339172" blue="0.20784313976764679" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="45"/>
-                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="＿＿＿＿＿" textAlignment="center" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="7S0-Xw-tfd">
                             <rect key="frame" x="103" y="40" width="202" height="46"/>
                             <color key="textColor" red="0.68235296010971069" green="0.36078432202339172" blue="0.20784313976764679" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
-                            <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            <textInputTraits key="textInputTraits" keyboardType="namePhonePad" returnKeyType="done"/>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="項目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r0K-0m-N3s">
                             <rect key="frame" x="25" y="40.5" width="70" height="45.5"/>
