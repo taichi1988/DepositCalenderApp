@@ -7,6 +7,7 @@ target 'DepositCalenderApp' do
 
   # Pods for DepositCalenderApp
 pod 'PopupDialog', '~> 0.5'
+pod 'KMPlaceholderTextView', '~> 1.3.0'
 
   target 'DepositCalenderAppTests' do
     inherit! :search_paths

@@ -7,107 +7,128 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09DC8ECE9D5F214EAC5897860DBDADD1 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810F27E13101A95FB59706105312C9A9 /* TransitionAnimator.swift */; };
-		182B7586E373AE7FB40B51030796FE4D /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F79CD00E4003A64D7113CC6EB42281 /* PopupDialogOverlayView.swift */; };
+		11603788F19907E39C430531AEC2735C /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0347D8174F5EA0EE105D2F5C08CF19B2 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14A9072AC1EB087CCCFCDA29506EAB9C /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E434EADF92667BEA3407408C00093 /* PopupDialogDefaultButtons.swift */; };
 		19831EFEADAA0D12CB55BDCB91183643 /* Pods-DepositCalenderAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 161833A8036173C44E71A93DCE42B788 /* Pods-DepositCalenderAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A740758EEF324161DA65D585A5032CC /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C2C5EF9953D1627D6DFF781BAB2F70 /* PopupDialogDefaultView.swift */; };
-		1C0C14878214CF0434BEA2ECC80F7882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		320988E5C7FE850AE3971593F6AAFEE9 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FDDBDB929D9138BC1B09640D7F89FB /* PopupDialog.swift */; };
-		34257C08774E3D082972A4D9BAC06A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		439F4081A52F0D8066D345AAC28172E2 /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9880755D5E432221D89DAA566FAEA768 /* PopupDialogContainerView.swift */; };
-		4873E8E4A4C53753531A12C7352E07F6 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FDC43D8F2590DD35851EA8C914043D /* InteractiveTransition.swift */; };
-		638F95882FF9641A59A07E46CA549A24 /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AD0A8F709FFBA11B488BC0C9E5BBBB3 /* PopupDialogDefaultButtons.swift */; };
-		66B3C54478901CF361DBA0C6FEB927DA /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EF18454EC7C9D0541FBA8FB9A0BB86 /* UIViewController+Visibility.swift */; };
-		748C29F0A2D7FC7650DEF2A17759D2F0 /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE8C9C4FA8744A1B7D55BCD7004F201 /* TransitionAnimations.swift */; };
-		7D11DA8C0CE6D3396593776A343385E8 /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E24D4412B2D1B863B6819767B63C468 /* PopupDialog+Keyboard.swift */; };
-		874922EE72AE96D30A4FF919E14283CF /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E902E2B88CF006ACF9F980A6B21AC0BB /* FXBlurView.m */; };
-		91E0F0BF40A63A8A69381B6AA370A220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		1C0C14878214CF0434BEA2ECC80F7882 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		20339972C2DE2C2A1F1122F85D545837 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2E896F0F66190A3B01E18C5CD61B4EB5 /* KMPlaceholderTextView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B859E8019EEDC75D64C420ECB563F01 /* KMPlaceholderTextView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E8E35BE5DE22A4881D2A8A32BB912F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		426389264AFB9762A78754ED08CE1FD3 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE4128F64CBD5D053D8BABD851DF673 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		497F77DB3FD0E9C4852B170C11AD8E3E /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DAA607DD575CD9E0088230D33FE327 /* InteractiveTransition.swift */; };
+		5ED8C94F5CC6AB547B6C17B6EE207FEF /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C5FFD311E4630A070B9504569F3A2A /* PopupDialog-dummy.m */; };
+		7025C24A703DC5778915DE6F9B519192 /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517DB3D0DD81504D360D70E5561E195B /* PopupDialogContainerView.swift */; };
+		7629E23770129A311C9DEEF817E74F8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		8465ECD1E7858BE4DE8EB774123033D2 /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5101B391D1C69B7786895F271D860F2 /* PopupDialogDefaultView.swift */; };
+		8F887FA2A0A708B7D7937E1F768E2628 /* KMPlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2A18D7707D9D0011C0552BDE3206AD /* KMPlaceholderTextView.swift */; };
+		91E0F0BF40A63A8A69381B6AA370A220 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		94973B9EB5A148C5EE65DC726F252B7F /* Pods-DepositCalenderAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D3E578CAE4AB545859D93A3EB905C30 /* Pods-DepositCalenderAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95C8A45B62F7E4F65C74C2B085129913 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90919FE88DA3E46C666D6172DF8B71D /* PresentationController.swift */; };
 		95FECB6B83AE7976F8A006290E2965A1 /* Pods-DepositCalenderAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFEB9081F5C36EC9BB04A668C7A5ADC /* Pods-DepositCalenderAppUITests-dummy.m */; };
-		997A446C29E9A6C1EFC211A069DF033C /* Pods-DepositCalenderApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4CA5DA58BC40045ECC3AAD907F698 /* Pods-DepositCalenderApp-dummy.m */; };
 		99E466BBF66FBAA5951CDD639E9D4E6E /* Pods-DepositCalenderAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE7E4C76D81A913D905376AC21702CC /* Pods-DepositCalenderAppTests-dummy.m */; };
-		9AB77E628D7875B5F28FBBFD763BC966 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		9E0C1DDF7FF6DAD9A323AFFD74430BAD /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E118531B92B40A7DC5128EA980D24650 /* PopupDialogDefaultViewController.swift */; };
-		B0DA7D7E8A5EE9B14CA959BE56B60BDB /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF37C25F7479DEE203139F44FA7DC55 /* PopupDialogButton.swift */; };
-		B36DBA017D6C34541904DEAFD1D17EA3 /* PopupDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E07291AEEC8E0024EBA4FD29AF114077 /* PopupDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B42B5F88B68B86A26060470B33DB2B69 /* Pods-DepositCalenderApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A210B949E1593BCD832D3744B0232C89 /* Pods-DepositCalenderApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCCC5AC831FAC0992DACC8837A451F6B /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6E611D7DACFB863F66332A9B03C848 /* UIView+Animations.swift */; };
-		C4C754E7BB98E8B9BDC3089D8B3CE94B /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7D313F2437C5DF4AB5F4178D8B4921 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C59330F4AB5B7FBDF7E419B03BA496BC /* PopupDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EF5106F36959AA600CADBDA2CC8DDFF7 /* PopupDialog-dummy.m */; };
-		CC743E0ACC5C9CD466C12E6D8B957ED3 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB50251D5D793D5475F300ABC57E78F /* PresentationManager.swift */; };
-		DEDC0C06355CEE145583B231C00E9413 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AA3D57A61BA0FBC28633CF9C61A5B0 /* PresentationController.swift */; };
+		A25C2FEA8964AE4F9B261288C375B6B5 /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049531C3B49A93E0210CD4415C9032F4 /* TransitionAnimations.swift */; };
+		B3536B120F52B9E8B509A328E7DFCF7E /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C981F632A21ED1CF5E73675766B2599 /* PresentationManager.swift */; };
+		C0102D1D90B34F9FDAEBF9E6F6535D27 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D9CF3C1564D29CDFF78DEBD0E8959C /* PopupDialogButton.swift */; };
+		C03E5FBE628BA95F751A6DA3B58A8765 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC6FA08DD63715D83A975A8B8BEAAA /* FXBlurView.m */; };
+		C20D49BBD3C52CD0E0C93DCE5C9D0250 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B52327C83726B54C0C9FAA6C8741B9E /* PopupDialog.swift */; };
+		C7E0DB64C44C36B99F9DCA12628C1810 /* Pods-DepositCalenderApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A210B949E1593BCD832D3744B0232C89 /* Pods-DepositCalenderApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8D93015CF1D621ABBA98D205001709B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		D408D558FB60DF93454B681C71BF4441 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996EF8202E2E893743065CEB3707B744 /* UIView+Animations.swift */; };
+		E2FBF13836A8284349F68EC3F9F36F76 /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7025B6FEFC842A6FEE6CA4228A858 /* PopupDialogDefaultViewController.swift */; };
+		E562CAF85F7AC4D61741F35B9F7C33B9 /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DBE5D8CBA36FEE49F6023908BC93120 /* PopupDialogOverlayView.swift */; };
+		E730BF2E6B2D6397D228D5A79FA2647E /* Pods-DepositCalenderApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B4CA5DA58BC40045ECC3AAD907F698 /* Pods-DepositCalenderApp-dummy.m */; };
+		E959A8D3A0DDAE65456D324B7CC894B0 /* KMPlaceholderTextView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB61CAA86CC712F7BEA11916F60D8AC0 /* KMPlaceholderTextView-dummy.m */; };
+		ECD29D98A146DCE7BAD183CAEBAD4C57 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE4118BA7A02EC5011E1D7AB66570E0 /* TransitionAnimator.swift */; };
+		ED24353E3649D82F50EF09B240EE778D /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6FC835854EA67A0B1CE16506E8C061 /* PopupDialog+Keyboard.swift */; };
+		F3B9464C046A7AF7A86FDB4F091C0102 /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8EFC32A1F4DB6722701D4CF571FBBC /* UIViewController+Visibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E214660921578F89BC2CDBFC2A6B5B16 /* PBXContainerItemProxy */ = {
+		867914FDFEEC03C61CE77CEF7C00CE8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F4F91DD75EBF4E0B49EDBDB5F11DC0F;
+			remoteGlobalIDString = 946CB36406A8710D2757D4AA1E38B1D6;
 			remoteInfo = PopupDialog;
+		};
+		C950551E55114BEF2E40B8111AAFDE54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D53804E34279A83A61915C6ACA3C0D06;
+			remoteInfo = KMPlaceholderTextView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02EF18454EC7C9D0541FBA8FB9A0BB86 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		0347D8174F5EA0EE105D2F5C08CF19B2 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = PopupDialog/Classes/FXBlurView.h; sourceTree = "<group>"; };
 		03AE89224BA3A56BA7298B2E20ACBE69 /* Pods-DepositCalenderAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DepositCalenderAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		049531C3B49A93E0210CD4415C9032F4 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
+		04DAA607DD575CD9E0088230D33FE327 /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
 		0633CA75F715A9E84102F38F561025A3 /* Pods-DepositCalenderApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DepositCalenderApp.debug.xcconfig"; sourceTree = "<group>"; };
 		074839C19943C668CE13D2357E90ABBD /* Pods-DepositCalenderAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DepositCalenderAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		099B414D12205B749E97C04DAE9978CB /* Pods-DepositCalenderAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DepositCalenderAppUITests-resources.sh"; sourceTree = "<group>"; };
-		0AF37C25F7479DEE203139F44FA7DC55 /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		0B52327C83726B54C0C9FAA6C8741B9E /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
 		0B82B699FB02F2D2F3B792F4B831B433 /* Pods-DepositCalenderApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DepositCalenderApp.release.xcconfig"; sourceTree = "<group>"; };
 		161833A8036173C44E71A93DCE42B788 /* Pods-DepositCalenderAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DepositCalenderAppTests-umbrella.h"; sourceTree = "<group>"; };
+		1C8EFC32A1F4DB6722701D4CF571FBBC /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+Visibility.swift"; path = "PopupDialog/Classes/UIViewController+Visibility.swift"; sourceTree = "<group>"; };
 		1CD35F145C07E35D626E7B1A7161AB54 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FE7E4C76D81A913D905376AC21702CC /* Pods-DepositCalenderAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DepositCalenderAppTests-dummy.m"; sourceTree = "<group>"; };
+		25F0CA9C4DA3E9241BCA9BC53475716D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2667DBBBC5B403D758D65157BEEBE701 /* Pods-DepositCalenderAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DepositCalenderAppTests-resources.sh"; sourceTree = "<group>"; };
 		34D8EB5804E33B6D69408AD951269D54 /* Pods-DepositCalenderAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DepositCalenderAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		36C2C5EF9953D1627D6DFF781BAB2F70 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
 		37B4CA5DA58BC40045ECC3AAD907F698 /* Pods-DepositCalenderApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DepositCalenderApp-dummy.m"; sourceTree = "<group>"; };
-		3B6E611D7DACFB863F66332A9B03C848 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
 		3B898CDB86F02C3730DCC9DCF1F247C4 /* Pods-DepositCalenderAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DepositCalenderAppTests-frameworks.sh"; sourceTree = "<group>"; };
-		3BE8C9C4FA8744A1B7D55BCD7004F201 /* TransitionAnimations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimations.swift; path = PopupDialog/Classes/TransitionAnimations.swift; sourceTree = "<group>"; };
-		42F79CD00E4003A64D7113CC6EB42281 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		3BE4128F64CBD5D053D8BABD851DF673 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
+		3C981F632A21ED1CF5E73675766B2599 /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
 		43E15B77B6DAD17F52A11685ED04998F /* Pods-DepositCalenderAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DepositCalenderAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4984FAEAB13F56D0705745DA0A757EAC /* Pods_DepositCalenderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DepositCalenderApp.framework; path = "Pods-DepositCalenderApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4AD0A8F709FFBA11B488BC0C9E5BBBB3 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		4604297834307B5C95021348B5642496 /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PopupDialog.modulemap; sourceTree = "<group>"; };
+		480C8116A688C0AE3A6AEB7B3B23E72E /* Pods_DepositCalenderApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DepositCalenderApp.framework; path = "Pods-DepositCalenderApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		517DB3D0DD81504D360D70E5561E195B /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
 		56DB9A33019EA92638B234E03CFEBF6E /* Pods-DepositCalenderApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DepositCalenderApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		5A54E8AC51B92D259268644F3FF8DF44 /* Pods-DepositCalenderApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DepositCalenderApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5B859E8019EEDC75D64C420ECB563F01 /* KMPlaceholderTextView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-umbrella.h"; sourceTree = "<group>"; };
 		5D3E578CAE4AB545859D93A3EB905C30 /* Pods-DepositCalenderAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DepositCalenderAppUITests-umbrella.h"; sourceTree = "<group>"; };
-		5E24D4412B2D1B863B6819767B63C468 /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
-		61FDC43D8F2590DD35851EA8C914043D /* InteractiveTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveTransition.swift; path = PopupDialog/Classes/InteractiveTransition.swift; sourceTree = "<group>"; };
-		6D7D313F2437C5DF4AB5F4178D8B4921 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = PopupDialog/Classes/FXBlurView.h; sourceTree = "<group>"; };
-		72EF3082C18A3A04D94D5A1CE1B11C84 /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		76AB24EC8439911AB70EB8F84A5FF6B5 /* Pods-DepositCalenderApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DepositCalenderApp-resources.sh"; sourceTree = "<group>"; };
 		78F80BAB6406ADF2F44956A490992FF9 /* Pods-DepositCalenderAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DepositCalenderAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7980349F8DB4A16650FBB3F409CFCA43 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B886256E4663F9B5E508BF17B86106A /* Pods_DepositCalenderAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DepositCalenderAppTests.framework; path = "Pods-DepositCalenderAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7EE107B30FCDD3383B072133139C33D4 /* Pods-DepositCalenderAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DepositCalenderAppUITests.modulemap"; sourceTree = "<group>"; };
-		810F27E13101A95FB59706105312C9A9 /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
-		865DBECE5AED17C3330EDB2FE456415B /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F2A18D7707D9D0011C0552BDE3206AD /* KMPlaceholderTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KMPlaceholderTextView.swift; path = KMPlaceholderTextView/KMPlaceholderTextView.swift; sourceTree = "<group>"; };
+		82D9CF3C1564D29CDFF78DEBD0E8959C /* PopupDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogButton.swift; path = PopupDialog/Classes/PopupDialogButton.swift; sourceTree = "<group>"; };
+		901766AAC3B242B2D14F2D842E776638 /* KMPlaceholderTextView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KMPlaceholderTextView.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9880755D5E432221D89DAA566FAEA768 /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogContainerView.swift; path = PopupDialog/Classes/PopupDialogContainerView.swift; sourceTree = "<group>"; };
+		94818433433CBAA6D0EFA8B5AAC7C464 /* KMPlaceholderTextView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = KMPlaceholderTextView.modulemap; sourceTree = "<group>"; };
+		9837B0753257A1BF117E3D3400293A80 /* Pods_DepositCalenderAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DepositCalenderAppTests.framework; path = "Pods-DepositCalenderAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		996EF8202E2E893743065CEB3707B744 /* UIView+Animations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Animations.swift"; path = "PopupDialog/Classes/UIView+Animations.swift"; sourceTree = "<group>"; };
+		9DBE5D8CBA36FEE49F6023908BC93120 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogOverlayView.swift; path = PopupDialog/Classes/PopupDialogOverlayView.swift; sourceTree = "<group>"; };
 		9DFEB9081F5C36EC9BB04A668C7A5ADC /* Pods-DepositCalenderAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DepositCalenderAppUITests-dummy.m"; sourceTree = "<group>"; };
 		9E2E51D1E07D148E4018F1B661935FA6 /* Pods-DepositCalenderAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DepositCalenderAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A210B949E1593BCD832D3744B0232C89 /* Pods-DepositCalenderApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DepositCalenderApp-umbrella.h"; sourceTree = "<group>"; };
 		A33F06FD2243CF5FB426270C8AABD514 /* Pods-DepositCalenderAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DepositCalenderAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5101B391D1C69B7786895F271D860F2 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultView.swift; path = PopupDialog/Classes/PopupDialogDefaultView.swift; sourceTree = "<group>"; };
 		AB28D3EE8CF5E690FBD94B46C9E6A43B /* Pods-DepositCalenderApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DepositCalenderApp-frameworks.sh"; sourceTree = "<group>"; };
+		AB61CAA86CC712F7BEA11916F60D8AC0 /* KMPlaceholderTextView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KMPlaceholderTextView-dummy.m"; sourceTree = "<group>"; };
 		AC9DB031D6D07F06CEA65FFE3A09E388 /* Pods-DepositCalenderAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DepositCalenderAppTests.modulemap"; sourceTree = "<group>"; };
 		ACF7D0D137C4DF9A862BD1E938E91621 /* Pods-DepositCalenderApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DepositCalenderApp.modulemap"; sourceTree = "<group>"; };
-		B901504E1FF8F286C95BBF4325C5435B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C9FDDBDB929D9138BC1B09640D7F89FB /* PopupDialog.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialog.swift; path = PopupDialog/Classes/PopupDialog.swift; sourceTree = "<group>"; };
-		CA335CD0EA839B389A867F1D931DD955 /* PopupDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PopupDialog.modulemap; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B07D5222765491E28F539C3DE1D1501F /* PopupDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PopupDialog.framework; path = PopupDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C0A7E4F82913F4A8A7785AA76FD980 /* KMPlaceholderTextView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KMPlaceholderTextView.framework; path = KMPlaceholderTextView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B46E434EADF92667BEA3407408C00093 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultButtons.swift; path = PopupDialog/Classes/PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		B6DE69F04DB14620DDD0347AD0B501B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90919FE88DA3E46C666D6172DF8B71D /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
 		CF00E7AD114DA3F7494E6EB46012E5BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFB50251D5D793D5475F300ABC57E78F /* PresentationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationManager.swift; path = PopupDialog/Classes/PresentationManager.swift; sourceTree = "<group>"; };
-		CFF40E6F6E70CFB7DA43508F6AEB1063 /* Pods_DepositCalenderAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DepositCalenderAppUITests.framework; path = "Pods-DepositCalenderAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E07291AEEC8E0024EBA4FD29AF114077 /* PopupDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-umbrella.h"; sourceTree = "<group>"; };
-		E118531B92B40A7DC5128EA980D24650 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
-		E2AA3D57A61BA0FBC28633CF9C61A5B0 /* PresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresentationController.swift; path = PopupDialog/Classes/PresentationController.swift; sourceTree = "<group>"; };
+		E1681C9095737E2AF18DBE308A42B5E4 /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
+		E2C5FFD311E4630A070B9504569F3A2A /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
 		E7A5A6763467D5FCF9326ED7E8A94C56 /* Pods-DepositCalenderAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DepositCalenderAppUITests-frameworks.sh"; sourceTree = "<group>"; };
-		E902E2B88CF006ACF9F980A6B21AC0BB /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = PopupDialog/Classes/FXBlurView.m; sourceTree = "<group>"; };
-		EACDAE7E8AC4577A4DEF356124B86D81 /* PopupDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PopupDialog-prefix.pch"; sourceTree = "<group>"; };
-		EF5106F36959AA600CADBDA2CC8DDFF7 /* PopupDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PopupDialog-dummy.m"; sourceTree = "<group>"; };
+		E7FB2381E83C3D29D2B5292DA8D3A2A3 /* Pods_DepositCalenderAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DepositCalenderAppUITests.framework; path = "Pods-DepositCalenderAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9FD4CBD16BC59AE054E30F61DA8CCAC /* PopupDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PopupDialog.xcconfig; sourceTree = "<group>"; };
+		EFAC6FA08DD63715D83A975A8B8BEAAA /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = PopupDialog/Classes/FXBlurView.m; sourceTree = "<group>"; };
 		F09CF947951B9D306A378ABB293A9DAA /* Pods-DepositCalenderAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DepositCalenderAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F51A415FA6E67DBCEE8E0B1865C2DB16 /* KMPlaceholderTextView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KMPlaceholderTextView-prefix.pch"; sourceTree = "<group>"; };
+		FCE4118BA7A02EC5011E1D7AB66570E0 /* TransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionAnimator.swift; path = PopupDialog/Classes/TransitionAnimator.swift; sourceTree = "<group>"; };
+		FE6FC835854EA67A0B1CE16506E8C061 /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "PopupDialog+Keyboard.swift"; path = "PopupDialog/Classes/PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
+		FEC7025B6FEFC842A6FEE6CA4228A858 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopupDialogDefaultViewController.swift; path = PopupDialog/Classes/PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,19 +140,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42B1478B2ECF187A9BA978F5CD29F622 /* Frameworks */ = {
+		8F7F072E8A73818551973E0370B53A28 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34257C08774E3D082972A4D9BAC06A38 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		73F250C64734548AB2C645BB87EA08A4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9AB77E628D7875B5F28FBBFD763BC966 /* Foundation.framework in Frameworks */,
+				20339972C2DE2C2A1F1122F85D545837 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +156,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9B5386D3600DEFEB604CB3F4FEFB1A58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7629E23770129A311C9DEEF817E74F8C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0A0260A18E86F352333E4D7773BA84F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8D93015CF1D621ABBA98D205001709B /* Foundation.framework in Frameworks */,
+				3E8E35BE5DE22A4881D2A8A32BB912F7 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE724C6A4D3D2AA60864B57016573B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2C0A7E4F82913F4A8A7785AA76FD980 /* KMPlaceholderTextView.framework */,
+				480C8116A688C0AE3A6AEB7B3B23E72E /* Pods_DepositCalenderApp.framework */,
+				9837B0753257A1BF117E3D3400293A80 /* Pods_DepositCalenderAppTests.framework */,
+				E7FB2381E83C3D29D2B5292DA8D3A2A3 /* Pods_DepositCalenderAppUITests.framework */,
+				B07D5222765491E28F539C3DE1D1501F /* PopupDialog.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0D30A633FAA40259F7C6E1BC0695E00C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,15 +198,44 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		21D9E005D3D912238F9C9C83B25836CE /* Products */ = {
+		1B9B664197B21FE7E2B1317E7CA86D60 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4984FAEAB13F56D0705745DA0A757EAC /* Pods_DepositCalenderApp.framework */,
-				7B886256E4663F9B5E508BF17B86106A /* Pods_DepositCalenderAppTests.framework */,
-				CFF40E6F6E70CFB7DA43508F6AEB1063 /* Pods_DepositCalenderAppUITests.framework */,
-				865DBECE5AED17C3330EDB2FE456415B /* PopupDialog.framework */,
+				B6DE69F04DB14620DDD0347AD0B501B9 /* Info.plist */,
+				94818433433CBAA6D0EFA8B5AAC7C464 /* KMPlaceholderTextView.modulemap */,
+				901766AAC3B242B2D14F2D842E776638 /* KMPlaceholderTextView.xcconfig */,
+				AB61CAA86CC712F7BEA11916F60D8AC0 /* KMPlaceholderTextView-dummy.m */,
+				F51A415FA6E67DBCEE8E0B1865C2DB16 /* KMPlaceholderTextView-prefix.pch */,
+				5B859E8019EEDC75D64C420ECB563F01 /* KMPlaceholderTextView-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/KMPlaceholderTextView";
+			sourceTree = "<group>";
+		};
+		315F07B5E8E3F94C7655CE00829195AB /* PopupDialog */ = {
+			isa = PBXGroup;
+			children = (
+				0347D8174F5EA0EE105D2F5C08CF19B2 /* FXBlurView.h */,
+				EFAC6FA08DD63715D83A975A8B8BEAAA /* FXBlurView.m */,
+				04DAA607DD575CD9E0088230D33FE327 /* InteractiveTransition.swift */,
+				0B52327C83726B54C0C9FAA6C8741B9E /* PopupDialog.swift */,
+				FE6FC835854EA67A0B1CE16506E8C061 /* PopupDialog+Keyboard.swift */,
+				82D9CF3C1564D29CDFF78DEBD0E8959C /* PopupDialogButton.swift */,
+				517DB3D0DD81504D360D70E5561E195B /* PopupDialogContainerView.swift */,
+				B46E434EADF92667BEA3407408C00093 /* PopupDialogDefaultButtons.swift */,
+				A5101B391D1C69B7786895F271D860F2 /* PopupDialogDefaultView.swift */,
+				FEC7025B6FEFC842A6FEE6CA4228A858 /* PopupDialogDefaultViewController.swift */,
+				9DBE5D8CBA36FEE49F6023908BC93120 /* PopupDialogOverlayView.swift */,
+				C90919FE88DA3E46C666D6172DF8B71D /* PresentationController.swift */,
+				3C981F632A21ED1CF5E73675766B2599 /* PresentationManager.swift */,
+				049531C3B49A93E0210CD4415C9032F4 /* TransitionAnimations.swift */,
+				FCE4118BA7A02EC5011E1D7AB66570E0 /* TransitionAnimator.swift */,
+				996EF8202E2E893743065CEB3707B744 /* UIView+Animations.swift */,
+				1C8EFC32A1F4DB6722701D4CF571FBBC /* UIViewController+Visibility.swift */,
+				A4DBD7C0DE00A50D2AA4D296FA427577 /* Support Files */,
+			);
+			name = PopupDialog;
+			path = PopupDialog;
 			sourceTree = "<group>";
 		};
 		3C4888D57059AA72874B294836213EF3 /* Pods-DepositCalenderAppTests */ = {
@@ -185,69 +256,40 @@
 			path = "Target Support Files/Pods-DepositCalenderAppTests";
 			sourceTree = "<group>";
 		};
-		5AA2E958ED186C4569E4E0FC1F1CA3A2 /* Support Files */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B901504E1FF8F286C95BBF4325C5435B /* Info.plist */,
-				CA335CD0EA839B389A867F1D931DD955 /* PopupDialog.modulemap */,
-				72EF3082C18A3A04D94D5A1CE1B11C84 /* PopupDialog.xcconfig */,
-				EF5106F36959AA600CADBDA2CC8DDFF7 /* PopupDialog-dummy.m */,
-				EACDAE7E8AC4577A4DEF356124B86D81 /* PopupDialog-prefix.pch */,
-				E07291AEEC8E0024EBA4FD29AF114077 /* PopupDialog-umbrella.h */,
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PopupDialog";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		619D52CAF61ABC79B01ECCB1006EE2E2 /* Pods */ = {
+		49380EDE657A5DD7F66EB9CE73B5BF60 /* KMPlaceholderTextView */ = {
 			isa = PBXGroup;
 			children = (
-				78689E921970BD3194CD9B678DEDCE49 /* PopupDialog */,
+				7F2A18D7707D9D0011C0552BDE3206AD /* KMPlaceholderTextView.swift */,
+				1B9B664197B21FE7E2B1317E7CA86D60 /* Support Files */,
+			);
+			name = KMPlaceholderTextView;
+			path = KMPlaceholderTextView;
+			sourceTree = "<group>";
+		};
+		51B84882798A5A6B7315EA3FC8B3DC8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49380EDE657A5DD7F66EB9CE73B5BF60 /* KMPlaceholderTextView */,
+				315F07B5E8E3F94C7655CE00829195AB /* PopupDialog */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		78689E921970BD3194CD9B678DEDCE49 /* PopupDialog */ = {
-			isa = PBXGroup;
-			children = (
-				6D7D313F2437C5DF4AB5F4178D8B4921 /* FXBlurView.h */,
-				E902E2B88CF006ACF9F980A6B21AC0BB /* FXBlurView.m */,
-				61FDC43D8F2590DD35851EA8C914043D /* InteractiveTransition.swift */,
-				C9FDDBDB929D9138BC1B09640D7F89FB /* PopupDialog.swift */,
-				5E24D4412B2D1B863B6819767B63C468 /* PopupDialog+Keyboard.swift */,
-				0AF37C25F7479DEE203139F44FA7DC55 /* PopupDialogButton.swift */,
-				9880755D5E432221D89DAA566FAEA768 /* PopupDialogContainerView.swift */,
-				4AD0A8F709FFBA11B488BC0C9E5BBBB3 /* PopupDialogDefaultButtons.swift */,
-				36C2C5EF9953D1627D6DFF781BAB2F70 /* PopupDialogDefaultView.swift */,
-				E118531B92B40A7DC5128EA980D24650 /* PopupDialogDefaultViewController.swift */,
-				42F79CD00E4003A64D7113CC6EB42281 /* PopupDialogOverlayView.swift */,
-				E2AA3D57A61BA0FBC28633CF9C61A5B0 /* PresentationController.swift */,
-				CFB50251D5D793D5475F300ABC57E78F /* PresentationManager.swift */,
-				3BE8C9C4FA8744A1B7D55BCD7004F201 /* TransitionAnimations.swift */,
-				810F27E13101A95FB59706105312C9A9 /* TransitionAnimator.swift */,
-				3B6E611D7DACFB863F66332A9B03C848 /* UIView+Animations.swift */,
-				02EF18454EC7C9D0541FBA8FB9A0BB86 /* UIViewController+Visibility.swift */,
-				5AA2E958ED186C4569E4E0FC1F1CA3A2 /* Support Files */,
-			);
-			name = PopupDialog;
-			path = PopupDialog;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				619D52CAF61ABC79B01ECCB1006EE2E2 /* Pods */,
-				21D9E005D3D912238F9C9C83B25836CE /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				51B84882798A5A6B7315EA3FC8B3DC8D /* Pods */,
+				0CE724C6A4D3D2AA60864B57016573B9 /* Products */,
 				0D30A633FAA40259F7C6E1BC0695E00C /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -270,12 +312,18 @@
 			path = "Target Support Files/Pods-DepositCalenderApp";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		A4DBD7C0DE00A50D2AA4D296FA427577 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				25F0CA9C4DA3E9241BCA9BC53475716D /* Info.plist */,
+				4604297834307B5C95021348B5642496 /* PopupDialog.modulemap */,
+				E9FD4CBD16BC59AE054E30F61DA8CCAC /* PopupDialog.xcconfig */,
+				E2C5FFD311E4630A070B9504569F3A2A /* PopupDialog-dummy.m */,
+				E1681C9095737E2AF18DBE308A42B5E4 /* PopupDialog-prefix.pch */,
+				3BE4128F64CBD5D053D8BABD851DF673 /* PopupDialog-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/PopupDialog";
 			sourceTree = "<group>";
 		};
 		D5002C62C32B6DDCF98943BBE15D54D0 /* Pods-DepositCalenderAppUITests */ = {
@@ -296,6 +344,15 @@
 			path = "Target Support Files/Pods-DepositCalenderAppUITests";
 			sourceTree = "<group>";
 		};
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -307,6 +364,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6081BBDFE50B1F9FD1F0AA85C668FD55 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E0DB64C44C36B99F9DCA12628C1810 /* Pods-DepositCalenderApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BC2F1F82C40E85A7E76B300A38AD651 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,44 +380,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89D4D7318FC0D5E6B56616B83B8C36FF /* Headers */ = {
+		BAE919B738A5A0C7A6E9503F840E580D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42B5F88B68B86A26060470B33DB2B69 /* Pods-DepositCalenderApp-umbrella.h in Headers */,
+				11603788F19907E39C430531AEC2735C /* FXBlurView.h in Headers */,
+				426389264AFB9762A78754ED08CE1FD3 /* PopupDialog-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8BCA6BFEADA48A160FAA7D7C281A4BD9 /* Headers */ = {
+		E1670857A3C496A3945B6C4CA7762E1A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4C754E7BB98E8B9BDC3089D8B3CE94B /* FXBlurView.h in Headers */,
-				B36DBA017D6C34541904DEAFD1D17EA3 /* PopupDialog-umbrella.h in Headers */,
+				2E896F0F66190A3B01E18C5CD61B4EB5 /* KMPlaceholderTextView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		145CFD8307B5FF4EB96B42B376F8A17C /* Pods-DepositCalenderApp */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E81AA92F82E641293D203E2EF40F89AA /* Build configuration list for PBXNativeTarget "Pods-DepositCalenderApp" */;
-			buildPhases = (
-				E0502ABE364B9156A2E89D31A61E3630 /* Sources */,
-				42B1478B2ECF187A9BA978F5CD29F622 /* Frameworks */,
-				89D4D7318FC0D5E6B56616B83B8C36FF /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E1152878FB99255602AE3F600556A70B /* PBXTargetDependency */,
-			);
-			name = "Pods-DepositCalenderApp";
-			productName = "Pods-DepositCalenderApp";
-			productReference = 4984FAEAB13F56D0705745DA0A757EAC /* Pods_DepositCalenderApp.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		2B9A764AD169DD3D699608C8ECF81B3D /* Pods-DepositCalenderAppTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5F5F840C552C17B6057407B7D59DC95 /* Build configuration list for PBXNativeTarget "Pods-DepositCalenderAppTests" */;
@@ -367,7 +414,26 @@
 			);
 			name = "Pods-DepositCalenderAppTests";
 			productName = "Pods-DepositCalenderAppTests";
-			productReference = 7B886256E4663F9B5E508BF17B86106A /* Pods_DepositCalenderAppTests.framework */;
+			productReference = 9837B0753257A1BF117E3D3400293A80 /* Pods_DepositCalenderAppTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5869492608F6752B0AC2B59F09FD18D6 /* Pods-DepositCalenderApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BA48B821602F03A3D713A55DD1CF476 /* Build configuration list for PBXNativeTarget "Pods-DepositCalenderApp" */;
+			buildPhases = (
+				B0ABF02562C30EAD98277B34AE213463 /* Sources */,
+				8F7F072E8A73818551973E0370B53A28 /* Frameworks */,
+				6081BBDFE50B1F9FD1F0AA85C668FD55 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C617EB5E39B0F39E33D9932952744BE7 /* PBXTargetDependency */,
+				D97FEDF3410EECF6E94C3E1829855776 /* PBXTargetDependency */,
+			);
+			name = "Pods-DepositCalenderApp";
+			productName = "Pods-DepositCalenderApp";
+			productReference = 480C8116A688C0AE3A6AEB7B3B23E72E /* Pods_DepositCalenderApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6BE82A3631A8470A35C3F6E290A68EBB /* Pods-DepositCalenderAppUITests */ = {
@@ -384,16 +450,16 @@
 			);
 			name = "Pods-DepositCalenderAppUITests";
 			productName = "Pods-DepositCalenderAppUITests";
-			productReference = CFF40E6F6E70CFB7DA43508F6AEB1063 /* Pods_DepositCalenderAppUITests.framework */;
+			productReference = E7FB2381E83C3D29D2B5292DA8D3A2A3 /* Pods_DepositCalenderAppUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F4F91DD75EBF4E0B49EDBDB5F11DC0F /* PopupDialog */ = {
+		946CB36406A8710D2757D4AA1E38B1D6 /* PopupDialog */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4E06029519DF7BDA9F6445072C8AD3B1 /* Build configuration list for PBXNativeTarget "PopupDialog" */;
+			buildConfigurationList = 32E040E7A0DA041E50A4F65F9BCCB2D4 /* Build configuration list for PBXNativeTarget "PopupDialog" */;
 			buildPhases = (
-				9D54480F64FA2FA663BE6EF9A12C7BF9 /* Sources */,
-				73F250C64734548AB2C645BB87EA08A4 /* Frameworks */,
-				8BCA6BFEADA48A160FAA7D7C281A4BD9 /* Headers */,
+				AD5FC19D4DC4D0B614CABD85BA49A865 /* Sources */,
+				9B5386D3600DEFEB604CB3F4FEFB1A58 /* Frameworks */,
+				BAE919B738A5A0C7A6E9503F840E580D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -401,7 +467,24 @@
 			);
 			name = PopupDialog;
 			productName = PopupDialog;
-			productReference = 865DBECE5AED17C3330EDB2FE456415B /* PopupDialog.framework */;
+			productReference = B07D5222765491E28F539C3DE1D1501F /* PopupDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D53804E34279A83A61915C6ACA3C0D06 /* KMPlaceholderTextView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 067781AD62F19538A7B4C2223D362013 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */;
+			buildPhases = (
+				286AFF2EAEE4EDB82052954482C97772 /* Sources */,
+				B0A0260A18E86F352333E4D7773BA84F /* Frameworks */,
+				E1670857A3C496A3945B6C4CA7762E1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KMPlaceholderTextView;
+			productName = KMPlaceholderTextView;
+			productReference = B2C0A7E4F82913F4A8A7785AA76FD980 /* KMPlaceholderTextView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -421,19 +504,29 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 21D9E005D3D912238F9C9C83B25836CE /* Products */;
+			productRefGroup = 0CE724C6A4D3D2AA60864B57016573B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				145CFD8307B5FF4EB96B42B376F8A17C /* Pods-DepositCalenderApp */,
+				D53804E34279A83A61915C6ACA3C0D06 /* KMPlaceholderTextView */,
+				5869492608F6752B0AC2B59F09FD18D6 /* Pods-DepositCalenderApp */,
 				2B9A764AD169DD3D699608C8ECF81B3D /* Pods-DepositCalenderAppTests */,
 				6BE82A3631A8470A35C3F6E290A68EBB /* Pods-DepositCalenderAppUITests */,
-				9F4F91DD75EBF4E0B49EDBDB5F11DC0F /* PopupDialog */,
+				946CB36406A8710D2757D4AA1E38B1D6 /* PopupDialog */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		286AFF2EAEE4EDB82052954482C97772 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E959A8D3A0DDAE65456D324B7CC894B0 /* KMPlaceholderTextView-dummy.m in Sources */,
+				8F887FA2A0A708B7D7937E1F768E2628 /* KMPlaceholderTextView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7DD4367770A50EFB84A9C8B2F9B4FEE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,27 +535,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9D54480F64FA2FA663BE6EF9A12C7BF9 /* Sources */ = {
+		AD5FC19D4DC4D0B614CABD85BA49A865 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				874922EE72AE96D30A4FF919E14283CF /* FXBlurView.m in Sources */,
-				4873E8E4A4C53753531A12C7352E07F6 /* InteractiveTransition.swift in Sources */,
-				7D11DA8C0CE6D3396593776A343385E8 /* PopupDialog+Keyboard.swift in Sources */,
-				C59330F4AB5B7FBDF7E419B03BA496BC /* PopupDialog-dummy.m in Sources */,
-				320988E5C7FE850AE3971593F6AAFEE9 /* PopupDialog.swift in Sources */,
-				B0DA7D7E8A5EE9B14CA959BE56B60BDB /* PopupDialogButton.swift in Sources */,
-				439F4081A52F0D8066D345AAC28172E2 /* PopupDialogContainerView.swift in Sources */,
-				638F95882FF9641A59A07E46CA549A24 /* PopupDialogDefaultButtons.swift in Sources */,
-				1A740758EEF324161DA65D585A5032CC /* PopupDialogDefaultView.swift in Sources */,
-				9E0C1DDF7FF6DAD9A323AFFD74430BAD /* PopupDialogDefaultViewController.swift in Sources */,
-				182B7586E373AE7FB40B51030796FE4D /* PopupDialogOverlayView.swift in Sources */,
-				DEDC0C06355CEE145583B231C00E9413 /* PresentationController.swift in Sources */,
-				CC743E0ACC5C9CD466C12E6D8B957ED3 /* PresentationManager.swift in Sources */,
-				748C29F0A2D7FC7650DEF2A17759D2F0 /* TransitionAnimations.swift in Sources */,
-				09DC8ECE9D5F214EAC5897860DBDADD1 /* TransitionAnimator.swift in Sources */,
-				BCCC5AC831FAC0992DACC8837A451F6B /* UIView+Animations.swift in Sources */,
-				66B3C54478901CF361DBA0C6FEB927DA /* UIViewController+Visibility.swift in Sources */,
+				C03E5FBE628BA95F751A6DA3B58A8765 /* FXBlurView.m in Sources */,
+				497F77DB3FD0E9C4852B170C11AD8E3E /* InteractiveTransition.swift in Sources */,
+				ED24353E3649D82F50EF09B240EE778D /* PopupDialog+Keyboard.swift in Sources */,
+				5ED8C94F5CC6AB547B6C17B6EE207FEF /* PopupDialog-dummy.m in Sources */,
+				C20D49BBD3C52CD0E0C93DCE5C9D0250 /* PopupDialog.swift in Sources */,
+				C0102D1D90B34F9FDAEBF9E6F6535D27 /* PopupDialogButton.swift in Sources */,
+				7025C24A703DC5778915DE6F9B519192 /* PopupDialogContainerView.swift in Sources */,
+				14A9072AC1EB087CCCFCDA29506EAB9C /* PopupDialogDefaultButtons.swift in Sources */,
+				8465ECD1E7858BE4DE8EB774123033D2 /* PopupDialogDefaultView.swift in Sources */,
+				E2FBF13836A8284349F68EC3F9F36F76 /* PopupDialogDefaultViewController.swift in Sources */,
+				E562CAF85F7AC4D61741F35B9F7C33B9 /* PopupDialogOverlayView.swift in Sources */,
+				95C8A45B62F7E4F65C74C2B085129913 /* PresentationController.swift in Sources */,
+				B3536B120F52B9E8B509A328E7DFCF7E /* PresentationManager.swift in Sources */,
+				A25C2FEA8964AE4F9B261288C375B6B5 /* TransitionAnimations.swift in Sources */,
+				ECD29D98A146DCE7BAD183CAEBAD4C57 /* TransitionAnimator.swift in Sources */,
+				D408D558FB60DF93454B681C71BF4441 /* UIView+Animations.swift in Sources */,
+				F3B9464C046A7AF7A86FDB4F091C0102 /* UIViewController+Visibility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0ABF02562C30EAD98277B34AE213463 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E730BF2E6B2D6397D228D5A79FA2647E /* Pods-DepositCalenderApp-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,22 +575,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E0502ABE364B9156A2E89D31A61E3630 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				997A446C29E9A6C1EFC211A069DF033C /* Pods-DepositCalenderApp-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E1152878FB99255602AE3F600556A70B /* PBXTargetDependency */ = {
+		C617EB5E39B0F39E33D9932952744BE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KMPlaceholderTextView;
+			target = D53804E34279A83A61915C6ACA3C0D06 /* KMPlaceholderTextView */;
+			targetProxy = C950551E55114BEF2E40B8111AAFDE54 /* PBXContainerItemProxy */;
+		};
+		D97FEDF3410EECF6E94C3E1829855776 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PopupDialog;
-			target = 9F4F91DD75EBF4E0B49EDBDB5F11DC0F /* PopupDialog */;
-			targetProxy = E214660921578F89BC2CDBFC2A6B5B16 /* PBXContainerItemProxy */;
+			target = 946CB36406A8710D2757D4AA1E38B1D6 /* PopupDialog */;
+			targetProxy = 867914FDFEEC03C61CE77CEF7C00CE8B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -538,7 +637,40 @@
 			};
 			name = Debug;
 		};
-		2AE4679544A53D023D72C1B8C8DFD525 /* Debug */ = {
+		1B4841A47AE9FC9334B05F6B8B3102FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901766AAC3B242B2D14F2D842E776638 /* KMPlaceholderTextView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPlaceholderTextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KMPlaceholderTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5703F5E4683BF4F94F54B427D9B0EB87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0633CA75F715A9E84102F38F561025A3 /* Pods-DepositCalenderApp.debug.xcconfig */;
 			buildSettings = {
@@ -574,9 +706,9 @@
 			};
 			name = Debug;
 		};
-		39D4283BD1A12545A5D7985813FA5A7A /* Debug */ = {
+		6A71EEB288760C1881FE65FD343ABE0E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72EF3082C18A3A04D94D5A1CE1B11C84 /* PopupDialog.xcconfig */;
+			baseConfigurationReference = E9FD4CBD16BC59AE054E30F61DA8CCAC /* PopupDialog.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -606,38 +738,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		3FF3042602435456E339C866FA1EF56F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72EF3082C18A3A04D94D5A1CE1B11C84 /* PopupDialog.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = PopupDialog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		730B43A65FF90BF8F5A27FFBCE1F39F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -674,9 +774,9 @@
 			};
 			name = Debug;
 		};
-		A9A1F43C3F0416CCADAC8C58F900B3F3 /* Release */ = {
+		A1CFD0AC590C66F5D9A925F503C48DF8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B82B699FB02F2D2F3B792F4B831B433 /* Pods-DepositCalenderApp.release.xcconfig */;
+			baseConfigurationReference = E9FD4CBD16BC59AE054E30F61DA8CCAC /* PopupDialog.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -689,20 +789,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DepositCalenderApp/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PopupDialog/PopupDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PopupDialog/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DepositCalenderApp/Pods-DepositCalenderApp.modulemap";
+				MODULEMAP_FILE = "Target Support Files/PopupDialog/PopupDialog.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DepositCalenderApp;
+				PRODUCT_NAME = PopupDialog;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -771,6 +868,41 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_DepositCalenderAppUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CF48EFF1EECFE2F7CEF150B6DB73DC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B82B699FB02F2D2F3B792F4B831B433 /* Pods-DepositCalenderApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DepositCalenderApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DepositCalenderApp/Pods-DepositCalenderApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DepositCalenderApp;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -854,9 +986,50 @@
 			};
 			name = Release;
 		};
+		F7E39B6DA099E73935D9780FF0C4B931 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901766AAC3B242B2D14F2D842E776638 /* KMPlaceholderTextView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KMPlaceholderTextView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KMPlaceholderTextView/KMPlaceholderTextView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KMPlaceholderTextView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		067781AD62F19538A7B4C2223D362013 /* Build configuration list for PBXNativeTarget "KMPlaceholderTextView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B4841A47AE9FC9334B05F6B8B3102FC /* Debug */,
+				F7E39B6DA099E73935D9780FF0C4B931 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		20EBB484762E5801A87B319AC8B3053E /* Build configuration list for PBXNativeTarget "Pods-DepositCalenderAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -875,11 +1048,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4E06029519DF7BDA9F6445072C8AD3B1 /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
+		32E040E7A0DA041E50A4F65F9BCCB2D4 /* Build configuration list for PBXNativeTarget "PopupDialog" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				39D4283BD1A12545A5D7985813FA5A7A /* Debug */,
-				3FF3042602435456E339C866FA1EF56F /* Release */,
+				6A71EEB288760C1881FE65FD343ABE0E /* Debug */,
+				A1CFD0AC590C66F5D9A925F503C48DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BA48B821602F03A3D713A55DD1CF476 /* Build configuration list for PBXNativeTarget "Pods-DepositCalenderApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5703F5E4683BF4F94F54B427D9B0EB87 /* Debug */,
+				CF48EFF1EECFE2F7CEF150B6DB73DC04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -889,15 +1071,6 @@
 			buildConfigurations = (
 				D7B6287CB4DBB03512E2F701414E91AF /* Debug */,
 				AECA17A78D3082A87EAC17C4AFAEE3F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E81AA92F82E641293D203E2EF40F89AA /* Build configuration list for PBXNativeTarget "Pods-DepositCalenderApp" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AE4679544A53D023D72C1B8C8DFD525 /* Debug */,
-				A9A1F43C3F0416CCADAC8C58F900B3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

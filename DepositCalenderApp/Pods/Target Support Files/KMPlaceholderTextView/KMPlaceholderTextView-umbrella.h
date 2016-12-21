@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_DepositCalenderAppVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_DepositCalenderAppVersionString[];
+FOUNDATION_EXPORT double KMPlaceholderTextViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char KMPlaceholderTextViewVersionString[];
 

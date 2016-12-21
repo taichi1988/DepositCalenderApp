@@ -52,19 +52,31 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-Zj-pFO">
                                 <rect key="frame" x="0.0" y="118" width="375" height="346"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ランチ" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-wp-Kie">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgW-wp-Kie" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
                                         <rect key="frame" x="20" y="10" width="169" height="326"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="0.40153556034482757" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.68235296010971069" green="0.36078432202339172" blue="0.20784313976764679" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="ランチ"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.54509806632995605" green="0.34117648005485535" blue="0.16470588743686676" alpha="0.40153557062149048" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="¥1000" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs3-bx-Mb7">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs3-bx-Mb7" customClass="KMPlaceholderTextView" customModule="KMPlaceholderTextView">
                                         <rect key="frame" x="186.5" y="10" width="168.5" height="326"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <color key="textColor" red="0.54509803921568623" green="0.3411764705882353" blue="0.16470588235294117" alpha="0.40153556034482757" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.68235296010971069" green="0.36078432202339172" blue="0.20784313976764679" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="¥1000"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" red="0.54509806632995605" green="0.34117648005485535" blue="0.16470588743686676" alpha="0.40153557062149048" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.9882352941176471" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>

@@ -14,7 +14,7 @@ import PopupDialog
 ///
 class ExpenseViewController: UIViewController {
     /// 日付のラベル
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!  
     /// 支出項目と支出金額を出力する領域の背面のView
     @IBOutlet weak var textAreaBackView: UIView!
     /// 支出項目の表示領域
@@ -63,6 +63,6 @@ extension ExpenseViewController: ExpenseInputViewControllerDelegate {
         // 支出入力フォームから渡ってきた項目と金額を追加する
         // 文末に改行を添えて縦並びにテキストを追加していく
         itemTextView.text = itemTextView.text + item + "\n"
-        priceTextView.text = priceTextView.text + price + "\n"
+        priceTextView.text = priceTextView.text + "¥" + price + "\n"
     }
 }
