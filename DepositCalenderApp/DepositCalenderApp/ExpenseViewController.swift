@@ -60,9 +60,11 @@ class ExpenseViewController: UIViewController {
 extension ExpenseViewController: ExpenseInputViewControllerDelegate {
     /// Delegate Method
     func addExpense(item: String, price: String) {
-        // 支出入力フォームから渡ってきた項目と金額を追加する
-        // 文末に改行を添えて縦並びにテキストを追加していく
-        itemTextView.text = itemTextView.text + item + "\n"
-        priceTextView.text = priceTextView.text + "¥" + price + "\n"
+        // 文末に改行と「¥」を追加したフォーマットに変換する
+        let newItem = itemTextView.text + item + "\n"
+        let newPrice = priceTextView.text + "¥" + price + "\n"
+        // 変換されたテキストを追加する
+        itemTextView.text = newItem
+        priceTextView.text = newPrice
     }
 }
